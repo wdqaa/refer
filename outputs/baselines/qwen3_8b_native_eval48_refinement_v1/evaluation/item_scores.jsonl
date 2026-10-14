@@ -1,0 +1,48 @@
+{"item_id": "native-00ef4f82bea5fd", "question_type": "qualitative", "coverage": {"direct": 0.8, "expert_critique": 0.8, "self_refine": 0.8}, "delta_vs_direct": {"expert_critique": 0.0, "self_refine": 0.0}}
+{"item_id": "native-0275f43271d94f", "question_type": "qualitative", "coverage": {"direct": 0.75, "expert_critique": 0.75, "self_refine": 0.75}, "delta_vs_direct": {"expert_critique": 0.0, "self_refine": 0.0}}
+{"item_id": "native-1199630e7830c1", "question_type": "mcq", "correct": {"direct": true, "expert_critique": true, "self_refine": true}}
+{"item_id": "native-163df300e9e185", "question_type": "qualitative", "coverage": {"direct": 1.0, "expert_critique": 1.0, "self_refine": 1.0}, "delta_vs_direct": {"expert_critique": 0.0, "self_refine": 0.0}}
+{"item_id": "native-1ee30871e4ed4a", "question_type": "qualitative", "coverage": {"direct": 0.0, "expert_critique": 0.0, "self_refine": 0.25}, "delta_vs_direct": {"expert_critique": 0.0, "self_refine": 0.25}}
+{"item_id": "native-2330220e0908a3", "question_type": "mcq", "correct": {"direct": true, "expert_critique": true, "self_refine": true}}
+{"item_id": "native-293484733341de", "question_type": "mcq", "correct": {"direct": true, "expert_critique": true, "self_refine": true}}
+{"item_id": "native-2b667ae5496ac9", "question_type": "qualitative", "coverage": {"direct": 1.0, "expert_critique": 1.0, "self_refine": 1.0}, "delta_vs_direct": {"expert_critique": 0.0, "self_refine": 0.0}}
+{"item_id": "native-2f12806040f38e", "question_type": "qualitative", "coverage": {"direct": 0.4, "expert_critique": 0.6, "self_refine": 0.6}, "delta_vs_direct": {"expert_critique": 0.19999999999999996, "self_refine": 0.19999999999999996}}
+{"item_id": "native-385a44a14dee6e", "question_type": "qualitative", "coverage": {"direct": 0.75, "expert_critique": 0.75, "self_refine": 0.75}, "delta_vs_direct": {"expert_critique": 0.0, "self_refine": 0.0}}
+{"item_id": "native-444ad5e3701625", "question_type": "qualitative", "coverage": {"direct": 0.75, "expert_critique": 0.75, "self_refine": 0.75}, "delta_vs_direct": {"expert_critique": 0.0, "self_refine": 0.0}}
+{"item_id": "native-44b5dad6a7f791", "question_type": "mcq", "correct": {"direct": true, "expert_critique": true, "self_refine": true}}
+{"item_id": "native-4a0fb05a96efa5", "question_type": "mcq", "correct": {"direct": true, "expert_critique": false, "self_refine": true}}
+{"item_id": "native-54981140f07ca2", "question_type": "qualitative", "coverage": {"direct": 1.0, "expert_critique": 1.0, "self_refine": 1.0}, "delta_vs_direct": {"expert_critique": 0.0, "self_refine": 0.0}}
+{"item_id": "native-5dbd54270e82a4", "question_type": "mcq", "correct": {"direct": true, "expert_critique": true, "self_refine": true}}
+{"item_id": "native-69c66cd23304c0", "question_type": "qualitative", "coverage": {"direct": 1.0, "expert_critique": 1.0, "self_refine": 1.0}, "delta_vs_direct": {"expert_critique": 0.0, "self_refine": 0.0}}
+{"item_id": "native-6cd13b37a7cb48", "question_type": "qualitative", "coverage": {"direct": 0.6, "expert_critique": 0.6, "self_refine": 0.6}, "delta_vs_direct": {"expert_critique": 0.0, "self_refine": 0.0}}
+{"item_id": "native-6dd60022871403", "question_type": "mcq", "correct": {"direct": true, "expert_critique": true, "self_refine": true}}
+{"item_id": "native-7f1ab338d1df39", "question_type": "qualitative", "coverage": {"direct": 1.0, "expert_critique": 1.0, "self_refine": 1.0}, "delta_vs_direct": {"expert_critique": 0.0, "self_refine": 0.0}}
+{"item_id": "native-81dab47e6f1d78", "question_type": "qualitative", "coverage": {"direct": 1.0, "expert_critique": 1.0, "self_refine": 1.0}, "delta_vs_direct": {"expert_critique": 0.0, "self_refine": 0.0}}
+{"item_id": "native-823f9ecde2c58e", "question_type": "mcq", "correct": {"direct": true, "expert_critique": true, "self_refine": true}}
+{"item_id": "native-860b1ff61747b3", "question_type": "qualitative", "coverage": {"direct": 0.5, "expert_critique": 0.5, "self_refine": 0.5}, "delta_vs_direct": {"expert_critique": 0.0, "self_refine": 0.0}}
+{"item_id": "native-8ed749aebde279", "question_type": "qualitative", "coverage": {"direct": 1.0, "expert_critique": 1.0, "self_refine": 1.0}, "delta_vs_direct": {"expert_critique": 0.0, "self_refine": 0.0}}
+{"item_id": "native-923c415b7ff94a", "question_type": "qualitative", "coverage": {"direct": 0.75, "expert_critique": 0.75, "self_refine": 0.75}, "delta_vs_direct": {"expert_critique": 0.0, "self_refine": 0.0}}
+{"item_id": "native-99273534388eb3", "question_type": "qualitative", "coverage": {"direct": 0.5, "expert_critique": 0.5, "self_refine": 0.75}, "delta_vs_direct": {"expert_critique": 0.0, "self_refine": 0.25}}
+{"item_id": "native-99bb53aab421f9", "question_type": "qualitative", "coverage": {"direct": 0.0, "expert_critique": 0.5, "self_refine": 0.25}, "delta_vs_direct": {"expert_critique": 0.5, "self_refine": 0.25}}
+{"item_id": "native-9b93588e2476aa", "question_type": "qualitative", "coverage": {"direct": 0.75, "expert_critique": 0.75, "self_refine": 0.75}, "delta_vs_direct": {"expert_critique": 0.0, "self_refine": 0.0}}
+{"item_id": "native-9c961cea8603b8", "question_type": "mcq", "correct": {"direct": true, "expert_critique": true, "self_refine": true}}
+{"item_id": "native-9f36fe6f3c746f", "question_type": "mcq", "correct": {"direct": true, "expert_critique": true, "self_refine": true}}
+{"item_id": "native-9f51e537ef1a94", "question_type": "qualitative", "coverage": {"direct": 0.0, "expert_critique": 0.0, "self_refine": 0.0}, "delta_vs_direct": {"expert_critique": 0.0, "self_refine": 0.0}}
+{"item_id": "native-a11709f37bfe8e", "question_type": "qualitative", "coverage": {"direct": 1.0, "expert_critique": 1.0, "self_refine": 1.0}, "delta_vs_direct": {"expert_critique": 0.0, "self_refine": 0.0}}
+{"item_id": "native-a21d5e9bab1fff", "question_type": "mcq", "correct": {"direct": false, "expert_critique": false, "self_refine": false}}
+{"item_id": "native-b68c4917e24d31", "question_type": "mcq", "correct": {"direct": false, "expert_critique": false, "self_refine": false}}
+{"item_id": "native-b8459e9358bd70", "question_type": "qualitative", "coverage": {"direct": 1.0, "expert_critique": 1.0, "self_refine": 1.0}, "delta_vs_direct": {"expert_critique": 0.0, "self_refine": 0.0}}
+{"item_id": "native-b84b17f7409b61", "question_type": "mcq", "correct": {"direct": true, "expert_critique": true, "self_refine": true}}
+{"item_id": "native-c3253f873fdeae", "question_type": "qualitative", "coverage": {"direct": 0.3333333333333333, "expert_critique": 0.3333333333333333, "self_refine": 0.3333333333333333}, "delta_vs_direct": {"expert_critique": 0.0, "self_refine": 0.0}}
+{"item_id": "native-cdd4bfbe57a2b9", "question_type": "qualitative", "coverage": {"direct": 0.75, "expert_critique": 0.75, "self_refine": 0.75}, "delta_vs_direct": {"expert_critique": 0.0, "self_refine": 0.0}}
+{"item_id": "native-cf12a26b5a5ecc", "question_type": "qualitative", "coverage": {"direct": 0.6666666666666666, "expert_critique": 0.6666666666666666, "self_refine": 0.6666666666666666}, "delta_vs_direct": {"expert_critique": 0.0, "self_refine": 0.0}}
+{"item_id": "native-d216c9ed276999", "question_type": "qualitative", "coverage": {"direct": 0.75, "expert_critique": 1.0, "self_refine": 0.75}, "delta_vs_direct": {"expert_critique": 0.25, "self_refine": 0.0}}
+{"item_id": "native-d5ca54db9abe88", "question_type": "qualitative", "coverage": {"direct": 0.6666666666666666, "expert_critique": 0.6666666666666666, "self_refine": 0.6666666666666666}, "delta_vs_direct": {"expert_critique": 0.0, "self_refine": 0.0}}
+{"item_id": "native-d8c15e8d76238e", "question_type": "qualitative", "coverage": {"direct": 0.75, "expert_critique": 0.75, "self_refine": 0.75}, "delta_vs_direct": {"expert_critique": 0.0, "self_refine": 0.0}}
+{"item_id": "native-e8213639caeee3", "question_type": "mcq", "correct": {"direct": true, "expert_critique": true, "self_refine": true}}
+{"item_id": "native-e9d9ff5b22f241", "question_type": "qualitative", "coverage": {"direct": 1.0, "expert_critique": 1.0, "self_refine": 1.0}, "delta_vs_direct": {"expert_critique": 0.0, "self_refine": 0.0}}
+{"item_id": "native-eae9d5bd9ad215", "question_type": "qualitative", "coverage": {"direct": 1.0, "expert_critique": 1.0, "self_refine": 1.0}, "delta_vs_direct": {"expert_critique": 0.0, "self_refine": 0.0}}
+{"item_id": "native-ebe06f8106a35f", "question_type": "mcq", "correct": {"direct": true, "expert_critique": true, "self_refine": true}}
+{"item_id": "native-f586f51a2498a4", "question_type": "mcq", "correct": {"direct": true, "expert_critique": true, "self_refine": true}}
+{"item_id": "native-f689a7d440530a", "question_type": "qualitative", "coverage": {"direct": 0.75, "expert_critique": 0.75, "self_refine": 0.75}, "delta_vs_direct": {"expert_critique": 0.0, "self_refine": 0.0}}
+{"item_id": "native-f7ea74c01d61ea", "question_type": "qualitative", "coverage": {"direct": 0.75, "expert_critique": 1.0, "self_refine": 1.0}, "delta_vs_direct": {"expert_critique": 0.25, "self_refine": 0.25}}

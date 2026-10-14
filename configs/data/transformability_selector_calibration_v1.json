@@ -1,0 +1,27 @@
+{
+  "id": "transformability-selector-calibration-v1",
+  "pool_id": "v1",
+  "seed": 44,
+  "domain_quotas": {
+    "astronomy": {
+      "mcq": 12,
+      "open": 28
+    },
+    "biology": {
+      "mcq": 8,
+      "open": 20
+    },
+    "chemistry": {
+      "mcq": 8,
+      "open": 20
+    },
+    "physics": {
+      "mcq": 8,
+      "open": 19
+    },
+    "geography": {
+      "mcq": 8,
+      "open": 19
+    }
+  }
+}

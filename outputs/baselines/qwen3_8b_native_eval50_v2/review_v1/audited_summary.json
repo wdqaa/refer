@@ -1,0 +1,66 @@
+{
+  "source_summary": "final_summary.json",
+  "policy": "Sensitivity analysis only; raw 50-item scores remain preserved.",
+  "excluded_item_ids": [
+    "native-8cdcc31d9a7923",
+    "native-ac759e6bfd9e31"
+  ],
+  "items": 48,
+  "question_types": {
+    "mcq": 16,
+    "qualitative": 32
+  },
+  "arms": {
+    "direct": {
+      "correct": 14,
+      "total": 48,
+      "accuracy": 0.2916666666666667,
+      "mcq_correct": 14,
+      "mcq_total": 16,
+      "qualitative_correct": 0,
+      "qualitative_total": 32
+    },
+    "routed_multi_agent": {
+      "correct": 15,
+      "total": 48,
+      "accuracy": 0.3125,
+      "mcq_correct": 15,
+      "mcq_total": 16,
+      "qualitative_correct": 0,
+      "qualitative_total": 32
+    },
+    "oracle_multi_agent": {
+      "correct": 15,
+      "total": 48,
+      "accuracy": 0.3125,
+      "mcq_correct": 15,
+      "mcq_total": 16,
+      "qualitative_correct": 0,
+      "qualitative_total": 32
+    }
+  },
+  "paired_comparisons": {
+    "routed_minus_direct": {
+      "difference": 0.020833333333333315,
+      "bootstrap_95_low": 0.0,
+      "bootstrap_95_high": 0.0625,
+      "target_only_correct": 1,
+      "baseline_only_correct": 0
+    },
+    "oracle_minus_direct": {
+      "difference": 0.020833333333333315,
+      "bootstrap_95_low": 0.0,
+      "bootstrap_95_high": 0.0625,
+      "target_only_correct": 1,
+      "baseline_only_correct": 0
+    },
+    "oracle_minus_routed": {
+      "difference": 0.0,
+      "bootstrap_95_low": 0.0,
+      "bootstrap_95_high": 0.0,
+      "target_only_correct": 0,
+      "baseline_only_correct": 0
+    }
+  },
+  "conclusion": "No meaningful Oracle-domain advantage; do not start Planner cold-start or RL."
+}

@@ -1,0 +1,25 @@
+{
+  "total": 49,
+  "inputs": {
+    "datasets/processed/deepseek_qa_pilot_v1/verified_qa_curated.jsonl": 16,
+    "datasets/processed/deepseek_qa_validation_v2/verified_qa_curated.jsonl": 2,
+    "datasets/processed/deepseek_qa_batch_v2/verified_qa_curated.jsonl": 31
+  },
+  "origin_type": {
+    "native_single": 27,
+    "native_cross_domain": 9,
+    "transformed_cross_domain": 13
+  },
+  "question_type": {
+    "short_answer": 12,
+    "numeric": 3,
+    "qualitative": 25,
+    "mcq": 8,
+    "symbolic": 1
+  },
+  "difficulty": {
+    "easy": 15,
+    "medium": 22,
+    "hard": 12
+  }
+}

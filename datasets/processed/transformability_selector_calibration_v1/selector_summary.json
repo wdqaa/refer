@@ -1,0 +1,36 @@
+{
+  "initial_candidate_sources": 150,
+  "selector_traces": 150,
+  "schema_valid": 137,
+  "failed_or_invalid": 13,
+  "transformability": {
+    "low": 78,
+    "medium": 55,
+    "high": 4
+  },
+  "candidate_relations": {
+    "quantitative_modeling": 55,
+    "constraint_coupling": 30,
+    "measurement_inference": 30
+  },
+  "possible_new_domains": {
+    "mathematics": 50,
+    "physics": 54,
+    "astronomy": 3,
+    "chemistry": 7,
+    "biology": 4,
+    "geography": 1
+  },
+  "risk_flags": {
+    "too_broad": 52,
+    "underspecified": 22,
+    "no_natural_extension": 75,
+    "answer_already_supplied": 28,
+    "paper_specific": 17,
+    "fact_lookup_only": 57,
+    "external_context_required": 10,
+    "false_boundary_split": 4,
+    "time_sensitive": 2
+  },
+  "strict_high_eligible": 4
+}

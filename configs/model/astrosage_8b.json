@@ -1,0 +1,8 @@
+{
+  "config_version": "astrosage_8b_domain_benchmark.v1",
+  "model_id": "AstroMLab/AstroSage-8B",
+  "model_path": "/home/dqwang/Model/AstroSage-8B",
+  "prompt_renderer": "plain_completion",
+  "renderer_basis": "The released model card demonstrates direct tokenizer(prompt) completion and the tokenizer has no chat_template.",
+  "training_enabled": false
+}

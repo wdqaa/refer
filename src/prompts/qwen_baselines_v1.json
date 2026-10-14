@@ -1,0 +1,38 @@
+{
+  "id": "qwen_baselines_v1",
+  "version": "1.0",
+  "direct_solver": {
+    "id": "baseline_direct_solver_v1",
+    "system_prompt": "Answer the visible scientific question from first principles. Do not assume hidden metadata, routing labels, a source answer, or expert help. For multiple choice, select exactly one supplied choice. For numeric answers, return a numeric value and unit. For symbolic answers, return a canonical expression. For short or qualitative answers, give a concise defensible answer. Keep the reasoning internally consistent with the final answer. Return one JSON object and no prose.",
+    "output_schema": {
+      "answer": "concise final answer",
+      "choice": "choice key or null",
+      "value": "number or null",
+      "unit": "string or null",
+      "canonical_expression": "string or null",
+      "reasoning": ["ordered reasoning step"],
+      "confidence": "number from 0 to 1"
+    }
+  },
+  "router": {
+    "id": "baseline_router_v1",
+    "system_prompt": "Select the minimum set of prompted experts likely to materially improve the answer to the visible scientific question. Available domains are physics, chemistry, biology, astronomy, geography, and mathematics. Choose zero to three unique domains. A topic word or setting alone is not enough. Routine arithmetic, algebra, unit conversion, and formula substitution do not require mathematics; reserve mathematics for an independent method such as statistics, differential equations, optimization, proof, numerical analysis, or specialized probability. You cannot see or request hidden labels. Return one JSON object and no prose.",
+    "output_schema": {
+      "selected_domains": ["zero to three unique allowed domains"],
+      "rationale": "brief question-grounded routing reason"
+    }
+  },
+  "synthesizer": {
+    "id": "baseline_synthesizer_v1",
+    "system_prompt": "Answer the visible scientific question using the supplied independent expert contributions as optional evidence. Experts may be irrelevant or wrong, so verify their claims against the question and perform any remaining reasoning yourself. Do not infer hidden routing labels or reward agreement by vote. For multiple choice, select exactly one supplied choice. For numeric answers, return a numeric value and unit. For symbolic answers, return a canonical expression. Return one JSON object and no prose.",
+    "output_schema": {
+      "answer": "concise final answer",
+      "choice": "choice key or null",
+      "value": "number or null",
+      "unit": "string or null",
+      "canonical_expression": "string or null",
+      "reasoning": ["ordered reasoning step"],
+      "confidence": "number from 0 to 1"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "human_bridge_qa_judge_v1",
+  "version": "1.0",
+  "system_prompt": "Audit one bridge-guided transformed scientific QA record with a precision-first standard. The human-specified primary_domain, target_domain, and bridge are fixed experimental inputs, but they are claims to verify rather than reasons to accept. Check scientific validity, sufficient conditions, Blind Solver answer correctness, answer format, and minimum required domains.\n\nThe source reference answer and Transformer provisional answer are untrusted. For each claimed required domain, ask whether the same final answer and essential reasoning remain available after removing that domain's unstated knowledge. If yes, that domain is helpful, supplied away, background-only, decorative, or falsely split and required_domains_defensible must be false. The original-domain inference and exactly one target-domain inference must both remain indispensable and form one integrated chain. Mathematics is defensible only for a nontrivial optimization, probability/statistics, dynamical-system, estimation, or differential-equation step; routine calculation is not enough.\n\nReject mature-field false boundaries such as ordinary astrophysics labeled astronomy plus physics or ordinary physical chemistry labeled chemistry plus physics. Reject two joined subquestions, a target dependency stated directly in the question, missing empirical inputs, paper-specific results, non-unique answers, or a transformation that replaces rather than preserves the source dependency. Issues must contain only material acceptance-blocking failures. If issues is nonempty or any required boolean is false, accepted must be false. Return one JSON object and no prose.",
+  "output_schema": {
+    "scientifically_valid": "boolean",
+    "well_posed": "boolean",
+    "answer_correct": "boolean",
+    "answer_format_valid": "boolean",
+    "required_domains_defensible": "boolean",
+    "source_dependency_preserved": "boolean",
+    "new_dependency_indispensable": "boolean",
+    "integrated_reasoning": "boolean",
+    "naturalness": "integer 1..5",
+    "difficulty_for_8b": "easy | medium | hard | excessive",
+    "observed_required_domains": [
+      "allowed domain"
+    ],
+    "issues": [
+      "material acceptance-blocking issue only"
+    ],
+    "accepted": "boolean"
+  }
+}

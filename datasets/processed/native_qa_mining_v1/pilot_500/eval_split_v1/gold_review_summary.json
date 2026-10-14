@@ -1,0 +1,12 @@
+{
+  "input": 50,
+  "accepted": 50,
+  "rejected": 0,
+  "review_decisions": {
+    "accept": 44,
+    "accept_with_edit": 6
+  },
+  "edited_records": 6,
+  "input_sha256": "c2de977dee0be094639a468de9fed8427becbf3bcb89b211724ad8c3c80aabfd",
+  "policy_version": "native_qa_gold_human_review_v1.0"
+}

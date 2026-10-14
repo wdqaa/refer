@@ -1,0 +1,52 @@
+{
+  "schema_version": "astronomy_domain_benchmark_data.v1",
+  "source_pool": {
+    "records": 30,
+    "sha256": "7e476410b80d740b9cdd974bbb2d955afb24b680408c8675a9fe88e359f17942",
+    "question_types": {
+      "mcq": 16,
+      "qualitative": 12,
+      "short_answer": 2
+    }
+  },
+  "gold_enrichment": {
+    "api_calls": 6,
+    "api_errors": 0,
+    "schema_valid": 29,
+    "schema_failed": 1,
+    "prompt_tokens": 13535,
+    "completion_tokens": 10345,
+    "total_tokens": 23880,
+    "estimated_cost_usd": {
+      "off_peak": 0.008124,
+      "peak": 0.016249
+    }
+  },
+  "human_review": {
+    "accepted_unchanged": 16,
+    "accepted_with_edit": 8,
+    "rejected_from_schema_valid": 5,
+    "rejected_schema_failure": 1
+  },
+  "curated_benchmark": {
+    "records": 24,
+    "sha256": "2f68aeeec54cf74815c252bbbda95da8815827e19d081a0fb0b100229787e6ab",
+    "question_types": {
+      "mcq": 11,
+      "qualitative": 12,
+      "short_answer": 1
+    },
+    "domain_types": {
+      "single": 23,
+      "native_cross_domain": 1
+    },
+    "gold_frozen_before_model_inference": true
+  },
+  "training_policy": {
+    "source_pool_records_excluded": 30,
+    "historical_training_candidates": 164,
+    "remaining_training_eligible": 134
+  },
+  "model_inference_started": false,
+  "answer_judging_started": false
+}

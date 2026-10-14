@@ -1,0 +1,43 @@
+{
+  "review_version": "qwen_solvability_strict_reasoning.1",
+  "evaluation_note": "A correct option is counted as correct only when the visible derivation is scientifically and numerically coherent.",
+  "direct_strict_accuracy": 0.25,
+  "fixed_multi_agent_strict_accuracy": 0.25,
+  "records": [
+    {
+      "id": "sa_single_02",
+      "direct_strict_correct": false,
+      "fixed_strict_correct": false,
+      "direct_issue": "The derivation first says the protonated lipid-soluble acid remains in the lumen and increases the gradient, then asserts the opposite conclusion without deriving proton shuttling.",
+      "fixed_issue": "The synthesis again says the protonated acid remains in the lumen, then claims the gradient is reduced without the required cross-membrane transport and stromal deprotonation step."
+    },
+    {
+      "id": "sa_surface_01",
+      "direct_strict_correct": false,
+      "fixed_strict_correct": false,
+      "direct_issue": "The direct answer selects the wrong option and converts 154 MeV using the per-eV Kelvin factor as though it were per MeV.",
+      "fixed_issue": "The final option is correct, but the synthesis writes the redshift ratio backwards and divides quantities in incompatible units; the physics expert also failed JSON parsing."
+    },
+    {
+      "id": "sa_surface_05",
+      "direct_strict_correct": true,
+      "fixed_strict_correct": false,
+      "direct_issue": null,
+      "fixed_issue": "The synthesis converts 1.5e9 cm/s to 1500 km/s instead of 15000 km/s, obtains about 21 Mpc, then discards its own result and selects 187 Mpc from the choices."
+    },
+    {
+      "id": "sa_subfield_02",
+      "direct_strict_correct": false,
+      "fixed_strict_correct": true,
+      "direct_issue": "The derivation contradicts the explicit premise by saying the protonated form cannot cross membranes and therefore supports pH 7.4, while selecting the pH 5.5 option.",
+      "fixed_issue": null
+    }
+  ],
+  "strict_buckets": {
+    "direct_and_fixed_correct": 0,
+    "fixed_multi_agent_gain": 1,
+    "collaboration_harms": 1,
+    "too_hard_or_shared_failure": 2
+  },
+  "interpretation": "Choice accuracy substantially overstates trajectory quality. Under the current non-thinking Qwen3-8B setup, these questions are not yet reliable OPD training items even though their final choices often match."
+}

@@ -1,0 +1,166 @@
+{
+  "total_records": 50,
+  "schema_valid_records": 49,
+  "failed_or_invalid_records": 1,
+  "source_primary_domain_mismatches": 14,
+  "independent_mathematics": 2,
+  "native_cross_domain": 7,
+  "counts": {
+    "source_domain": {
+      "astronomy": 19,
+      "biology": 7,
+      "chemistry": 8,
+      "physics": 8,
+      "geography": 7
+    },
+    "sample_group": {
+      "stage015_calibration": 49
+    },
+    "taxonomy": {
+      "B1": 13,
+      "C1": 15,
+      "C2": 5,
+      "A1": 14,
+      "A2": 1,
+      "B2": 1
+    },
+    "decision": {
+      "keep_control": 20,
+      "transform_candidate": 15,
+      "keep_cross_domain": 6,
+      "reject": 8
+    },
+    "question_type": {
+      "numeric": 10,
+      "qualitative": 20,
+      "mcq": 15,
+      "short_answer": 3,
+      "symbolic": 1
+    },
+    "primary_domain": {
+      "physics": 16,
+      "astronomy": 11,
+      "biology": 7,
+      "mathematics": 1,
+      "chemistry": 10,
+      "geography": 4
+    },
+    "required_domain_set": {
+      "physics": 15,
+      "astronomy": 8,
+      "astronomy+physics": 3,
+      "astronomy+biology+chemistry": 1,
+      "biology": 6,
+      "mathematics": 1,
+      "chemistry": 8,
+      "biology+mathematics": 1,
+      "biology+chemistry": 1,
+      "geography": 4,
+      "chemistry+geography": 1
+    },
+    "helpful_domain_set": {
+      "mathematics": 12,
+      "physics": 9,
+      "none": 15,
+      "astronomy": 1,
+      "chemistry+mathematics+physics": 1,
+      "chemistry+mathematics": 1,
+      "astronomy+mathematics": 1,
+      "biology+geography": 1,
+      "biology": 3,
+      "chemistry": 1,
+      "mathematics+physics": 1,
+      "biology+physics": 1,
+      "geography": 1,
+      "chemistry+geography": 1
+    },
+    "reference_answer_role": {
+      "objective_gold_candidate": 20,
+      "qualitative_reference": 17,
+      "unreliable_or_insufficient": 12
+    }
+  },
+  "by_sample_group": {
+    "representative": {
+      "total": 0,
+      "taxonomy": {},
+      "decision": {},
+      "question_type": {},
+      "native_cross_domain": 0,
+      "source_primary_domain_mismatches": 0
+    },
+    "stress": {
+      "total": 0,
+      "taxonomy": {},
+      "decision": {},
+      "question_type": {},
+      "native_cross_domain": 0,
+      "source_primary_domain_mismatches": 0
+    }
+  },
+  "by_source_domain": {
+    "astronomy": {
+      "total": 19,
+      "decision": {
+        "keep_control": 10,
+        "transform_candidate": 3,
+        "keep_cross_domain": 4,
+        "reject": 2
+      },
+      "primary_domain": {
+        "physics": 8,
+        "astronomy": 11
+      }
+    },
+    "biology": {
+      "total": 7,
+      "decision": {
+        "reject": 3,
+        "transform_candidate": 3,
+        "keep_control": 1
+      },
+      "primary_domain": {
+        "biology": 5,
+        "mathematics": 1,
+        "physics": 1
+      }
+    },
+    "chemistry": {
+      "total": 8,
+      "decision": {
+        "keep_control": 3,
+        "keep_cross_domain": 1,
+        "transform_candidate": 3,
+        "reject": 1
+      },
+      "primary_domain": {
+        "chemistry": 8
+      }
+    },
+    "geography": {
+      "total": 7,
+      "decision": {
+        "transform_candidate": 5,
+        "keep_control": 1,
+        "keep_cross_domain": 1
+      },
+      "primary_domain": {
+        "geography": 4,
+        "biology": 2,
+        "chemistry": 1
+      }
+    },
+    "physics": {
+      "total": 8,
+      "decision": {
+        "keep_control": 5,
+        "reject": 2,
+        "transform_candidate": 1
+      },
+      "primary_domain": {
+        "physics": 7,
+        "chemistry": 1
+      }
+    }
+  }
+}

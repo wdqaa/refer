@@ -1,0 +1,38 @@
+{
+  "dataset_items": 49,
+  "scoring_policy": "unchanged deterministic scoring plus candidate-code-blinded strict complete-rubric review",
+  "v1": {
+    "direct": {"overall": "17/49", "qualitative": "1/25", "objective": "16/24"},
+    "routed_multi_agent": {"overall": "16/49", "qualitative": "1/25", "objective": "15/24"},
+    "oracle_multi_agent": {"overall": "16/49", "qualitative": "1/25", "objective": "15/24"}
+  },
+  "v2": {
+    "direct": {"overall": "16/49", "qualitative": "1/25", "objective": "15/24"},
+    "routed_multi_agent": {"overall": "20/49", "qualitative": "3/25", "objective": "17/24"},
+    "oracle_multi_agent": {"overall": "20/49", "qualitative": "2/25", "objective": "18/24"}
+  },
+  "oracle_v2_minus_direct_v2": {
+    "difference_items": 4,
+    "difference_accuracy": 0.08163265306122452,
+    "bootstrap_95_low": 0.0,
+    "bootstrap_95_high": 0.18367346938775508,
+    "rescued": 5,
+    "damaged": 1,
+    "rescued_item_ids": [
+      "qa-batch-v2-biology-16775",
+      "qa-batch-v2-chemistry-7904",
+      "qa-batch-v2-geography-5235",
+      "qa-batch-v2-physics-14821",
+      "qa-batch-v2-physics-458"
+    ],
+    "damaged_item_ids": ["qa-batch-v2-geography-19886"]
+  },
+  "integrity": {
+    "latest_predictions_ok": 147,
+    "hidden_label_leaks": 0,
+    "router_choices_identical_to_v1": true,
+    "direct_raw_trace_rows": 50,
+    "direct_parse_failures_preserved": 1
+  },
+  "interpretation": "Positive fixed-set Oracle trend, but not a training authorization because prompts were adapted after v1 on the same 49 records and qualitative coverage remains low."
+}

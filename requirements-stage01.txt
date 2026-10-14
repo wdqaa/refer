@@ -1,0 +1,5 @@
+# Installed inside the project-local .venv for Qwen3 support.
+# PyTorch 2.4.0+cu121 is inherited from the host py310 environment.
+transformers==4.57.6
+tokenizers==0.22.2
+

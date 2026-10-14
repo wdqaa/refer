@@ -1,0 +1,15 @@
+{
+  "total": 30,
+  "calibration_group": {
+    "verified_native_single": 15,
+    "verified_native_cross_domain": 9,
+    "audited_invalid": 6
+  },
+  "gold_domain_type": {
+    "single": 15,
+    "native_cross_domain": 9
+  },
+  "valid": 24,
+  "invalid": 6,
+  "overlap_with_calibration_60": 0
+}

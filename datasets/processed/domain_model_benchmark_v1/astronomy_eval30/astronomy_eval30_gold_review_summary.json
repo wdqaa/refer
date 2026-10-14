@@ -1,0 +1,13 @@
+{
+  "input": 29,
+  "accepted": 24,
+  "rejected": 5,
+  "review_decisions": {
+    "accept": 16,
+    "accept_with_edit": 8,
+    "reject": 5
+  },
+  "edited_records": 8,
+  "input_sha256": "daaaacad1c7e965bdb30019dc083f28fc65930f96209a69983e2b5d1872df601",
+  "policy_version": "astronomy_eval30_gold_human_review_v1.0"
+}

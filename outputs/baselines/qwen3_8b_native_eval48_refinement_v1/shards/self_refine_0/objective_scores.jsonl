@@ -1,0 +1,16 @@
+{"item_id": "native-00ef4f82bea5fd", "arm": "self_refine", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-0275f43271d94f", "arm": "self_refine", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-293484733341de", "arm": "self_refine", "auto_correct": true, "method": "choice_exact", "reason": "expected=C actual=C"}
+{"item_id": "native-44b5dad6a7f791", "arm": "self_refine", "auto_correct": true, "method": "choice_exact", "reason": "expected=D actual=D"}
+{"item_id": "native-69c66cd23304c0", "arm": "self_refine", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-6cd13b37a7cb48", "arm": "self_refine", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-6dd60022871403", "arm": "self_refine", "auto_correct": true, "method": "choice_exact", "reason": "expected=A actual=A"}
+{"item_id": "native-8ed749aebde279", "arm": "self_refine", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-9c961cea8603b8", "arm": "self_refine", "auto_correct": true, "method": "choice_exact", "reason": "expected=A actual=A"}
+{"item_id": "native-9f36fe6f3c746f", "arm": "self_refine", "auto_correct": true, "method": "choice_exact", "reason": "expected=A actual=A"}
+{"item_id": "native-9f51e537ef1a94", "arm": "self_refine", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-b8459e9358bd70", "arm": "self_refine", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-b84b17f7409b61", "arm": "self_refine", "auto_correct": true, "method": "choice_exact", "reason": "expected=A actual=A"}
+{"item_id": "native-cdd4bfbe57a2b9", "arm": "self_refine", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-d216c9ed276999", "arm": "self_refine", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-e8213639caeee3", "arm": "self_refine", "auto_correct": true, "method": "choice_exact", "reason": "expected=C actual=C"}

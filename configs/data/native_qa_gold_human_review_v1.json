@@ -1,0 +1,148 @@
+{
+  "version": "native_qa_gold_human_review_v1.0",
+  "review_date": "2026-10-08",
+  "expected_input_records": 50,
+  "expected_input_sha256": "c2de977dee0be094639a468de9fed8427becbf3bcb89b211724ad8c3c80aabfd",
+  "default_decision": "accept",
+  "default_reason": "Semantically consistent with the unchanged question and source reference; the answer, solution, and rubric are scientifically adequate for evaluation.",
+  "overrides": {
+    "native-c3253f873fdeae": {
+      "decision": "accept_with_edit",
+      "reason": "Clarify that bending and area-expansion moduli are constitutive parameters governing the response; applied stress does not automatically change an intrinsic modulus.",
+      "gold_enrichment": {
+        "gold_answer": {
+          "correct_choice": null,
+          "answer_text": "A lipid bilayer responds to applied stress according to its elastic parameters. Bending stress produces curvature with an energetic cost set by the bending modulus, for example through a Helfrich energy proportional to κ(C-C0)^2. In-plane tensile or compressive stress changes membrane area, with tension related to fractional area strain by the area-expansion modulus, σ ≈ KA ΔA/A0 in the small-strain regime. Thus larger applied bending moments or lateral stresses generally produce larger curvature or area strain, while κ and KA quantify resistance to those deformations. The intrinsic moduli need not themselves change under small stress, although large stress can reorganize the membrane and change its effective properties."
+        },
+        "standard_solution": [
+          "Model the bilayer as an elastic sheet: bending deformation is governed by a Helfrich-type curvature energy whose coefficient is the bending modulus κ.",
+          "Relate lateral stretching or compression to membrane tension using the area-expansion modulus, σ ≈ KA ΔA/A0 for small strains.",
+          "Interpret κ and KA as resistance parameters: at fixed moduli, increasing applied stress increases curvature or area strain rather than necessarily changing the intrinsic modulus.",
+          "Note that sufficiently large stress can reorganize lipids, change phase or composition, or damage the membrane, thereby changing effective mechanical properties."
+        ],
+        "scoring_rubric": [
+          {"criterion": "Identifies the bending modulus as the coefficient governing resistance to membrane curvature in a Helfrich-type description.", "points": 3},
+          {"criterion": "Relates membrane tension to stretching or compression and fractional area change through an area-expansion modulus.", "points": 3},
+          {"criterion": "Explains that increasing applied stress generally increases deformation at fixed elastic moduli, rather than asserting that small stress must change the intrinsic modulus.", "points": 3},
+          {"criterion": "Notes that large stress or structural reorganization can alter effective mechanical properties.", "points": 1}
+        ]
+      }
+    },
+    "native-8ed749aebde279": {
+      "decision": "accept_with_edit",
+      "reason": "Remove unsupported claims about flow direction, convergence, residence time, and mixing; retain only the spatial association stated by the source.",
+      "gold_enrichment": {
+        "gold_answer": {
+          "correct_choice": null,
+          "answer_text": "In fall, the observed wind pattern in Lake Tai is associated with a northwest-to-southeast decrease in nutrient and chlorophyll-a concentrations. Concentrations are highest in leeward bays in the northwestern part of the lake. The defensible conclusion from the supplied evidence is this wind-associated redistribution pattern; the source does not establish a more detailed transport mechanism."
+        },
+        "standard_solution": [
+          "Identify the fall wind pattern as the factor associated with the spatial redistribution of nutrients and chlorophyll a.",
+          "State the observed northwest-to-southeast decreasing concentration gradient.",
+          "Locate the maxima in leeward bays in the northwestern part of Lake Tai.",
+          "Avoid adding an unreported hydrodynamic mechanism beyond the association given in the source."
+        ],
+        "scoring_rubric": [
+          {"criterion": "States that fall wind patterns are associated with the spatial distributions of nutrients and chlorophyll a in Lake Tai.", "points": 3},
+          {"criterion": "States that nutrient and chlorophyll-a concentrations decrease from northwest to southeast.", "points": 4},
+          {"criterion": "States that the highest concentrations occur in leeward bays in the northwestern part of the lake.", "points": 3}
+        ]
+      }
+    },
+    "native-00ef4f82bea5fd": {
+      "decision": "accept_with_edit",
+      "reason": "Replace the overgeneralized claim that sulfur doping is universally n-type with a configuration-dependent description.",
+      "gold_enrichment": {
+        "gold_answer": {
+          "correct_choice": null,
+          "answer_text": "Heteroatom dopants change the band structure, Fermi level, carrier density, defect states, work function, and surface reactivity of graphene and other 2D materials. Substitutional nitrogen often donates electron density and promotes n-type behavior, while substitutional boron commonly creates holes and promotes p-type behavior. Sulfur can alter defect states, carrier density, conductivity, and adsorption, but its net doping behavior depends on bonding configuration, concentration, and the host material rather than being universally n-type. These tunable properties support field-effect transistors, p-n junctions, and gas, chemical, or biological sensors, where dopant-created states and adsorption sites can improve switching or sensitivity."
+        },
+        "standard_solution": [
+          "Explain that heteroatom doping perturbs the electronic structure and surface chemistry of a 2D material.",
+          "Describe nitrogen as commonly promoting electron-rich or n-type behavior and boron as commonly promoting hole-rich or p-type behavior in graphene.",
+          "Treat sulfur and other dopants as configuration-dependent: their effects depend on bonding site, concentration, defects, and host material.",
+          "Connect carrier-type and band-structure control to transistors and junctions, and connect modified adsorption and defect states to sensing."
+        ],
+        "scoring_rubric": [
+          {"criterion": "Explains that heteroatom doping changes electronic structure, carrier density or type, defect states, work function, or surface reactivity.", "points": 3},
+          {"criterion": "Correctly describes the common nitrogen n-type and boron p-type trends in substitutionally doped graphene.", "points": 2},
+          {"criterion": "Notes that sulfur and other dopants have configuration-, concentration-, and host-dependent effects rather than one universal carrier type.", "points": 2},
+          {"criterion": "Connects tunable carrier or band properties to transistor or junction applications.", "points": 2},
+          {"criterion": "Connects altered adsorption or defect states to chemical, gas, or biological sensing.", "points": 1}
+        ]
+      }
+    },
+    "native-e9d9ff5b22f241": {
+      "decision": "accept_with_edit",
+      "reason": "Correct the carbonic-anhydrase zinc coordination example while preserving the valid coordination-chemistry explanation.",
+      "gold_enrichment": {
+        "gold_answer": {
+          "correct_choice": null,
+          "answer_text": "The biological role of a metal center depends on the metal identity, ligand atoms supplied by the protein, coordination number and geometry, and the surrounding electrostatic environment. These features tune redox potential, Lewis acidity, substrate binding, electron transfer, and structural stability. In hemoglobin and myoglobin, heme iron coordinated by porphyrin nitrogens and a histidine binds oxygen reversibly. In carbonic anhydrase, Zn2+ is coordinated by three histidines and water or hydroxide; the metal lowers the water pKa and helps generate the nucleophile that converts carbon dioxide to bicarbonate. Cytochrome c oxidase uses coupled copper and heme-iron centers for electron transfer and oxygen reduction, while nitrogenase uses the FeMo cofactor to enable nitrogen reduction."
+        },
+        "standard_solution": [
+          "State that metal identity, protein ligands, coordination number, geometry, and local environment control the properties of a metalloprotein active site.",
+          "Link those coordination features to functions such as reversible ligand binding, Lewis-acid catalysis, redox chemistry, electron transfer, or structural stabilization.",
+          "Use heme proteins as an example of coordination controlling reversible oxygen binding.",
+          "Use carbonic anhydrase as an example: Zn2+ coordinated by three histidines and water or hydroxide activates water for carbon-dioxide hydration.",
+          "Give another valid example such as the copper/heme centers of cytochrome c oxidase or the FeMo cofactor of nitrogenase."
+        ],
+        "scoring_rubric": [
+          {"criterion": "Identifies metal identity, ligand set, coordination number or geometry, and local environment as determinants of metal-center behavior.", "points": 2},
+          {"criterion": "Connects coordination chemistry to catalysis, redox potential, electron transfer, ligand binding, or structural stability.", "points": 2},
+          {"criterion": "Explains reversible oxygen binding by heme iron in hemoglobin or myoglobin.", "points": 2},
+          {"criterion": "Correctly explains the three-histidine plus water/hydroxide zinc site and catalytic role in carbonic anhydrase.", "points": 2},
+          {"criterion": "Provides another correct metalloprotein example such as cytochrome c oxidase or nitrogenase.", "points": 2}
+        ]
+      }
+    },
+    "native-b68c4917e24d31": {
+      "decision": "accept_with_edit",
+      "reason": "Retain the correct keyed result but repair the dimensional accounting between permeated gas volume at reference conditions and pressure in the flask.",
+      "gold_enrichment": {
+        "gold_answer": {
+          "correct_choice": "G",
+          "answer_text": "1.04 × 10^-5 mbar"
+        },
+        "standard_solution": [
+          "Convert 5 × 10^-4 mol % helium to a mole fraction of 5 × 10^-6, giving an external helium partial pressure of about 5.1 × 10^-3 mbar at one atmosphere.",
+          "For a spherical 100 cm3 flask, compute r = (3V/4π)^(1/3) ≈ 2.88 cm and surface area A ≈ 104 cm2.",
+          "Use the permeability relation q = K A Δp/d with K = 4.9 × 10^-13, d = 0.7 mm, and Δp ≈ 5.1 × 10^-3 mbar to obtain q ≈ 3.7 × 10^-13 cm3(STP)/s.",
+          "Over 30 days, the permeated helium is about 9.6 × 10^-7 cm3(STP), or about 4.3 × 10^-11 mol.",
+          "Apply the ideal-gas law in the 0.100 L flask at 293 K to obtain p ≈ 1.0 × 10^-8 bar = 1.04 × 10^-5 mbar, which is option G."
+        ],
+        "scoring_rubric": [
+          {"criterion": "Converts the atmospheric helium abundance to an external helium partial pressure of about 5 × 10^-3 mbar.", "points": 2},
+          {"criterion": "Computes or uses the approximately 104 cm2 surface area of a spherical 100 cm3 flask and applies q = K A Δp/d.", "points": 3},
+          {"criterion": "Integrates the permeation rate over one month to obtain about 9.6 × 10^-7 cm3(STP) of helium.", "points": 2},
+          {"criterion": "Converts the permeated standard gas volume to moles or otherwise accounts consistently for reference pressure before obtaining the flask pressure.", "points": 2},
+          {"criterion": "Selects option G, approximately 1.04 × 10^-5 mbar.", "points": 1}
+        ]
+      }
+    },
+    "native-81dab47e6f1d78": {
+      "decision": "accept_with_edit",
+      "reason": "Expand the answer_text so that it answers the requested efficiency and feasibility comparison rather than only naming the methods.",
+      "gold_enrichment": {
+        "gold_answer": {
+          "correct_choice": null,
+          "answer_text": "Tokamaks normally combine several methods. Ohmic heating is simple and also drives plasma current, but it becomes ineffective as temperature rises because plasma resistivity falls. Neutral beam injection provides strong bulk heating and useful current drive, but requires large, high-voltage beam systems. Radio-frequency methods can heat selected particle populations and drive current; lower-hybrid waves are particularly effective for current drive, while ion-cyclotron waves are effective for ion heating, but coupling and antenna engineering are demanding. Electron-cyclotron resonance heating is localized and controllable for electron heating and current-profile control, but needs powerful microwave sources and suitable access. No single method is universally best: reactor-relevant operation typically uses a feasible combination selected for heating efficiency, current profile, plasma conditions, and engineering constraints."
+        },
+        "standard_solution": [
+          "Compare Ohmic heating: simple and current-driving, but progressively inefficient at high temperature as resistivity falls.",
+          "Compare neutral beam injection: strong heating and momentum/current drive, but costly and technically demanding at high voltage and power.",
+          "Compare RF families: ion-cyclotron waves favor ion heating and lower-hybrid waves can efficiently drive current, subject to antenna and coupling constraints.",
+          "Compare electron-cyclotron heating: localized, controllable electron heating and profile control, limited by microwave-source, access, and resonance requirements.",
+          "Conclude that tokamaks generally combine methods because efficiency and feasibility depend on the plasma regime and engineering goals."
+        ],
+        "scoring_rubric": [
+          {"criterion": "Explains the simplicity and high-temperature limitation of Ohmic heating.", "points": 2},
+          {"criterion": "Explains that neutral beam injection provides strong heating and current or momentum drive but has substantial engineering and power requirements.", "points": 2},
+          {"criterion": "Distinguishes relevant RF methods and their heating or current-drive roles while noting coupling or antenna constraints.", "points": 2},
+          {"criterion": "Explains the localized and controllable nature of electron-cyclotron heating and its microwave or resonance constraints.", "points": 2},
+          {"criterion": "Concludes that practical tokamak operation combines methods according to plasma conditions, desired current profile, efficiency, and feasibility.", "points": 2}
+        ]
+      }
+    }
+  }
+}

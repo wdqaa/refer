@@ -1,0 +1,1 @@
+{"item_id": "qa-pilot-v1-physics-5114", "arm": "routed_multi_agent", "auto_correct": false, "method": "numeric_tolerance", "reason": "expected=5.2 tolerance=0.1 actual=1.3"}

@@ -1,0 +1,122 @@
+{
+  "version": "native_eval50_qualitative_adjudications_v2.0",
+  "policy": "Only ambiguous concept matches, negations, contradictions, arm differences, and material scientific errors are adjudicated. Absence of a rubric point is not a scientific error.",
+  "validation_sources": [
+    {"scope": "annual cosmic-ray dose", "url": "https://www.unscear.org/unscear/uploads/documents/publications/UNSCEAR_2024_Annex-B.pdf"},
+    {"scope": "DPC and POLDER instrument properties", "url": "https://doi.org/10.1016/j.jqsrt.2018.07.003"},
+    {"scope": "cosmic-ray ionization, aerosol nucleation, and CCN", "url": "https://doi.org/10.1126/science.aaf2649"},
+    {"scope": "geomagnetic cutoff latitude effect", "url": "https://www.ngdc.noaa.gov/stp/solar/cosmicrays.html"},
+    {"scope": "ABI1 protein phosphatase identity", "url": "https://doi.org/10.1016/S0014-5793(98)00149-5"}
+  ],
+  "coverage_overrides": [
+    {"item_id": "native-00ef4f82bea5fd", "arm": "direct", "criterion_id": "C5", "covered": false, "reason": "Mentions sensors and sensitivity but does not connect sensing to dopant-created adsorption, reactivity, or defect sites."},
+    {"item_id": "native-00ef4f82bea5fd", "arm": "routed_multi_agent", "criterion_id": "C5", "covered": false, "reason": "Names sensors without explaining a sensing mechanism."},
+    {"item_id": "native-00ef4f82bea5fd", "arm": "oracle_multi_agent", "criterion_id": "C5", "covered": false, "reason": "Names sensors without explaining a sensing mechanism."},
+    {"item_id": "native-163df300e9e185", "arm": "oracle_multi_agent", "criterion_id": "C2", "covered": false, "reason": "Explains phosphate release but never identifies its biological nutrient availability."},
+
+    {"item_id": "native-1ee30871e4ed4a", "arm": "direct", "criterion_id": "C1", "covered": false, "reason": "Forms an unspecified carbocation and adds an inapplicable rearrangement; it does not establish the secondary/Markovnikov route."},
+    {"item_id": "native-1ee30871e4ed4a", "arm": "direct", "criterion_id": "C2", "covered": false, "reason": "Water attack is present, but the protonated-alcohol intermediate and deprotonation step are absent."},
+    {"item_id": "native-1ee30871e4ed4a", "arm": "direct", "criterion_id": "C4", "covered": false, "reason": "Calls the propene product racemic even though 2-propanol is achiral."},
+    {"item_id": "native-1ee30871e4ed4a", "arm": "routed_multi_agent", "criterion_id": "C4", "covered": false, "reason": "Notes planar attack but does not state that propene gives an achiral product and no racemic pair."},
+    {"item_id": "native-1ee30871e4ed4a", "arm": "oracle_multi_agent", "criterion_id": "C4", "covered": false, "reason": "Notes planar attack but does not state that propene gives an achiral product and no racemic pair."},
+
+    {"item_id": "native-2f12806040f38e", "arm": "direct", "criterion_id": "C1", "covered": false, "reason": "Discusses generic electronic levels but not the core/inner-shell levels that define characteristic X-rays."},
+    {"item_id": "native-2f12806040f38e", "arm": "direct", "criterion_id": "C2", "covered": false, "reason": "Describes generic excitation without a core-electron threshold or absorption edge."},
+    {"item_id": "native-2f12806040f38e", "arm": "routed_multi_agent", "criterion_id": "C2", "covered": true, "reason": "Explicitly describes X-ray absorption as an inner-shell electron transition to a higher state; ionization is not the only valid absorption route."},
+    {"item_id": "native-2f12806040f38e", "arm": "oracle_multi_agent", "criterion_id": "C1", "covered": false, "reason": "Mentions shells generally but never identifies core/inner-shell levels as the origin of characteristic X-rays."},
+    {"item_id": "native-2f12806040f38e", "arm": "oracle_multi_agent", "criterion_id": "C2", "covered": false, "reason": "Describes generic excitation without a core-electron threshold or absorption edge."},
+
+    {"item_id": "native-444ad5e3701625", "arm": "direct", "criterion_id": "C3", "covered": false, "reason": "No survival-probability formula or quadratic short-time dependence is supplied."},
+    {"item_id": "native-444ad5e3701625", "arm": "routed_multi_agent", "criterion_id": "C3", "covered": false, "reason": "The displayed exponential has no measurement-interval or N dependence and does not demonstrate the Zeno limit."},
+    {"item_id": "native-444ad5e3701625", "arm": "oracle_multi_agent", "criterion_id": "C3", "covered": false, "reason": "The displayed exponential has no measurement-interval or N dependence and does not demonstrate the Zeno limit."},
+
+    {"item_id": "native-6cd13b37a7cb48", "arm": "direct", "criterion_id": "C1", "covered": false, "reason": "Does not identify non-thermal plasma chemistry or reactive oxygen/nitrogen species."},
+    {"item_id": "native-6cd13b37a7cb48", "arm": "routed_multi_agent", "criterion_id": "C3", "covered": false, "reason": "Discusses plant defenses but not pathogen/pest inactivation or reduced pesticide use."},
+    {"item_id": "native-6cd13b37a7cb48", "arm": "oracle_multi_agent", "criterion_id": "C3", "covered": false, "reason": "Discusses plant defenses but not pathogen/pest inactivation or reduced pesticide use."},
+
+    {"item_id": "native-81dab47e6f1d78", "arm": "routed_multi_agent", "criterion_id": "C1", "covered": false, "reason": "Names Ohmic heating without explaining why falling resistivity limits it at high temperature."},
+    {"item_id": "native-81dab47e6f1d78", "arm": "oracle_multi_agent", "criterion_id": "C1", "covered": false, "reason": "Names Ohmic heating without explaining why falling resistivity limits it at high temperature."},
+
+    {"item_id": "native-860b1ff61747b3", "arm": "direct", "criterion_id": "C2", "covered": false, "reason": "Lists energetic sources but does not map solar, Galactic, and ultra-high-energy regimes to source classes."},
+    {"item_id": "native-860b1ff61747b3", "arm": "routed_multi_agent", "criterion_id": "C2", "covered": false, "reason": "Lists SNR/AGN/PWN without the requested energy-regime comparison or low-energy solar component."},
+    {"item_id": "native-860b1ff61747b3", "arm": "oracle_multi_agent", "criterion_id": "C2", "covered": false, "reason": "Lists SNR/AGN/PWN without the requested energy-regime comparison or low-energy solar component."},
+    {"item_id": "native-860b1ff61747b3", "arm": "routed_multi_agent", "criterion_id": "C3", "covered": false, "reason": "Mentions propagation and anisotropy but does not explain energy-dependent magnetic deflection or attribution difficulty."},
+    {"item_id": "native-860b1ff61747b3", "arm": "oracle_multi_agent", "criterion_id": "C3", "covered": false, "reason": "Mentions propagation and anisotropy but does not explain energy-dependent magnetic deflection or attribution difficulty."},
+
+    {"item_id": "native-923c415b7ff94a", "arm": "direct", "criterion_id": "C4", "covered": false, "reason": "Does not explain pair breaking and finite resistance above Tc."},
+    {"item_id": "native-923c415b7ff94a", "arm": "routed_multi_agent", "criterion_id": "C4", "covered": false, "reason": "Does not explain pair breaking and finite resistance above Tc."},
+    {"item_id": "native-923c415b7ff94a", "arm": "oracle_multi_agent", "criterion_id": "C4", "covered": false, "reason": "Does not explain pair breaking and finite resistance above Tc."},
+    {"item_id": "native-99273534388eb3", "arm": "direct", "criterion_id": "C4", "covered": false, "reason": "Names nonadiabatic transitions but does not explain how surfaces/couplings feed a dynamics or trajectory calculation."},
+
+    {"item_id": "native-99bb53aab421f9", "arm": "direct", "criterion_id": "C1", "covered": false, "reason": "Reports about 3 mSv rather than the roughly 0.3 mSv annual cosmic-ray component."},
+    {"item_id": "native-99bb53aab421f9", "arm": "routed_multi_agent", "criterion_id": "C1", "covered": false, "reason": "Confuses the roughly 2.4-3.1 mSv total natural background with the roughly 0.3 mSv cosmic-ray component."},
+    {"item_id": "native-99bb53aab421f9", "arm": "oracle_multi_agent", "criterion_id": "C1", "covered": false, "reason": "Confuses the roughly 2.4-3.1 mSv total natural background with the roughly 0.3 mSv cosmic-ray component."},
+    {"item_id": "native-99bb53aab421f9", "arm": "direct", "criterion_id": "C3", "covered": false, "reason": "Mentions DNA damage and cancer but overstates specific disease outcomes and does not contextualize the very small ordinary-background risk."},
+
+    {"item_id": "native-9f51e537ef1a94", "arm": "direct", "criterion_id": "C1", "covered": false, "reason": "Misidentifies DPC and portrays it as a cloud/precipitation instrument rather than a comparable multi-angle polarimeter."},
+    {"item_id": "native-9f51e537ef1a94", "arm": "routed_multi_agent", "criterion_id": "C1", "covered": false, "reason": "Misnames DPC and never establishes that both instruments use comparable multi-angle polarimetry/bands."},
+    {"item_id": "native-9f51e537ef1a94", "arm": "oracle_multi_agent", "criterion_id": "C1", "covered": false, "reason": "Incorrectly calls DPC passive microwave and POLDER active optical."},
+
+    {"item_id": "native-a11709f37bfe8e", "arm": "routed_multi_agent", "criterion_id": "C1", "covered": false, "reason": "Discusses interactions and aggregation generally but omits conversion of misfolded protein into oligomers/fibrils."},
+    {"item_id": "native-a11709f37bfe8e", "arm": "oracle_multi_agent", "criterion_id": "C1", "covered": false, "reason": "Mentions fibrils but omits the misfolding-to-oligomer/fibril causal sequence."},
+
+    {"item_id": "native-c3253f873fdeae", "arm": "direct", "criterion_id": "C1", "covered": true, "reason": "Defines bending modulus as the energy cost/resistance to bending, which semantically covers curvature resistance."},
+    {"item_id": "native-c3253f873fdeae", "arm": "direct", "criterion_id": "C2", "covered": false, "reason": "Mentions tension and lateral interactions but not area strain or an area-expansion relation."},
+    {"item_id": "native-c3253f873fdeae", "arm": "routed_multi_agent", "criterion_id": "C2", "covered": false, "reason": "Does not relate tension to area strain/area expansion and instead conflates it with Helfrich bending energy."},
+    {"item_id": "native-c3253f873fdeae", "arm": "oracle_multi_agent", "criterion_id": "C2", "covered": false, "reason": "Does not relate tension to area strain/area expansion and instead conflates it with Helfrich bending energy."},
+    {"item_id": "native-cdd4bfbe57a2b9", "arm": "oracle_multi_agent", "criterion_id": "C2", "covered": true, "reason": "Explicitly explains production of pions, muons, and neutrinos as observable secondary particles used to test particle physics."},
+
+    {"item_id": "native-cf12a26b5a5ecc", "arm": "direct", "criterion_id": "C3", "covered": false, "reason": "Explains efficient emission but not the defining low-heat/cold-light property."},
+    {"item_id": "native-cf12a26b5a5ecc", "arm": "routed_multi_agent", "criterion_id": "C3", "covered": false, "reason": "Explains efficient emission but not the defining low-heat/cold-light property."},
+    {"item_id": "native-cf12a26b5a5ecc", "arm": "oracle_multi_agent", "criterion_id": "C3", "covered": false, "reason": "Explains efficient emission but not the defining low-heat/cold-light property."},
+
+    {"item_id": "native-d5ca54db9abe88", "arm": "direct", "criterion_id": "C2", "covered": false, "reason": "Attributes the latitude trend to weaker field magnitude rather than lower geomagnetic cutoff/effective shielding."},
+    {"item_id": "native-d5ca54db9abe88", "arm": "routed_multi_agent", "criterion_id": "C3", "covered": true, "reason": "Connects crews/frequent flyers and polar high-altitude routes to greater accumulated exposure."},
+    {"item_id": "native-d5ca54db9abe88", "arm": "oracle_multi_agent", "criterion_id": "C3", "covered": true, "reason": "Connects crews/frequent flyers and high-altitude/high-latitude exposure to greater dose."},
+
+    {"item_id": "native-d8c15e8d76238e", "arm": "direct", "criterion_id": "C3", "covered": false, "reason": "Lists valid methods but does not describe measuring across controlled temperatures."},
+    {"item_id": "native-d8c15e8d76238e", "arm": "direct", "criterion_id": "C4", "covered": true, "reason": "Explains that force required to detach a ring/plate or drop count is the measured quantity used for surface tension."},
+    {"item_id": "native-d8c15e8d76238e", "arm": "oracle_multi_agent", "criterion_id": "C2", "covered": true, "reason": "Correctly attributes the decrease to weakening hydrogen-bond/intermolecular cohesion as temperature rises."},
+    {"item_id": "native-d8c15e8d76238e", "arm": "oracle_multi_agent", "criterion_id": "C4", "covered": true, "reason": "Explains force/drop measurements and controlled-temperature setup."},
+    {"item_id": "native-f7ea74c01d61ea", "arm": "direct", "criterion_id": "C2", "covered": true, "reason": "In context, reduction/oxidation of the analyte plus lead diffusion current proportional to concentration adequately states the electroanalytical mechanism."},
+
+    {"item_id": "native-d216c9ed276999", "arm": "direct", "criterion_id": "C1", "covered": false, "reason": "Incorrectly treats charged ions as cloud-condensation nuclei rather than as possible promoters of aerosol nucleation/growth."},
+    {"item_id": "native-d216c9ed276999", "arm": "routed_multi_agent", "criterion_id": "C1", "covered": false, "reason": "Incorrectly treats charged ions as cloud-condensation nuclei rather than as possible promoters of aerosol nucleation/growth."},
+    {"item_id": "native-d216c9ed276999", "arm": "oracle_multi_agent", "criterion_id": "C1", "covered": false, "reason": "Incorrectly treats charged ions as cloud-condensation nuclei rather than as possible promoters of aerosol nucleation/growth."}
+  ],
+  "scientific_errors": [
+    {"item_id": "native-d5ca54db9abe88", "arm": "direct", "error_id": "E1", "claim": "Earth's magnetic field is weaker at higher latitudes.", "reason": "The latitude dependence is governed by geomagnetic cutoff/field geometry, not simply weaker field magnitude."},
+    {"item_id": "native-d5ca54db9abe88", "arm": "routed_multi_agent", "error_id": "E1", "claim": "Earth's magnetic field is weaker at higher latitudes.", "reason": "The later cutoff reference is useful, but the explicit field-strength explanation remains inaccurate."},
+    {"item_id": "native-d5ca54db9abe88", "arm": "oracle_multi_agent", "error_id": "E1", "claim": "Earth's magnetic field is weaker at higher latitudes.", "reason": "The later cutoff reference is useful, but the explicit field-strength explanation remains inaccurate."},
+
+    {"item_id": "native-9f51e537ef1a94", "arm": "direct", "error_id": "E1", "claim": "DPC is a Dual Polarization Cloud instrument focused on cloud and precipitation studies.", "reason": "DPC is the Directional Polarimetric Camera, a passive multi-angle optical polarimeter used for aerosol/cloud remote sensing."},
+    {"item_id": "native-9f51e537ef1a94", "arm": "routed_multi_agent", "error_id": "E1", "claim": "DPC means Dense Pixel Camera.", "reason": "The instrument name and implied characterization are wrong."},
+    {"item_id": "native-9f51e537ef1a94", "arm": "oracle_multi_agent", "error_id": "E1", "claim": "DPC is passive microwave and POLDER is active optical.", "reason": "Both are passive optical multi-angle polarimetric instruments; POLDER is not active."},
+
+    {"item_id": "native-99bb53aab421f9", "arm": "direct", "error_id": "E1", "claim": "Annual cosmic-ray background dose at sea level is about 3 mSv.", "reason": "This confuses the cosmic-ray component, about 0.3 mSv/year, with total natural background."},
+    {"item_id": "native-99bb53aab421f9", "arm": "direct", "error_id": "E2", "claim": "Ordinary cosmic-ray background is linked here to specific cardiovascular and cognitive decline outcomes.", "reason": "Those specific outcomes are overstated for ordinary sea-level background exposure; the defensible effect is a very small stochastic cancer risk."},
+    {"item_id": "native-99bb53aab421f9", "arm": "routed_multi_agent", "error_id": "E1", "claim": "Annual cosmic-ray dose at sea level is 2.4-3.1 mSv.", "reason": "That range approximates total natural background, not the cosmic-ray component."},
+    {"item_id": "native-99bb53aab421f9", "arm": "oracle_multi_agent", "error_id": "E1", "claim": "Annual cosmic-ray dose at sea level is 2.4-3.1 mSv.", "reason": "That range approximates total natural background, not the cosmic-ray component."},
+
+    {"item_id": "native-eae9d5bd9ad215", "arm": "direct", "error_id": "E1", "claim": "Added luminescent material converts a solar cell's non-radiative recombination losses into reusable emitted light.", "reason": "Spectral conversion can redirect incident photons, but it does not generally convert the host cell's non-radiative recombination loss into light."},
+    {"item_id": "native-7f1ab338d1df39", "arm": "routed_multi_agent", "error_id": "E1", "claim": "ABI1 is a transcription factor in the SOS response.", "reason": "ABI1 is a protein phosphatase, not a transcription factor."},
+    {"item_id": "native-7f1ab338d1df39", "arm": "routed_multi_agent", "error_id": "E2", "claim": "MT1 and ZIP are metal-responsive transcription factors.", "reason": "MT1 denotes a metallothionein and ZIP proteins are metal transporters, not transcription factors."},
+    {"item_id": "native-7f1ab338d1df39", "arm": "oracle_multi_agent", "error_id": "E1", "claim": "ABI1 is a transcription factor in the SOS response.", "reason": "ABI1 is a protein phosphatase, not a transcription factor."},
+    {"item_id": "native-7f1ab338d1df39", "arm": "oracle_multi_agent", "error_id": "E2", "claim": "MT1 and ZIP are metal-responsive transcription factors.", "reason": "MT1 denotes a metallothionein and ZIP proteins are metal transporters, not transcription factors."},
+
+    {"item_id": "native-6cd13b37a7cb48", "arm": "direct", "error_id": "E1", "claim": "Plasma agriculture mainly stimulates photosynthesis and roots through emitted light and heat.", "reason": "Non-thermal plasma agricultural effects are primarily mediated by reactive species and surface/water chemistry; heating is not the central beneficial mechanism."},
+    {"item_id": "native-444ad5e3701625", "arm": "routed_multi_agent", "error_id": "E1", "claim": "P≈exp(-Γt) demonstrates suppression as measurement spacing tends to zero.", "reason": "The displayed expression contains no measurement interval or number of measurements and therefore does not yield the stated Zeno limit."},
+    {"item_id": "native-444ad5e3701625", "arm": "oracle_multi_agent", "error_id": "E1", "claim": "P≈exp(-Γt) demonstrates suppression as measurement spacing tends to zero.", "reason": "The displayed expression contains no measurement interval or number of measurements and therefore does not yield the stated Zeno limit."},
+
+    {"item_id": "native-1ee30871e4ed4a", "arm": "direct", "error_id": "E1", "claim": "Propene hydration undergoes a hydride or alkyl shift.", "reason": "Protonation already gives the secondary isopropyl carbocation, so no stabilizing rearrangement occurs."},
+    {"item_id": "native-1ee30871e4ed4a", "arm": "direct", "error_id": "E2", "claim": "Attack on propene's planar carbocation gives a racemic product.", "reason": "The product is achiral 2-propanol, so it is not a racemic mixture."},
+
+    {"item_id": "native-d216c9ed276999", "arm": "direct", "error_id": "E1", "claim": "Atmospheric ions created by cosmic rays act directly as cloud-condensation nuclei.", "reason": "The hypothesis is that ionization may enhance aerosol nucleation/growth; molecular ions are not themselves ordinary CCN."},
+    {"item_id": "native-d216c9ed276999", "arm": "routed_multi_agent", "error_id": "E1", "claim": "Charged particles created by ionization act directly as cloud-condensation nuclei.", "reason": "The hypothesis is that ionization may enhance aerosol nucleation/growth; molecular ions are not themselves ordinary CCN."},
+    {"item_id": "native-d216c9ed276999", "arm": "oracle_multi_agent", "error_id": "E1", "claim": "Charged particles created by ionization act directly as cloud-condensation nuclei.", "reason": "The hypothesis is that ionization may enhance aerosol nucleation/growth; molecular ions are not themselves ordinary CCN."},
+
+    {"item_id": "native-c3253f873fdeae", "arm": "routed_multi_agent", "error_id": "E1", "claim": "Membrane tension is described by the Helfrich bending-energy relation.", "reason": "The quoted Helfrich curvature term describes bending energy; in-plane tension/area strain requires a distinct area-expansion contribution."},
+    {"item_id": "native-c3253f873fdeae", "arm": "oracle_multi_agent", "error_id": "E1", "claim": "Membrane tension is described by the Helfrich bending-energy relation.", "reason": "The quoted Helfrich curvature term describes bending energy; in-plane tension/area strain requires a distinct area-expansion contribution."},
+    {"item_id": "native-54981140f07ca2", "arm": "direct", "error_id": "E1", "claim": "Functional information is not available with MRI.", "reason": "MRI has functional and physiological variants; PET is distinguished by tracer-based metabolic sensitivity, not an absolute absence of MRI functional imaging."}
+  ]
+}

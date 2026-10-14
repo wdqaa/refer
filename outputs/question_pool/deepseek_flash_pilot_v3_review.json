@@ -1,0 +1,47 @@
+{
+  "review_version": "deepseek_flash_pilot_v3_codex_review.1",
+  "generated": 5,
+  "machine_gate_passed": 5,
+  "codex_protocol_review_accepted": 4,
+  "codex_protocol_review_rejected": 1,
+  "accepted_ids": [
+    "sa_single_02",
+    "sa_surface_01",
+    "sa_surface_05",
+    "sa_subfield_02"
+  ],
+  "reviews": [
+    {
+      "id": "sa_single_02",
+      "decision": "accept",
+      "reason": "Acid-base speciation across the thylakoid membrane and the biological ATP/NADPH dependency are both necessary in one causal chain."
+    },
+    {
+      "id": "sa_surface_01",
+      "decision": "accept",
+      "reason": "The QCD confinement transition supplies the physical conclusion, while cosmological temperature-redshift reasoning supplies the epoch."
+    },
+    {
+      "id": "sa_surface_04",
+      "decision": "reject",
+      "reason": "Collider missing momentum and a galaxy rotation curve are two parallel observations whose conclusions are merely concatenated; neither domain changes the other domain's reasoning step."
+    },
+    {
+      "id": "sa_surface_05",
+      "decision": "accept",
+      "reason": "The rest wavelength must first be obtained from photon physics and then used in redshift and Hubble-distance inference."
+    },
+    {
+      "id": "sa_subfield_02",
+      "decision": "accept",
+      "reason": "Weak-acid speciation determines inhibitor uptake, which must then be combined with plant embryogenesis timing."
+    }
+  ],
+  "accepted_run_usage": {
+    "prompt_tokens": 7245,
+    "completion_tokens": 35523,
+    "total_tokens": 42768,
+    "estimated_off_peak_usd": 0.022099,
+    "note": "Estimate uses the published DeepSeek Flash cache-hit, cache-miss, and output rates; earlier prompt-development calls are excluded."
+  }
+}

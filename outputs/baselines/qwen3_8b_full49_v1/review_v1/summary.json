@@ -1,0 +1,53 @@
+{
+  "trace_items": 147,
+  "preliminary_score_counts": {
+    "direct": {
+      "manual": 37,
+      "true": 10,
+      "false": 2
+    },
+    "oracle_multi_agent": {
+      "manual": 37,
+      "true": 8,
+      "false": 4
+    },
+    "routed_multi_agent": {
+      "manual": 37,
+      "true": 9,
+      "false": 3
+    }
+  },
+  "routing": {
+    "items": 49,
+    "exact_set_match": 0.6530612244897959,
+    "micro_precision": 0.8108108108108109,
+    "micro_recall": 0.8450704225352113,
+    "over_routed_items": 13,
+    "under_routed_items": 11
+  },
+  "efficiency": {
+    "direct": {
+      "items": 49,
+      "mean_calls": 1,
+      "mean_input_tokens": 258.59183673469386,
+      "mean_output_tokens": 200.79591836734693,
+      "mean_latency_seconds": 11.561292551020408
+    },
+    "oracle_multi_agent": {
+      "items": 49,
+      "mean_calls": 2.4489795918367347,
+      "mean_input_tokens": 924.8163265306123,
+      "mean_output_tokens": 470.55102040816325,
+      "mean_latency_seconds": 28.791205163265307
+    },
+    "routed_multi_agent": {
+      "items": 49,
+      "mean_calls": 3.510204081632653,
+      "mean_input_tokens": 1177.6938775510205,
+      "mean_output_tokens": 533.9387755102041,
+      "mean_latency_seconds": 34.47961867346939
+    }
+  },
+  "manual_review_items": 39,
+  "warning": "Do not report overall arm accuracy until blinded manual reviews are merged."
+}

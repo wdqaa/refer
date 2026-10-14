@@ -1,0 +1,3 @@
+{"item_id": "native-cdd4bfbe57a2b9", "arm": "direct", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-cdd4bfbe57a2b9", "arm": "routed_multi_agent", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-cdd4bfbe57a2b9", "arm": "oracle_multi_agent", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}

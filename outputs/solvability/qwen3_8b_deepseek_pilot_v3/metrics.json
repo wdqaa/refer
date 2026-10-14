@@ -1,0 +1,14 @@
+{
+  "total": 4,
+  "direct_accuracy": 0.75,
+  "fixed_multi_agent_accuracy": 1.0,
+  "buckets": {
+    "direct_and_fixed_correct": 3,
+    "fixed_multi_agent_gain": 1,
+    "collaboration_harms": 0,
+    "too_hard_or_shared_failure": 0
+  },
+  "routing": "oracle fixed routing from reviewed candidate metadata; labels were not shown to solver prompts",
+  "model": "Qwen/Qwen3-8B",
+  "seed": 42
+}

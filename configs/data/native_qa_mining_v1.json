@@ -1,0 +1,18 @@
+{
+  "id": "native-qa-mining-v1-calibration-60",
+  "seed": 53,
+  "gold_records": 30,
+  "fresh_per_domain": {
+    "astronomy": {"mcq": 2, "open": 3},
+    "biology": {"mcq": 2, "open": 3},
+    "chemistry": {"mcq": 2, "open": 3},
+    "geography": {"mcq": 2, "open": 3},
+    "mathematics": {"mcq": 2, "open": 3},
+    "physics": {"mcq": 2, "open": 3}
+  },
+  "batch_size": 5,
+  "model": "deepseek-flash",
+  "thinking_enabled": false,
+  "max_tokens": 2000,
+  "retries": 0
+}

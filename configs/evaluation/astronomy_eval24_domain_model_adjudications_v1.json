@@ -1,0 +1,227 @@
+{
+  "id": "astronomy_eval24_domain_model_adjudications_v1",
+  "basis": "Codex audit of every rubric disagreement, scientific-error claim, the one schema-extra response, and all affected paired answers. Coverage remains binary against the frozen pre-output rubric.",
+  "rubric_resolutions": {
+    "native-af1a7c16d5b9aa": {
+      "status": "usable",
+      "reason": "The question explicitly asks how inflation contributed to large-scale structure, so quantum fluctuations becoming density perturbations are directly responsive rather than extra detail."
+    },
+    "native-f272d1394daf20": {
+      "status": "usable",
+      "reason": "Criterion C4 explicitly states that absolute extractable energy scales with mass and separately qualifies charge and the uncharged Kerr limit."
+    },
+    "native-3c11a10aea5007": {
+      "status": "usable",
+      "reason": "Criterion C1 covers a catastrophic progenitor and compact central engine, while C3 separately requires jet-energy dissipation plus a plausible radiation mechanism; together they cover the necessary Gold content."
+    }
+  },
+  "adjudications": {
+    "native-8d6eff671d9446": {
+      "astrosage_8b": {
+        "coverage": {
+          "C2": {
+            "covered": false,
+            "evidence": "The answer gives inverse temperature-mass dependence and mentions evaporation, but never links Hawking mass loss to rising temperature and accelerating evaporation."
+          }
+        },
+        "audit_note": "Removed over-credit for an unstated evaporation feedback chain."
+      }
+    },
+    "native-f272d1394daf20": {
+      "qwen3_8b": {
+        "coverage": {
+          "C1": {
+            "covered": false,
+            "evidence": "The answer names the ergosphere but does not explain negative-energy infall or the energy-gain mechanism."
+          }
+        },
+        "audit_note": "Naming the ergosphere alone does not cover the required Penrose mechanism."
+      },
+      "astrosage_8b": {
+        "coverage": {
+          "C4": {
+            "covered": false,
+            "evidence": "The response does not distinguish absolute mass scaling from fractional efficiency or qualify 29.3% as the uncharged Kerr limit; it instead vaguely says mass and charge limit efficiency."
+          }
+        },
+        "scientific_errors": [
+          {
+            "claim": "Mass and charge limit Penrose efficiency because they affect angular momentum and extraction efficiency.",
+            "correction": "Mass scales the absolute extractable energy, the rotational fraction is governed by dimensionless spin, and charge changes the Kerr-Newman reducible-energy budget; 29.3% is the neutral extremal Kerr result.",
+            "severity": "material"
+          }
+        ],
+        "audit_note": "The property-dependence error is material because it directly answers the second half of the question."
+      }
+    },
+    "native-8a06a186112d69": {
+      "astrosage_8b": {
+        "coverage": {
+          "C3": {
+            "covered": false,
+            "evidence": "The answer associates flat curves with dark matter but does not explain that an extended halo keeps enclosed mass increasing with radius."
+          }
+        },
+        "audit_note": "Association without the required enclosed-mass mechanism is insufficient."
+      }
+    },
+    "native-d56f980a2267e0": {
+      "qwen3_8b": {
+        "coverage": {
+          "C2": {
+            "covered": false,
+            "evidence": "The response mentions rapid expansion but not the stretching of one initially causally connected patch to cosmic scales."
+          }
+        },
+        "audit_note": "Rapid expansion alone does not cover the causal-patch mechanism central to the question."
+      },
+      "astrosage_8b": {
+        "coverage": {
+          "C2": {
+            "covered": false,
+            "evidence": "The response mentions a rapid expansion phase but never states that it stretches a causally connected region to cosmic scales."
+          }
+        },
+        "audit_note": "Rapid expansion alone does not cover the causal-patch mechanism central to the question."
+      }
+    },
+    "native-2a220e23116fcc": {
+      "qwen3_8b": {
+        "coverage": {
+          "C2": {
+            "covered": false,
+            "evidence": "It mentions rotation curves generally but does not connect an extended halo mass profile to flat outer rotation speeds or outer-disk binding."
+          },
+          "C3": {
+            "covered": true,
+            "evidence": "It states that dark-matter density and distribution influence star-formation rate and galaxy evolution, which is one of the criterion's accepted dependencies."
+          }
+        },
+        "audit_note": "Moved credit from an unstated outer-curve mechanism to the explicitly stated halo-property/star-formation dependency."
+      }
+    },
+    "native-e6d75b7d0d9c67": {
+      "astrosage_8b": {
+        "scientific_errors": [
+          {
+            "claim": "The Chandrasekhar limit directly results from quantum mechanics and general relativity.",
+            "correction": "The standard limit follows primarily from special-relativistic electron degeneracy pressure and hydrostatic equilibrium; general relativity is not required for the standard derivation.",
+            "severity": "minor"
+          },
+          {
+            "claim": "The limit has been extensively confirmed and experimentally validated.",
+            "correction": "Observed white-dwarf masses are broadly consistent with the theoretical limit, but it has not been experimentally validated in the stated sense.",
+            "severity": "minor"
+          }
+        ],
+        "audit_note": "Deduplicated a repeated general-relativity claim while retaining the two distinct minor issues."
+      }
+    },
+    "native-3c11a10aea5007": {
+      "qwen3_8b": {
+        "coverage": {
+          "C1": {
+            "covered": true,
+            "evidence": "The reasoning identifies massive-star collapse and compact-object mergers as the catastrophic progenitors of the compact central engine."
+          },
+          "C2": {
+            "covered": false,
+            "evidence": "It mentions rotation, magnetic fields, and relativistic jets but omits the accretion flow required by this bundled criterion."
+          }
+        },
+        "scientific_errors": [
+          {
+            "claim": "The jets emit the prompt gamma rays as they interact with the surrounding medium.",
+            "correction": "Prompt gamma rays are produced by internal jet dissipation; interaction with the external medium primarily powers the afterglow.",
+            "severity": "material"
+          }
+        ],
+        "audit_note": "Credited the explicitly named catastrophic progenitors and consolidated the error assessment around the genuinely wrong prompt-emission mechanism."
+      },
+      "astrosage_8b": {
+        "scientific_errors": [
+          {
+            "claim": "Accretion onto a black hole directly converts gravitational energy into the observed gamma-ray burst.",
+            "correction": "Accretion and black-hole rotation can power and launch a relativistic jet, but prompt gamma rays require dissipation within that jet rather than direct black-hole or disk emission.",
+            "severity": "material"
+          },
+          {
+            "claim": "The Blandford-Znajek process is the canonical expression for the whole gamma-ray burst phenomenon.",
+            "correction": "Blandford-Znajek is one jet-powering mechanism and does not describe the prompt gamma-ray dissipation mechanism as a whole.",
+            "severity": "minor"
+          }
+        ],
+        "audit_note": "Consolidated overlapping direct-emission errors without changing coverage."
+      }
+    },
+    "native-1b16029be0d1da": {
+      "qwen3_8b": {
+        "scientific_errors": [
+          {
+            "claim": "Near-light speed minimizes UHECR interaction with the cosmic microwave background by reducing the interaction cross-section.",
+            "correction": "Relativistic motion does not suppress the relevant interactions; UHECRs lose energy through pair production, photopion production, or photodisintegration depending on species and energy.",
+            "severity": "material"
+          }
+        ],
+        "audit_note": "Consolidated two duplicate formulations of the same propagation error."
+      },
+      "astrosage_8b": {
+        "coverage": {
+          "C3": {
+            "covered": false,
+            "evidence": "It invokes the GZK cutoff while incorrectly presenting it as a reason for nearly loss-free travel, rather than explicitly rejecting loss-free propagation and explaining the energy loss."
+          }
+        },
+        "audit_note": "Removed credit for a criterion contradicted by the answer's own loss-free framing."
+      }
+    },
+    "native-c7277fa4845332": {
+      "astrosage_8b": {
+        "coverage": {
+          "C2": {
+            "covered": false,
+            "evidence": "It generically mentions alternative gravity but never identifies additional scalar or vector polarization modes."
+          }
+        },
+        "scientific_errors": [
+          {
+            "claim": "Polarization distinguishes stellar-mass from supermassive mergers and directly provides black-hole masses, spins, and orbital dynamics.",
+            "correction": "Mass and spin are inferred primarily from full-waveform phasing, precession, higher modes, merger, and ringdown; polarization helps break extrinsic degeneracies.",
+            "severity": "material"
+          },
+          {
+            "claim": "Polarization reveals nearby stars or black holes in the merger environment.",
+            "correction": "Polarization measurements do not directly identify such environmental companions.",
+            "severity": "material"
+          },
+          {
+            "claim": "Polarization itself probes frame dragging, spacetime curvature, and the no-hair theorem.",
+            "correction": "Those tests rely primarily on full waveform structure, precession, and ringdown rather than polarization alone.",
+            "severity": "material"
+          }
+        ],
+        "audit_note": "Required the specified extra-mode content and consolidated overlapping parameter-inference overclaims."
+      }
+    },
+    "native-fbe39c3fa210c2": {
+      "qwen3_8b": {
+        "coverage": {
+          "C4": {
+            "covered": true,
+            "evidence": "It explicitly connects the detections to extreme gravitational environments and high-energy astrophysical phenomena without portraying them as collider measurements."
+          }
+        },
+        "audit_note": "Credited the criterion's accepted extreme-spacetime implication."
+      },
+      "astrosage_8b": {
+        "coverage": {
+          "C4": {
+            "covered": true,
+            "evidence": "It discusses otherwise inaccessible black-hole formation/evolution and matter and energy in extreme black-hole environments without claiming a collider measurement."
+          }
+        },
+        "audit_note": "Credited the criterion's accepted population and extreme-spacetime implications."
+      }
+    }
+  }
+}

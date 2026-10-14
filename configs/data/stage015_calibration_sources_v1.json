@@ -1,0 +1,18 @@
+{
+  "id": "stage015_calibration_sources_v1",
+  "version": "1.0",
+  "seed": 43,
+  "batch_id": "stage015-calibration-v1",
+  "relation_quotas": {
+    "quantitative_modeling": 5,
+    "constraint_coupling": 5,
+    "measurement_observation": 5
+  },
+  "domain_quotas": {
+    "astronomy": {"mcq": 8, "likely_objective_open": 7, "non_mechanism_affordance": 5},
+    "biology": {"mcq": 2, "likely_objective_open": 3, "non_mechanism_affordance": 2},
+    "chemistry": {"mcq": 2, "likely_objective_open": 3, "non_mechanism_affordance": 3},
+    "physics": {"mcq": 2, "likely_objective_open": 3, "non_mechanism_affordance": 3},
+    "geography": {"mcq": 2, "likely_objective_open": 3, "non_mechanism_affordance": 2}
+  }
+}

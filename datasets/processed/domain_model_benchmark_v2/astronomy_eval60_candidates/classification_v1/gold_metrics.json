@@ -1,0 +1,22 @@
+{
+  "total": 0,
+  "schema_valid": 0,
+  "validity_accuracy": 0.0,
+  "required_domains_exact_match": 0.0,
+  "domain_type_accuracy": 0.0,
+  "cross_domain_precision": 0.0,
+  "cross_domain_recall": 0.0,
+  "valid_only": {
+    "total": 0,
+    "retention_rate": 0.0,
+    "required_domains_exact_match": 0.0,
+    "domain_type_accuracy": 0.0,
+    "cross_domain_precision": 0.0,
+    "cross_domain_recall": 0.0
+  },
+  "invalid_controls": {
+    "total": 0,
+    "rejection_rate": 0.0
+  },
+  "per_category_domain_exact_match": {}
+}

@@ -1,0 +1,17 @@
+{
+  "total": 30,
+  "schema_valid": 30,
+  "validity_accuracy": 0.9333,
+  "required_domains_exact_match": 0.7667,
+  "domain_type_accuracy": 0.7667,
+  "cross_domain_precision": 0.4,
+  "cross_domain_recall": 0.8,
+  "per_category_domain_exact_match": {
+    "directory_label_mismatch": 0.8,
+    "natural_cross_domain": 0.8,
+    "ordinary_math_not_domain": 0.6,
+    "single_domain": 1.0,
+    "subfield_not_new_domain": 1.0,
+    "surface_cross_actual_single": 0.4
+  }
+}

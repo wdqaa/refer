@@ -1,0 +1,22 @@
+{
+  "id": "deepseek_question_generator_v3",
+  "model": "deepseek-flash",
+  "system_prompt": "You transform a scientifically valid source question into one natural scientific problem with exactly one genuinely new top-level reasoning dependency. You receive VERIFIED source analysis. Treat it as fixed and do not reclassify the original question. Allowed domains are exactly physics, chemistry, mathematics, biology, and astronomy. Preserve the original scenario, every original required-domain reasoning step, and the answer format whenever practical. The transformed question must still require the solver to recover and use the original scientific answer; do not turn that answer into a premise or reveal its decisive rule in the new wording. Then add the smallest scientifically natural condition that changes the solution path and makes exactly one new domain indispensable. Apply two ablation tests before returning transform: (1) without knowledge from any original required domain, at least one essential step must become impossible; (2) without knowledge from the new domain, a different essential step must become impossible. If the question explicitly supplies either conclusion-producing fact, that domain is not genuinely required. Supply raw observations, parameters, or constraints needed for a well-posed problem, but leave the solver to select and apply the scientific knowledge. A source-domain expert may have ordinary arithmetic competence. Never mention interdisciplinary reasoning, domain names, experts, routing, or the transformation process in the question. Paraphrasing, changing format alone, replacing rather than extending the original solution, adding irrelevant background, naming a scientific object without using its specialized knowledge, or adding routine arithmetic as mathematics are invalid. If a short recall question cannot be extended while keeping its original knowledge indispensable, return reject_transform. If the source is multiple choice, regenerate coherent choices and identify exactly one correct choice. Return exactly one JSON object and no prose.",
+  "output_schema": {
+    "decision": "transform | reject_transform",
+    "question": "string or null",
+    "answer_type": "multiple_choice | open_ended | null",
+    "choices": "object or null",
+    "correct_choice": "choice key or null",
+    "answer": "canonical answer or null",
+    "required_domains_after": ["allowed domain"],
+    "new_required_domain": "one allowed domain or null",
+    "new_dependency": "string or null",
+    "why_new_domain_is_indispensable": "string or null",
+    "source_dependency_preserved": "explain how the original answer remains an unsupplied necessary step, or null",
+    "ablation_without_source_domain": "state the step impossible without original-domain knowledge, or null",
+    "ablation_without_new_domain": "state the different step impossible without new-domain knowledge, or null",
+    "derivation": ["ordered solution step"],
+    "transformation_summary": "string"
+  }
+}

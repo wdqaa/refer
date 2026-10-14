@@ -1,0 +1,83 @@
+{
+  "scope": "calibration_60",
+  "total_questions": 60,
+  "schema_valid_labeled": 60,
+  "failed_or_invalid": 0,
+  "valid": 50,
+  "domain_type": {
+    "single": 49,
+    "native_cross_domain": 11
+  },
+  "required_domains": {
+    "astronomy": 9,
+    "biology": 14,
+    "chemistry": 14,
+    "physics": 21,
+    "mathematics": 8,
+    "geography": 1
+  },
+  "question_type": {
+    "mcq": 39,
+    "numeric": 8,
+    "short_answer": 2,
+    "qualitative": 11
+  },
+  "keep_priority": {
+    "high": 26,
+    "medium": 24,
+    "low": 10
+  },
+  "answer_verifiability": {
+    "rule_verifiable": 43,
+    "rubric_verifiable": 7,
+    "unreliable": 10
+  },
+  "high_priority_single": 18,
+  "high_priority_cross_domain": 8,
+  "api_batches": 12,
+  "api_errors": 0,
+  "api_usage": {
+    "prompt_tokens": 22091,
+    "completion_tokens": 3668,
+    "total_tokens": 25759,
+    "prompt_cache_hit_tokens": 3456,
+    "prompt_cache_miss_tokens": 18635
+  },
+  "actual_cost_usd": {
+    "off_peak": 0.005006,
+    "peak": 0.010013
+  },
+  "full_scan_projection": {
+    "raw_non_mixed_records": 180029,
+    "exact_unique_question_answer_pairs": 178814,
+    "method": "linear scaling from this calibration after exact question-answer deduplication",
+    "projected_usage": {
+      "prompt_tokens": 65836335,
+      "completion_tokens": 10931496,
+      "total_tokens": 76767831,
+      "prompt_cache_hit_tokens": 10299687,
+      "prompt_cache_miss_tokens": 55536649
+    },
+    "estimated_cost_usd": {
+      "off_peak": 14.92,
+      "peak": 29.84
+    }
+  },
+  "pricing": {
+    "as_of": "2026-10-08",
+    "model": "DeepSeek-V4.1-Flash via deepseek-flash",
+    "source": "https://api-docs.deepseek.com/quick_start/pricing",
+    "usd_per_million_tokens": {
+      "off_peak": {
+        "input_cache_hit": 0.003,
+        "input_cache_miss": 0.15,
+        "output": 0.6
+      },
+      "peak": {
+        "input_cache_hit": 0.006,
+        "input_cache_miss": 0.3,
+        "output": 1.2
+      }
+    }
+  }
+}

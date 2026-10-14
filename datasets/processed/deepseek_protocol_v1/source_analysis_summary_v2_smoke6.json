@@ -1,0 +1,117 @@
+{
+  "total_records": 6,
+  "schema_valid_records": 5,
+  "failed_or_invalid_records": 1,
+  "source_primary_domain_mismatches": 0,
+  "independent_mathematics": 1,
+  "native_cross_domain": 2,
+  "counts": {
+    "source_domain": {
+      "astronomy": 3,
+      "biology": 1,
+      "chemistry": 1
+    },
+    "sample_group": {
+      "representative": 4,
+      "stress": 1
+    },
+    "taxonomy": {
+      "A1": 1,
+      "C1": 2,
+      "C2": 2
+    },
+    "decision": {
+      "keep_control": 2,
+      "keep_cross_domain": 2,
+      "transform_candidate": 1
+    },
+    "question_type": {
+      "mcq": 1,
+      "qualitative": 4
+    },
+    "primary_domain": {
+      "astronomy": 3,
+      "biology": 1,
+      "chemistry": 1
+    },
+    "required_domain_set": {
+      "astronomy": 3,
+      "biology+mathematics": 1,
+      "chemistry+physics": 1
+    },
+    "helpful_domain_set": {
+      "physics": 3,
+      "chemistry": 1,
+      "mathematics": 1
+    },
+    "reference_answer_role": {
+      "objective_gold_candidate": 1,
+      "qualitative_reference": 4
+    }
+  },
+  "by_sample_group": {
+    "representative": {
+      "total": 4,
+      "taxonomy": {
+        "A1": 1,
+        "C1": 2,
+        "C2": 1
+      },
+      "decision": {
+        "keep_control": 2,
+        "keep_cross_domain": 1,
+        "transform_candidate": 1
+      },
+      "question_type": {
+        "mcq": 1,
+        "qualitative": 3
+      },
+      "native_cross_domain": 1,
+      "source_primary_domain_mismatches": 0
+    },
+    "stress": {
+      "total": 1,
+      "taxonomy": {
+        "C2": 1
+      },
+      "decision": {
+        "keep_cross_domain": 1
+      },
+      "question_type": {
+        "qualitative": 1
+      },
+      "native_cross_domain": 1,
+      "source_primary_domain_mismatches": 0
+    }
+  },
+  "by_source_domain": {
+    "astronomy": {
+      "total": 3,
+      "decision": {
+        "keep_control": 2,
+        "transform_candidate": 1
+      },
+      "primary_domain": {
+        "astronomy": 3
+      }
+    },
+    "biology": {
+      "total": 1,
+      "decision": {
+        "keep_cross_domain": 1
+      },
+      "primary_domain": {
+        "biology": 1
+      }
+    },
+    "chemistry": {
+      "total": 1,
+      "decision": {
+        "keep_cross_domain": 1
+      },
+      "primary_domain": {
+        "chemistry": 1
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{"item_id": "native-1199630e7830c1", "arm": "expert_critique", "auto_correct": true, "method": "choice_exact", "reason": "expected=B actual=B"}
+{"item_id": "native-2330220e0908a3", "arm": "expert_critique", "auto_correct": true, "method": "choice_exact", "reason": "expected=D actual=D"}
+{"item_id": "native-2b667ae5496ac9", "arm": "expert_critique", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-385a44a14dee6e", "arm": "expert_critique", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-5dbd54270e82a4", "arm": "expert_critique", "auto_correct": true, "method": "choice_exact", "reason": "expected=D actual=D"}
+{"item_id": "native-7f1ab338d1df39", "arm": "expert_critique", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-81dab47e6f1d78", "arm": "expert_critique", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-99bb53aab421f9", "arm": "expert_critique", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-9b93588e2476aa", "arm": "expert_critique", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-a11709f37bfe8e", "arm": "expert_critique", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-a21d5e9bab1fff", "arm": "expert_critique", "auto_correct": false, "method": "choice_exact", "reason": "expected=E actual=C"}
+{"item_id": "native-cf12a26b5a5ecc", "arm": "expert_critique", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-d5ca54db9abe88", "arm": "expert_critique", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-d8c15e8d76238e", "arm": "expert_critique", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-ebe06f8106a35f", "arm": "expert_critique", "auto_correct": true, "method": "choice_exact", "reason": "expected=D actual=D"}
+{"item_id": "native-f586f51a2498a4", "arm": "expert_critique", "auto_correct": true, "method": "choice_exact", "reason": "expected=B actual=B"}

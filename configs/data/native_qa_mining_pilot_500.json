@@ -1,0 +1,18 @@
+{
+  "id": "native-qa-mining-v1.3-pilot-500",
+  "seed": 79,
+  "total_records": 500,
+  "quota_by_domain_surface": {
+    "astronomy": {"mcq": 42, "open": 42},
+    "biology": {"mcq": 42, "open": 42},
+    "chemistry": {"mcq": 42, "open": 41},
+    "geography": {"mcq": 42, "open": 41},
+    "mathematics": {"mcq": 42, "open": 41},
+    "physics": {"mcq": 42, "open": 41}
+  },
+  "batch_size": 5,
+  "model": "deepseek-flash",
+  "thinking_enabled": false,
+  "max_tokens": 2000,
+  "retries": 0
+}

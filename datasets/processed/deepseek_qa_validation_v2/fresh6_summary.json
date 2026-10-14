@@ -1,0 +1,24 @@
+{
+  "total": 6,
+  "accepted": 1,
+  "status": {
+    "rejected_by_judge": 3,
+    "error": 2,
+    "accepted": 1
+  },
+  "route": {
+    "transform_candidate": 6
+  },
+  "accepted_origin_type": {
+    "transformed_cross_domain": 1
+  },
+  "accepted_question_type": {
+    "short_answer": 1
+  },
+  "accepted_difficulty": {
+    "medium": 1
+  },
+  "accepted_required_domains": {
+    "biology+geography": 1
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "id": "human-bridge-transform-smoke-v1",
+  "pairs": [
+    {
+      "bridge_source_id": "bridge-v1-chemistry-11516",
+      "expected_case": "positive",
+      "target_domain": "mathematics",
+      "bridge": "optimization"
+    },
+    {
+      "bridge_source_id": "bridge-v1-biology-11471",
+      "expected_case": "positive",
+      "target_domain": "mathematics",
+      "bridge": "nonlinear_dynamics"
+    },
+    {
+      "bridge_source_id": "bridge-v1-biology-1183",
+      "expected_case": "positive",
+      "target_domain": "physics",
+      "bridge": "membrane_transport"
+    },
+    {
+      "bridge_source_id": "bridge-v1-astronomy-85",
+      "expected_case": "positive",
+      "target_domain": "biology",
+      "bridge": "radiation_health_effect"
+    },
+    {
+      "bridge_source_id": "bridge-v1-astronomy-1585",
+      "expected_case": "negative",
+      "target_domain": "physics",
+      "bridge": "radiation"
+    },
+    {
+      "bridge_source_id": "bridge-v1-chemistry-17990",
+      "expected_case": "negative",
+      "target_domain": "physics",
+      "bridge": "material_behavior"
+    },
+    {
+      "bridge_source_id": "bridge-v1-chemistry-2043",
+      "expected_case": "negative",
+      "target_domain": "biology",
+      "bridge": "molecular_binding"
+    },
+    {
+      "bridge_source_id": "bridge-v1-biology-18691",
+      "expected_case": "negative",
+      "target_domain": "biology",
+      "bridge": "biophysical_transport"
+    }
+  ]
+}

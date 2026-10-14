@@ -1,0 +1,14 @@
+{
+  "config_version": "qwen3_8b_stage01.v1",
+  "model_id": "Qwen/Qwen3-8B",
+  "model_path": "/home/dqwang/Model/Qwen3-8B",
+  "purpose": "Shared Stage 01 model for every prompted role",
+  "training_enabled": false,
+  "generation_defaults": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_new_tokens": 1024,
+    "seed": 42
+  }
+}
+

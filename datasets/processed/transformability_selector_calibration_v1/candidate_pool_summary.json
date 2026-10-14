@@ -1,0 +1,19 @@
+{
+  "config_id": "transformability-selector-calibration-v1",
+  "seed": 44,
+  "total": 150,
+  "domain": {
+    "chemistry": 28,
+    "biology": 28,
+    "geography": 27,
+    "astronomy": 40,
+    "physics": 27
+  },
+  "sampling_stratum": {
+    "open": 106,
+    "mcq": 44
+  },
+  "excluded_source_identities": 200,
+  "uses_relation_keywords": false,
+  "contains_affordance_hints": false
+}

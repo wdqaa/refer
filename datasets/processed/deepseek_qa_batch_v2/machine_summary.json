@@ -1,0 +1,46 @@
+{
+  "total": 78,
+  "accepted": 37,
+  "status": {
+    "rejected_by_judge": 32,
+    "accepted": 37,
+    "rejected_by_solver_gate": 7,
+    "rejected_by_transformer": 1,
+    "error": 1
+  },
+  "route": {
+    "keep_control": 47,
+    "keep_cross_domain": 9,
+    "transform_candidate": 22
+  },
+  "accepted_origin_type": {
+    "native_single": 23,
+    "native_cross_domain": 5,
+    "transformed_cross_domain": 9
+  },
+  "accepted_question_type": {
+    "qualitative": 21,
+    "mcq": 6,
+    "short_answer": 8,
+    "numeric": 1,
+    "symbolic": 1
+  },
+  "accepted_difficulty": {
+    "hard": 9,
+    "medium": 19,
+    "easy": 9
+  },
+  "accepted_required_domains": {
+    "physics": 8,
+    "astronomy+physics": 2,
+    "biology": 7,
+    "biology+chemistry": 1,
+    "biology+geography": 4,
+    "chemistry": 6,
+    "chemistry+geography": 2,
+    "chemistry+physics": 3,
+    "geography": 2,
+    "geography+physics": 1,
+    "mathematics+physics": 1
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "config_id": "stage015_calibration_sources_v1",
+  "seed": 43,
+  "total": 50,
+  "domain": {
+    "astronomy": 20,
+    "biology": 7,
+    "chemistry": 8,
+    "physics": 8,
+    "geography": 7
+  },
+  "sampling_stratum": {
+    "non_mechanism_affordance": 15,
+    "mcq": 16,
+    "likely_objective_open": 19
+  },
+  "affordance_hint": {
+    "constraint_coupling": 5,
+    "measurement_observation": 5,
+    "quantitative_modeling": 5
+  },
+  "excluded_source_identities": 150
+}

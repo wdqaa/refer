@@ -1,0 +1,192 @@
+{
+  "total_records": 150,
+  "schema_valid_records": 150,
+  "failed_or_invalid_records": 0,
+  "source_primary_domain_mismatches": 39,
+  "unsupported_mathematics": 2,
+  "native_cross_domain": 27,
+  "counts": {
+    "source_domain": {
+      "astronomy": 25,
+      "biology": 30,
+      "chemistry": 30,
+      "physics": 30,
+      "geography": 35
+    },
+    "sample_group": {
+      "representative": 100,
+      "stress": 50
+    },
+    "taxonomy": {
+      "A1": 29,
+      "C1": 66,
+      "C2": 26,
+      "B1": 28,
+      "A2": 1
+    },
+    "decision": {
+      "keep_control": 66,
+      "transform_candidate": 42,
+      "keep_cross_domain": 25,
+      "reject": 17
+    },
+    "question_type": {
+      "mcq": 30,
+      "qualitative": 92,
+      "short_answer": 18,
+      "numeric": 8,
+      "symbolic": 2
+    },
+    "primary_domain": {
+      "astronomy": 19,
+      "physics": 37,
+      "biology": 41,
+      "None": 2,
+      "chemistry": 34,
+      "geography": 17
+    },
+    "required_domain_set": {
+      "astronomy": 12,
+      "astronomy+physics": 10,
+      "physics": 30,
+      "biology": 35,
+      "none": 2,
+      "chemistry": 28,
+      "chemistry+physics": 5,
+      "chemistry+geography": 2,
+      "biology+chemistry": 4,
+      "biology+geography": 5,
+      "geography": 16,
+      "biology+physics": 1
+    },
+    "reference_answer_role": {
+      "objective_gold_candidate": 47,
+      "qualitative_reference": 87,
+      "unreliable_or_insufficient": 16
+    }
+  },
+  "by_sample_group": {
+    "representative": {
+      "total": 100,
+      "taxonomy": {
+        "A1": 15,
+        "C1": 48,
+        "C2": 24,
+        "B1": 13
+      },
+      "decision": {
+        "keep_control": 40,
+        "transform_candidate": 31,
+        "keep_cross_domain": 22,
+        "reject": 7
+      },
+      "question_type": {
+        "mcq": 15,
+        "qualitative": 72,
+        "short_answer": 8,
+        "numeric": 4,
+        "symbolic": 1
+      },
+      "native_cross_domain": 24,
+      "source_primary_domain_mismatches": 23
+    },
+    "stress": {
+      "total": 50,
+      "taxonomy": {
+        "B1": 15,
+        "C1": 18,
+        "C2": 2,
+        "A1": 14,
+        "A2": 1
+      },
+      "decision": {
+        "keep_control": 26,
+        "transform_candidate": 11,
+        "keep_cross_domain": 3,
+        "reject": 10
+      },
+      "question_type": {
+        "short_answer": 10,
+        "qualitative": 20,
+        "mcq": 15,
+        "numeric": 4,
+        "symbolic": 1
+      },
+      "native_cross_domain": 3,
+      "source_primary_domain_mismatches": 16
+    }
+  },
+  "by_source_domain": {
+    "astronomy": {
+      "total": 25,
+      "decision": {
+        "keep_control": 12,
+        "transform_candidate": 6,
+        "keep_cross_domain": 6,
+        "reject": 1
+      },
+      "primary_domain": {
+        "astronomy": 18,
+        "physics": 7
+      }
+    },
+    "biology": {
+      "total": 30,
+      "decision": {
+        "keep_control": 14,
+        "transform_candidate": 12,
+        "reject": 3,
+        "keep_cross_domain": 1
+      },
+      "primary_domain": {
+        "biology": 28,
+        "physics": 1,
+        "None": 1
+      }
+    },
+    "chemistry": {
+      "total": 30,
+      "decision": {
+        "transform_candidate": 5,
+        "keep_control": 13,
+        "keep_cross_domain": 6,
+        "reject": 6
+      },
+      "primary_domain": {
+        "chemistry": 23,
+        "physics": 3,
+        "biology": 4
+      }
+    },
+    "geography": {
+      "total": 35,
+      "decision": {
+        "keep_cross_domain": 7,
+        "keep_control": 12,
+        "transform_candidate": 14,
+        "reject": 2
+      },
+      "primary_domain": {
+        "biology": 9,
+        "geography": 17,
+        "chemistry": 7,
+        "None": 1,
+        "physics": 1
+      }
+    },
+    "physics": {
+      "total": 30,
+      "decision": {
+        "keep_control": 15,
+        "reject": 5,
+        "keep_cross_domain": 5,
+        "transform_candidate": 5
+      },
+      "primary_domain": {
+        "physics": 25,
+        "chemistry": 4,
+        "astronomy": 1
+      }
+    }
+  }
+}

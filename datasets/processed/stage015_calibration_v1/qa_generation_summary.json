@@ -1,0 +1,33 @@
+{
+  "total": 14,
+  "accepted": 5,
+  "status": {
+    "accepted": 5,
+    "rejected_by_judge": 8,
+    "rejected_by_solver_gate": 1
+  },
+  "route": {
+    "keep_control": 8,
+    "keep_cross_domain": 2,
+    "transform_candidate": 4
+  },
+  "accepted_origin_type": {
+    "native_single": 4,
+    "transformed_cross_domain": 1
+  },
+  "accepted_question_type": {
+    "short_answer": 3,
+    "mcq": 2
+  },
+  "accepted_difficulty": {
+    "easy": 2,
+    "medium": 2,
+    "hard": 1
+  },
+  "accepted_required_domains": {
+    "astronomy": 1,
+    "physics": 1,
+    "chemistry": 2,
+    "astronomy+physics": 1
+  }
+}

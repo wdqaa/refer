@@ -1,0 +1,39 @@
+{
+  "experiment_id": "EXP031",
+  "date": "2026-10-08",
+  "prompt_version": "native-qa-classifier-v1.3",
+  "total": 30,
+  "schema_valid": 30,
+  "gold_valid": 24,
+  "gold_invalid": 6,
+  "validity_accuracy": 0.8667,
+  "valid_retention_rate": 0.9167,
+  "invalid_rejection_rate": 0.6667,
+  "valid_required_domains_exact_match": 0.7917,
+  "valid_domain_type_accuracy": 0.875,
+  "valid_cross_domain_precision": 1.0,
+  "valid_cross_domain_recall": 0.6667,
+  "final_cross_candidates": 8,
+  "human_accepted_cross_candidates": 6,
+  "final_cross_candidate_precision": 0.75,
+  "high_cross_candidates": 6,
+  "human_accepted_high_cross_candidates": 5,
+  "high_cross_candidate_precision": 0.8333,
+  "valid_cross_false_negatives": 3,
+  "valid_false_negatives": 2,
+  "usage": {
+    "prompt_tokens": 14844,
+    "completion_tokens": 1951,
+    "total_tokens": 16795
+  },
+  "estimated_cost_usd": {
+    "off_peak": 0.003171,
+    "peak": 0.006343
+  },
+  "projected_full_scan_cost_usd": {
+    "off_peak": 18.9,
+    "peak": 37.81
+  },
+  "gate": "pass_for_medium_pilot_only",
+  "decision": "Do not tune on the holdout and do not launch the full scan. The relaxed retention policy is adequate for a staged medium pilot with sampled human audits."
+}

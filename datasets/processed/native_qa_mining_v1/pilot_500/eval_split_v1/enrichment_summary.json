@@ -1,0 +1,19 @@
+{
+  "input": 50,
+  "enriched": 50,
+  "rejected": 0,
+  "failed": 0,
+  "batches": 10,
+  "api_errors": 0,
+  "usage": {
+    "prompt_tokens": 24612,
+    "completion_tokens": 19272,
+    "total_tokens": 43884,
+    "prompt_cache_hit_tokens": 896,
+    "prompt_cache_miss_tokens": 23716
+  },
+  "cost_usd": {
+    "off_peak": 0.015123,
+    "peak": 0.030247
+  }
+}

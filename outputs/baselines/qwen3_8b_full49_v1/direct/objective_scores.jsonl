@@ -1,0 +1,49 @@
+{"item_id": "qa-pilot-v1-biology-11457", "arm": "direct", "auto_correct": true, "method": "normalized_alias_exact", "reason": "Exact normalized match to a verified answer or alias"}
+{"item_id": "qa-pilot-v1-astronomy-3654", "arm": "direct", "auto_correct": null, "method": "rubric_review", "reason": "Non-exact short answer requires blinded rubric review"}
+{"item_id": "qa-pilot-v1-chemistry-9315", "arm": "direct", "auto_correct": true, "method": "numeric_tolerance", "reason": "expected=1.1 tolerance=0.01 actual=1.1"}
+{"item_id": "qa-pilot-v1-biology-4324", "arm": "direct", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "qa-pilot-v1-astronomy-456", "arm": "direct", "auto_correct": true, "method": "choice_exact", "reason": "expected=B actual=B"}
+{"item_id": "qa-pilot-v1-physics-5114", "arm": "direct", "auto_correct": null, "method": "numeric_unit_review", "reason": "Unit conversion or mismatch requires review: expected=mm actual=millimeters"}
+{"item_id": "qa-pilot-v1-chemistry-2522", "arm": "direct", "auto_correct": true, "method": "choice_exact", "reason": "expected=A actual=A"}
+{"item_id": "qa-pilot-v1-geography-481", "arm": "direct", "auto_correct": true, "method": "choice_exact", "reason": "expected=A actual=A"}
+{"item_id": "qa-pilot-v1-physics-9885", "arm": "direct", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "qa-pilot-v1-physics-4416", "arm": "direct", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "qa-pilot-v1-chemistry-15521", "arm": "direct", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "qa-pilot-v1-geography-20701", "arm": "direct", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "qa-pilot-v1-physics-13938", "arm": "direct", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "qa-pilot-v1-physics-1935", "arm": "direct", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "qa-pilot-v1-physics-13303", "arm": "direct", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "qa-pilot-v1-geography-1614", "arm": "direct", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "qa-validation-v2-biology-8591", "arm": "direct", "auto_correct": null, "method": "rubric_review", "reason": "Non-exact short answer requires blinded rubric review"}
+{"item_id": "qa-validation-v2-geography-19687", "arm": "direct", "auto_correct": null, "method": "rubric_review", "reason": "Non-exact short answer requires blinded rubric review"}
+{"item_id": "qa-batch-v2-astronomy-3016", "arm": "direct", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "qa-batch-v2-astronomy-383", "arm": "direct", "auto_correct": true, "method": "choice_exact", "reason": "expected=B actual=B"}
+{"item_id": "qa-batch-v2-astronomy-3033", "arm": "direct", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "qa-batch-v2-biology-12824", "arm": "direct", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "qa-batch-v2-biology-12675", "arm": "direct", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "qa-batch-v2-biology-13790", "arm": "direct", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "qa-batch-v2-biology-16775", "arm": "direct", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "qa-batch-v2-biology-19246", "arm": "direct", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "qa-batch-v2-biology-17903", "arm": "direct", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "qa-batch-v2-biology-5661", "arm": "direct", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "qa-batch-v2-biology-22035", "arm": "direct", "auto_correct": null, "method": "rubric_review", "reason": "Non-exact short answer requires blinded rubric review"}
+{"item_id": "qa-batch-v2-chemistry-10656", "arm": "direct", "auto_correct": null, "method": "rubric_review", "reason": "Non-exact short answer requires blinded rubric review"}
+{"item_id": "qa-batch-v2-chemistry-1483", "arm": "direct", "auto_correct": false, "method": "choice_exact", "reason": "expected=A actual=D"}
+{"item_id": "qa-batch-v2-chemistry-1893", "arm": "direct", "auto_correct": true, "method": "choice_exact", "reason": "expected=D actual=D"}
+{"item_id": "qa-batch-v2-chemistry-7904", "arm": "direct", "auto_correct": null, "method": "numeric_unit_review", "reason": "Unit conversion or mismatch requires review: expected=g actual=mol"}
+{"item_id": "qa-batch-v2-chemistry-16377", "arm": "direct", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "qa-batch-v2-chemistry-19509", "arm": "direct", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "qa-batch-v2-chemistry-905", "arm": "direct", "auto_correct": true, "method": "choice_exact", "reason": "expected=B actual=B"}
+{"item_id": "qa-batch-v2-geography-15776", "arm": "direct", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "qa-batch-v2-geography-28410", "arm": "direct", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "qa-batch-v2-geography-19886", "arm": "direct", "auto_correct": null, "method": "rubric_review", "reason": "Non-exact short answer requires blinded rubric review"}
+{"item_id": "qa-batch-v2-geography-29227", "arm": "direct", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "qa-batch-v2-physics-13597", "arm": "direct", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "qa-batch-v2-physics-14715", "arm": "direct", "auto_correct": null, "method": "rubric_review", "reason": "Non-exact short answer requires blinded rubric review"}
+{"item_id": "qa-batch-v2-physics-16164", "arm": "direct", "auto_correct": true, "method": "normalized_alias_exact", "reason": "Exact normalized match to a verified answer or alias"}
+{"item_id": "qa-batch-v2-physics-14821", "arm": "direct", "auto_correct": true, "method": "normalized_alias_exact", "reason": "Exact normalized match to a verified answer or alias"}
+{"item_id": "qa-batch-v2-physics-458", "arm": "direct", "auto_correct": false, "method": "choice_exact", "reason": "expected=A actual=B"}
+{"item_id": "qa-batch-v2-geography-5235", "arm": "direct", "auto_correct": null, "method": "rubric_review", "reason": "Non-exact short answer requires blinded rubric review"}
+{"item_id": "qa-batch-v2-physics-7460", "arm": "direct", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "qa-batch-v2-physics-5711", "arm": "direct", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "qa-batch-v2-physics-14546", "arm": "direct", "auto_correct": null, "method": "rubric_review", "reason": "Non-exact short answer requires blinded rubric review"}

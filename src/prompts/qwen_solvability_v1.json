@@ -1,0 +1,11 @@
+{
+  "id": "qwen_solvability_v1",
+  "direct_solver": "Solve the multiple-choice scientific question independently. Work through the necessary scientific reasoning and calculations, then select exactly one option. Return one JSON object and no prose outside it.",
+  "fixed_synthesizer": "You are the final synthesizer for a scientific question-answering team. Use the question, choices, and independent expert contributions below. Check their consistency, do any remaining reasoning yourself, and select exactly one option. Experts may be wrong; do not vote mechanically. Return one JSON object and no prose outside it.",
+  "output_schema": {
+    "correct_choice": "one choice key",
+    "answer": "concise canonical answer",
+    "reasoning": ["ordered reasoning step"],
+    "confidence": "number from 0 to 1"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "schema_version": "astronomy_eval60_expansion_gold_pool_summary.v1",
+  "records": 72,
+  "seed": 211,
+  "surface": {
+    "mcq": 36,
+    "open": 36
+  },
+  "source_file": {
+    "astronomy/astronomy_test500.json": 12,
+    "astronomy/astronomy_train.jsonl": 48,
+    "astronomy/supergpqa_astro.jsonl": 12
+  },
+  "question_type": {
+    "mcq": 36,
+    "numeric": 3,
+    "qualitative": 31,
+    "short_answer": 2
+  },
+  "keep_priority": {
+    "high": 66,
+    "medium": 6
+  },
+  "answer_verifiability": {
+    "rubric_verifiable": 31,
+    "rule_verifiable": 41
+  },
+  "required_domain_sets": {
+    "astronomy": 36,
+    "astronomy+biology": 1,
+    "astronomy+geography": 1,
+    "astronomy+physics": 27,
+    "physics+astronomy": 7
+  },
+  "model_outputs_seen_during_selection": false,
+  "sha256": "f6be18ec5a6e9d2c949e2cab530de978b276e2e755b1dd608a423b8e6dbe4cff"
+}

@@ -1,0 +1,325 @@
+{
+  "schema_version": "native_eval48_refinement_evaluation.v1",
+  "items": 48,
+  "mcq_items": 16,
+  "qualitative_items": 32,
+  "qualitative_criteria": 124,
+  "rubric_version": "native_eval50_qualitative_rubric_v2.0",
+  "unresolved_review_flags": [],
+  "arms": {
+    "direct": {
+      "mcq_correct": 14,
+      "mcq_total": 16,
+      "mcq_accuracy": 0.875,
+      "qualitative_mean_item_coverage": 0.7177083333333333,
+      "qualitative_covered_criteria": 89,
+      "qualitative_total_criteria": 124,
+      "responses_with_scientific_error": 8,
+      "scientific_error_claims": 10,
+      "efficiency": {
+        "items": 48,
+        "calls": 48,
+        "parse_failed_calls": 0,
+        "input_tokens": 14970,
+        "output_tokens": 12116,
+        "summed_model_latency_seconds": 700.9678480000002,
+        "mean_calls_per_item": 1.0,
+        "mean_input_tokens_per_item": 311.875,
+        "mean_output_tokens_per_item": 252.41666666666666,
+        "mean_model_latency_seconds_per_item": 14.603496833333333
+      }
+    },
+    "expert_critique": {
+      "mcq_correct": 13,
+      "mcq_total": 16,
+      "mcq_accuracy": 0.8125,
+      "qualitative_mean_item_coverage": 0.7552083333333334,
+      "qualitative_covered_criteria": 94,
+      "qualitative_total_criteria": 124,
+      "responses_with_scientific_error": 6,
+      "scientific_error_claims": 7,
+      "efficiency": {
+        "items": 48,
+        "calls": 132,
+        "parse_failed_calls": 2,
+        "input_tokens": 107245,
+        "output_tokens": 38296,
+        "summed_model_latency_seconds": 2335.0830839999994,
+        "mean_calls_per_item": 2.75,
+        "mean_input_tokens_per_item": 2234.2708333333335,
+        "mean_output_tokens_per_item": 797.8333333333334,
+        "mean_model_latency_seconds_per_item": 48.64756425
+      }
+    },
+    "self_refine": {
+      "mcq_correct": 14,
+      "mcq_total": 16,
+      "mcq_accuracy": 0.875,
+      "qualitative_mean_item_coverage": 0.7552083333333334,
+      "qualitative_covered_criteria": 94,
+      "qualitative_total_criteria": 124,
+      "responses_with_scientific_error": 7,
+      "scientific_error_claims": 8,
+      "efficiency": {
+        "items": 48,
+        "calls": 132,
+        "parse_failed_calls": 0,
+        "input_tokens": 104840,
+        "output_tokens": 34399,
+        "summed_model_latency_seconds": 2268.776017,
+        "mean_calls_per_item": 2.75,
+        "mean_input_tokens_per_item": 2184.1666666666665,
+        "mean_output_tokens_per_item": 716.6458333333334,
+        "mean_model_latency_seconds_per_item": 47.266167020833336
+      }
+    }
+  },
+  "paired_comparisons": {
+    "expert_critique_minus_direct": {
+      "mcq_rescued": [],
+      "mcq_damaged": [
+        "native-4a0fb05a96efa5"
+      ],
+      "qualitative_mean_coverage_delta": 0.0375,
+      "qualitative_improved": [
+        {
+          "item_id": "native-2f12806040f38e",
+          "delta": 0.19999999999999996
+        },
+        {
+          "item_id": "native-99bb53aab421f9",
+          "delta": 0.5
+        },
+        {
+          "item_id": "native-d216c9ed276999",
+          "delta": 0.25
+        },
+        {
+          "item_id": "native-f7ea74c01d61ea",
+          "delta": 0.25
+        }
+      ],
+      "qualitative_degraded": [],
+      "qualitative_tied": 28,
+      "direct_error_items_corrected": [
+        "native-6cd13b37a7cb48",
+        "native-99bb53aab421f9",
+        "native-d216c9ed276999"
+      ],
+      "new_error_items_introduced": [
+        "native-f7ea74c01d61ea"
+      ]
+    },
+    "self_refine_minus_direct": {
+      "mcq_rescued": [],
+      "mcq_damaged": [],
+      "qualitative_mean_coverage_delta": 0.0375,
+      "qualitative_improved": [
+        {
+          "item_id": "native-1ee30871e4ed4a",
+          "delta": 0.25
+        },
+        {
+          "item_id": "native-2f12806040f38e",
+          "delta": 0.19999999999999996
+        },
+        {
+          "item_id": "native-99273534388eb3",
+          "delta": 0.25
+        },
+        {
+          "item_id": "native-99bb53aab421f9",
+          "delta": 0.25
+        },
+        {
+          "item_id": "native-f7ea74c01d61ea",
+          "delta": 0.25
+        }
+      ],
+      "qualitative_degraded": [],
+      "qualitative_tied": 27,
+      "direct_error_items_corrected": [
+        "native-6cd13b37a7cb48"
+      ],
+      "new_error_items_introduced": []
+    }
+  },
+  "scientific_errors": [
+    {
+      "item_id": "native-d5ca54db9abe88",
+      "arm": "direct",
+      "error_id": "E1",
+      "claim": "Earth's magnetic field is weaker at higher latitudes.",
+      "reason": "The latitude dependence is governed by geomagnetic cutoff/field geometry, not simply weaker field magnitude."
+    },
+    {
+      "item_id": "native-9f51e537ef1a94",
+      "arm": "direct",
+      "error_id": "E1",
+      "claim": "DPC is a Dual Polarization Cloud instrument focused on cloud and precipitation studies.",
+      "reason": "DPC is the Directional Polarimetric Camera, a passive multi-angle optical polarimeter used for aerosol/cloud remote sensing."
+    },
+    {
+      "item_id": "native-99bb53aab421f9",
+      "arm": "direct",
+      "error_id": "E1",
+      "claim": "Annual cosmic-ray background dose at sea level is about 3 mSv.",
+      "reason": "This confuses the cosmic-ray component, about 0.3 mSv/year, with total natural background."
+    },
+    {
+      "item_id": "native-99bb53aab421f9",
+      "arm": "direct",
+      "error_id": "E2",
+      "claim": "Ordinary cosmic-ray background is linked here to specific cardiovascular and cognitive decline outcomes.",
+      "reason": "Those specific outcomes are overstated for ordinary sea-level background exposure; the defensible effect is a very small stochastic cancer risk."
+    },
+    {
+      "item_id": "native-eae9d5bd9ad215",
+      "arm": "direct",
+      "error_id": "E1",
+      "claim": "Added luminescent material converts a solar cell's non-radiative recombination losses into reusable emitted light.",
+      "reason": "Spectral conversion can redirect incident photons, but it does not generally convert the host cell's non-radiative recombination loss into light."
+    },
+    {
+      "item_id": "native-6cd13b37a7cb48",
+      "arm": "direct",
+      "error_id": "E1",
+      "claim": "Plasma agriculture mainly stimulates photosynthesis and roots through emitted light and heat.",
+      "reason": "Non-thermal plasma agricultural effects are primarily mediated by reactive species and surface/water chemistry; heating is not the central beneficial mechanism."
+    },
+    {
+      "item_id": "native-1ee30871e4ed4a",
+      "arm": "direct",
+      "error_id": "E1",
+      "claim": "Propene hydration undergoes a hydride or alkyl shift.",
+      "reason": "Protonation already gives the secondary isopropyl carbocation, so no stabilizing rearrangement occurs."
+    },
+    {
+      "item_id": "native-1ee30871e4ed4a",
+      "arm": "direct",
+      "error_id": "E2",
+      "claim": "Attack on propene's planar carbocation gives a racemic product.",
+      "reason": "The product is achiral 2-propanol, so it is not a racemic mixture."
+    },
+    {
+      "item_id": "native-d216c9ed276999",
+      "arm": "direct",
+      "error_id": "E1",
+      "claim": "Atmospheric ions created by cosmic rays act directly as cloud-condensation nuclei.",
+      "reason": "The hypothesis is that ionization may enhance aerosol nucleation/growth; molecular ions are not themselves ordinary CCN."
+    },
+    {
+      "item_id": "native-54981140f07ca2",
+      "arm": "direct",
+      "error_id": "E1",
+      "claim": "Functional information is not available with MRI.",
+      "reason": "MRI has functional and physiological variants; PET is distinguished by tracer-based metabolic sensitivity, not an absolute absence of MRI functional imaging."
+    },
+    {
+      "item_id": "native-1ee30871e4ed4a",
+      "arm": "expert_critique",
+      "error_id": "E1",
+      "claim": "Propene hydration undergoes a hydride or alkyl shift.",
+      "reason": "Protonation already gives the secondary isopropyl carbocation, so no stabilizing rearrangement occurs."
+    },
+    {
+      "item_id": "native-1ee30871e4ed4a",
+      "arm": "expert_critique",
+      "error_id": "E2",
+      "claim": "Planar attack in propene hydration produces a racemic mixture.",
+      "reason": "The product is achiral 2-propanol, not a racemic pair."
+    },
+    {
+      "item_id": "native-1ee30871e4ed4a",
+      "arm": "self_refine",
+      "error_id": "E1",
+      "claim": "Propene hydration undergoes a hydride or alkyl shift.",
+      "reason": "Protonation already gives the secondary isopropyl carbocation, so no stabilizing rearrangement occurs."
+    },
+    {
+      "item_id": "native-1ee30871e4ed4a",
+      "arm": "self_refine",
+      "error_id": "E2",
+      "claim": "Propene hydration produces a mixture of stereoisomers whose ratio depends on pathway or solvent.",
+      "reason": "The product is achiral 2-propanol, so this stereochemical claim is inapplicable."
+    },
+    {
+      "item_id": "native-9f51e537ef1a94",
+      "arm": "expert_critique",
+      "error_id": "E1",
+      "claim": "DPC is a Dual Polarization Cloud instrument focused on cloud/precipitation and POLDER has higher spatial resolution.",
+      "reason": "DPC is the Directional Polarimetric Camera for aerosol/cloud remote sensing, and it has finer spatial resolution than POLDER."
+    },
+    {
+      "item_id": "native-9f51e537ef1a94",
+      "arm": "self_refine",
+      "error_id": "E1",
+      "claim": "DPC is a Dual Polarization Cloud instrument focused on cloud/precipitation and POLDER has higher spatial resolution.",
+      "reason": "DPC is the Directional Polarimetric Camera for aerosol/cloud remote sensing, and it has finer spatial resolution than POLDER."
+    },
+    {
+      "item_id": "native-eae9d5bd9ad215",
+      "arm": "expert_critique",
+      "error_id": "E1",
+      "claim": "Added luminescent material converts a host solar cell's non-radiative recombination losses into radiative emission for reabsorption.",
+      "reason": "Spectral converters redirect incident photons; they do not generally recover the host cell's already dissipated non-radiative recombination loss."
+    },
+    {
+      "item_id": "native-eae9d5bd9ad215",
+      "arm": "self_refine",
+      "error_id": "E1",
+      "claim": "Added luminescent material converts a host solar cell's non-radiative recombination losses into radiative emission for reabsorption.",
+      "reason": "Spectral converters redirect incident photons; they do not generally recover the host cell's already dissipated non-radiative recombination loss."
+    },
+    {
+      "item_id": "native-d5ca54db9abe88",
+      "arm": "expert_critique",
+      "error_id": "E1",
+      "claim": "Earth's magnetic field is stronger near the equator and weaker at high latitude.",
+      "reason": "The radiation trend is governed by geomagnetic cutoff and field geometry; surface field magnitude is not simply weaker at the poles."
+    },
+    {
+      "item_id": "native-d5ca54db9abe88",
+      "arm": "self_refine",
+      "error_id": "E1",
+      "claim": "Earth's magnetic field is stronger near the equator and weaker at the poles.",
+      "reason": "The radiation trend is governed by geomagnetic cutoff and field geometry; surface field magnitude is not simply weaker at the poles."
+    },
+    {
+      "item_id": "native-54981140f07ca2",
+      "arm": "expert_critique",
+      "error_id": "E1",
+      "claim": "Functional information is not available with MRI.",
+      "reason": "MRI has functional and physiological variants; PET is distinguished by tracer-based molecular/metabolic sensitivity."
+    },
+    {
+      "item_id": "native-54981140f07ca2",
+      "arm": "self_refine",
+      "error_id": "E1",
+      "claim": "Functional or metabolic information is not available with MRI.",
+      "reason": "MRI has functional and physiological variants; PET is distinguished by tracer-based molecular/metabolic sensitivity."
+    },
+    {
+      "item_id": "native-f7ea74c01d61ea",
+      "arm": "expert_critique",
+      "error_id": "E1",
+      "claim": "The Ilkovic diffusion-current condition requires a well-stirred solution and the supporting electrolyte ensures stirring.",
+      "reason": "Classical diffusion-controlled polarography uses an unstirred solution; supporting electrolyte suppresses migration rather than providing stirring."
+    },
+    {
+      "item_id": "native-d216c9ed276999",
+      "arm": "self_refine",
+      "error_id": "E1",
+      "claim": "Charged particles freshly created by cosmic-ray ionization may themselves act as cloud-condensation nuclei.",
+      "reason": "Ionization may promote aerosol nucleation and growth toward CCN sizes; molecular ions are not ordinary CCN."
+    },
+    {
+      "item_id": "native-99bb53aab421f9",
+      "arm": "self_refine",
+      "error_id": "E1",
+      "claim": "Ordinary sea-level cosmic-ray background specifically causes lung/breast cancer, cardiovascular disease, and cognitive decline.",
+      "reason": "Those deterministic/specific outcomes are overstated at ordinary background dose; the defensible effect is a very small stochastic cancer risk."
+    }
+  ],
+  "interpretation_boundary": "The same audited rubric is used for all arms. This eval48 was used to design the fixed refinement prompts, so results are diagnostic rather than an independent generalization estimate."
+}

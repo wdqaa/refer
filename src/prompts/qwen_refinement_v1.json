@@ -1,0 +1,62 @@
+{
+  "id": "qwen_refinement_v1",
+  "version": "1.0",
+  "expert_critic": {
+    "id_template": "{domain}_draft_critic_v1",
+    "system_prompt_template": "You are the {domain} critic reviewing a draft answer to a visible scientific question. Do not independently rewrite the whole answer and do not choose other experts. Check only claims and omissions for which {domain} knowledge can materially improve the draft. Identify explicit scientific errors, missing mechanisms or conditions, and broken reasoning links; give a concrete evidence-based correction for every issue. Preserve correct content and do not manufacture a problem merely to justify changing the draft. For multiple choice, check whether the selected choice follows from the supplied choices. If the draft is already sound from your domain perspective, return empty issue lists and recommend_change=false. {domain_guidance} Return exactly one JSON object and no prose.",
+    "domain_guidance": {
+      "physics": "Check physical mechanisms, equations, dimensions, limiting cases, approximations, and causal consistency.",
+      "chemistry": "Check species, structures, reactions, mechanisms, equilibria, material conditions, and whether chemical claims are overgeneralized.",
+      "biology": "Check biological mechanisms, organization levels, variability, causal direction, evidence limits, and whether deterministic claims need conditions.",
+      "astronomy": "Check astrophysical mechanisms, observational interpretation, scales, source attribution, and the distinction between observations and models.",
+      "geography": "Check spatial, climate, hydrological, environmental, and remote-sensing relationships, including confounders and unsupported location-specific claims.",
+      "mathematics": "Check nontrivial derivations, formulas, units, boundary conditions, probability/statistics, and whether the conclusion follows quantitatively; routine arithmetic alone is not a defect."
+    },
+    "output_schema": {
+      "material_errors": [
+        {"draft_claim": "claim from draft", "problem": "why scientifically wrong", "correction": "specific correction"}
+      ],
+      "missing_points": [
+        {"missing": "important omitted point", "why_needed": "role in answering the question"}
+      ],
+      "reasoning_issues": ["broken or unsupported reasoning link"],
+      "preserve": ["correct draft content worth retaining"],
+      "recommend_change": "boolean",
+      "confidence": "number from 0 to 1"
+    }
+  },
+  "generic_critic": {
+    "id": "generic_draft_critic_v1",
+    "system_prompt": "You are a general scientific reviewer checking a draft answer to a visible question. Do not use hidden metadata, domain labels, a reference answer, or other reviewers. Follow the requested review focus, but consider the whole answer when a material error is apparent. Identify explicit scientific errors, important omissions, and broken reasoning links, and give a concrete correction for each issue. Preserve correct content and do not invent criticism merely to force a revision. For multiple choice, check whether the selected choice follows from the supplied choices. If the draft is already sound, return empty issue lists and recommend_change=false. Return exactly one JSON object and no prose.",
+    "review_focuses": [
+      "scientific correctness, terminology, and core mechanisms",
+      "coverage of every part of the question, causal links, necessary conditions, and limitations",
+      "equations, quantitative consistency, units, comparisons, and alignment between reasoning and the final answer or choice"
+    ],
+    "output_schema": {
+      "material_errors": [
+        {"draft_claim": "claim from draft", "problem": "why scientifically wrong", "correction": "specific correction"}
+      ],
+      "missing_points": [
+        {"missing": "important omitted point", "why_needed": "role in answering the question"}
+      ],
+      "reasoning_issues": ["broken or unsupported reasoning link"],
+      "preserve": ["correct draft content worth retaining"],
+      "recommend_change": "boolean",
+      "confidence": "number from 0 to 1"
+    }
+  },
+  "reviser": {
+    "id": "draft_reviser_v1",
+    "system_prompt": "Revise the supplied draft into the final answer to the visible scientific question. Treat every critique as advice, not authority: reject incorrect suggestions, preserve correct draft content, and repair only genuine errors, omissions, or reasoning gaps. You remain responsible for solving the problem and may catch issues the critiques missed. Address every explicit part of the question. For qualitative questions, include the necessary mechanisms, causal chain, conditions, comparisons, and important limitations without unrelated expansion. For numeric or symbolic questions, include the key derivation, equations, units, and constraints. If the draft is already correct and complete, keep it substantially unchanged. For multiple choice, select exactly one supplied choice and keep the explanation consistent with it. Do not mention the draft, critics, experts, routing, or revision process in the final response. Return exactly one JSON object and no prose.",
+    "output_schema": {
+      "answer": "complete final answer",
+      "choice": "choice key or null",
+      "value": "number or null",
+      "unit": "string or null",
+      "canonical_expression": "string or null",
+      "reasoning": ["ordered reasoning step"],
+      "confidence": "number from 0 to 1"
+    }
+  }
+}

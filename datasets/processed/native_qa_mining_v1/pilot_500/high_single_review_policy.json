@@ -1,0 +1,33 @@
+{
+  "reviewed_all": true,
+  "default_disposition": "keep_high",
+  "downgrade_medium": {
+    "native-3c11a10aea5007": "Broad GRB mechanism question with a usable but non-unique qualitative answer.",
+    "native-07e0f0ff6bdd77": "No telescope specifications are supplied; the reference gives a useful conditional explanation rather than a minimum size.",
+    "native-860b1ff61747b3": "Broad and partly unsettled source-energy relationship, but the reference provides a reasonable overview.",
+    "native-1b5d57aba80949": "The stem supplies most of the aldol reasoning, leaving a relatively simple comprehension item.",
+    "native-43634fea2f91ca": "Rule-verifiable but unusually cumbersome multi-component chemical naming lowers practical value.",
+    "native-c7074071cc2695": "The sustainable CNT synthesis prompt is broad and the proposed design is non-unique.",
+    "native-7495118f025c90": "Objective but product- and study-specific behavior has limited general training value.",
+    "native-9f51e537ef1a94": "Grounded instrument comparison, but narrow and source-specific.",
+    "native-d76da8c258bc49": "The intended at-least-one-match probability is recoverable, although 'this probability' has a mildly ambiguous antecedent.",
+    "native-523992ee89f294": "Correct reverse word problem, but the supplied final answer makes it mechanically simple.",
+    "native-07581a53aae60a": "Correct reverse word problem with low scientific or routing value.",
+    "native-ee2885e6c20049": "The MCQ tests the correct 4.9 V threshold, but its stem asks for an explanation not represented in the keyed choice."
+  },
+  "reject": {
+    "native-146e10de4c6727": "A neutrino oscillation probability cannot be identified from energy and baseline without mixing parameters and the initial/final flavor model.",
+    "native-dfd0f6cba1ebdb": "The missing figure is needed to locate the cavity relative to the external particle.",
+    "native-8015341caef51c": "The keyed option is not the no-reaction pair; FeSO4 and NaCl remain soluble while the keyed calcium sulfate pair can precipitate.",
+    "native-5779f38ba4ed19": "The stem calls -393.5 kJ/mol an oxygen combustion enthalpy, which is scientifically invalid and irrelevant to water formation.",
+    "native-ac1b7c2b7672d5": "The surface bounds are malformed ('1 <= z <= 1'), so the flux region is not defined.",
+    "native-32d42fe8c1a2a6": "Attenuation alone cannot determine a maximum fiber distance without launch power and a receiver detection threshold.",
+    "native-e77bf6a841cb53": "There is no universal minimum fusion temperature, and the keyed 15 million K is misleading for controlled terrestrial fusion.",
+    "native-32eb7eecb55bb7": "No option gives both the correct field magnitude and perpendicular direction for an equilateral triangular loop.",
+    "native-5ad827ea5f86ae": "The stem asks for pairing, stability, and predictive behavior, but the keyed option answers only the basic model distinction.",
+    "native-c0ece092202385": "The keyed rectangular-loop magnetic field does not match the finite-wire calculation.",
+    "native-0f1d51075aed91": "For a parallel-sided slab the emergent angular deviation is zero; the reference incorrectly reports incidence minus refraction angle.",
+    "native-7306afeba58dfe": "The reference incorrectly describes helium-4 superfluidity as Cooper pairing and overgeneralizes materials exhibiting both phenomena.",
+    "native-f833cbec309e9d": "The purported first-order vacuum-polarization expression is malformed and does not actually calculate the stated uniform-field correction."
+  }
+}

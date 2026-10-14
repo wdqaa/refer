@@ -1,0 +1,341 @@
+{
+  "version": "astronomy_eval30_gold_human_review_v1.0",
+  "expected_input_records": 29,
+  "expected_input_sha256": "daaaacad1c7e965bdb30019dc083f28fc65930f96209a69983e2b5d1872df601",
+  "default_decision": "accept",
+  "default_reason": "Question, keyed answer, standard solution, and question-entailed rubric were independently reviewed and found scientifically usable.",
+  "audit_sources": [
+    {
+      "topic": "Kerr extractable energy",
+      "url": "https://link.aps.org/doi/10.1103/PhysRevResearch.7.013203",
+      "finding": "The extremal Kerr limit is 29.3 percent and follows from the irreducible-mass expression."
+    },
+    {
+      "topic": "Retrograde planetary rotation",
+      "url": "https://ssd.jpl.nasa.gov/horizons/manual.html",
+      "finding": "JPL Horizons lists both Venus and Uranus as retrograde rotators, so the claimed unique Venus answer is convention-dependent or false."
+    },
+    {
+      "topic": "CME initiation",
+      "url": "https://ntrs.nasa.gov/citations/20050181426",
+      "finding": "CME initiation can involve reconnection, ideal-MHD instability, or loss of equilibrium, making the two proposed mechanisms non-unique."
+    },
+    {
+      "topic": "Blandford-Znajek energy source",
+      "url": "https://academic.oup.com/mnras/article/179/3/433/962905",
+      "finding": "The Blandford-Znajek process electromagnetically extracts rotational energy from a Kerr black hole; it is not extraction of accretion-disk energy."
+    },
+    {
+      "topic": "Binary gravitational-radiation reaction",
+      "url": "https://ligo.org/science-summaries/s6pe/",
+      "finding": "Gravitational radiation removes energy from the emitting compact binary; the source does not establish the proposed generic eccentricity or inclination changes of a planet."
+    },
+    {
+      "topic": "Gravitational-wave polarization",
+      "url": "https://ligo.org/science-summaries/O2TGR/",
+      "finding": "Polarization content primarily tests tensor versus non-GR modes and requires a detector network; source masses and spins come from the broader waveform."
+    }
+  ],
+  "overrides": {
+    "native-f272d1394daf20": {
+      "decision": "accept_with_edit",
+      "reason": "The 29 percent limit is correct, but the generated spin-dependent formula was wrong and the role of charge needed qualification.",
+      "gold_enrichment": {
+        "gold_answer": {
+          "correct_choice": null,
+          "answer_text": "For a neutral extremal Kerr black hole, at most 1 - 1/sqrt(2), about 29.3 percent, of the mass-energy is rotationally extractable in the reversible limit associated with Penrose-type extraction. The absolute energy scales with mass, while the fraction is set by the dimensionless spin and falls to zero for a nonrotating hole. Electric charge changes the Kerr-Newman horizon and total reducible-energy budget, so the 29.3 percent statement specifically applies to the uncharged Kerr case; charge is not the source of the rotational Penrose process."
+        },
+        "standard_solution": [
+          "The Penrose process uses negative conserved-energy trajectories in the ergosphere to remove rotational energy from a spinning black hole.",
+          "For a Kerr black hole with dimensionless spin a_star, the irreducible-mass fraction is sqrt((1 + sqrt(1 - a_star^2))/2).",
+          "The maximum rotationally extractable fraction is therefore 1 - sqrt((1 + sqrt(1 - a_star^2))/2). It is zero at a_star = 0 and reaches 1 - 1/sqrt(2), about 0.293, at a_star = 1.",
+          "Multiplying this fraction by M c^2 gives the absolute energy, so a more massive hole stores more extractable energy at the same dimensionless spin.",
+          "The classic 29.3 percent limit is for an uncharged Kerr hole. Charge modifies the Kerr-Newman horizon and energy budget and permits separate electromagnetic energy extraction, but does not replace angular momentum as the source of rotational Penrose extraction."
+        ],
+        "scoring_rubric": [
+          {
+            "criterion": "Explains that the Penrose process extracts rotational energy through negative-energy trajectories in the ergosphere.",
+            "points": 2
+          },
+          {
+            "criterion": "States the neutral extremal Kerr maximum as about 29.3 percent of the black hole mass-energy and zero for a nonrotating hole.",
+            "points": 3
+          },
+          {
+            "criterion": "Correctly relates the extractable fraction to dimensionless spin through the Kerr irreducible mass, or gives equivalent correct spin-dependent reasoning.",
+            "points": 3
+          },
+          {
+            "criterion": "Explains that absolute energy scales with mass and qualifies that charge modifies the Kerr-Newman energy budget while the 29.3 percent limit is the uncharged Kerr result.",
+            "points": 2
+          }
+        ]
+      }
+    },
+    "native-8a06a186112d69": {
+      "decision": "accept_with_edit",
+      "reason": "The original trend needed an all-else-equal qualification and an explicit enclosed-mass relation.",
+      "gold_enrichment": {
+        "gold_answer": {
+          "correct_choice": null,
+          "answer_text": "A galaxy rotation curve follows v_c(r)^2 = G M(<r)/r. If visible matter supplied nearly all the mass, M(<r) would approach a constant beyond the luminous disk and the speed would decline approximately as r^(-1/2). An extended dark-matter halo keeps M(<r) increasing with radius, producing flat or slowly changing outer rotation speeds. At a fixed radius and for comparable baryonic distributions, more enclosed halo mass gives a larger circular speed, but the detailed curve depends on the halo density profile as well as the total dark-matter amount."
+        },
+        "standard_solution": [
+          "Define the rotation curve as circular speed versus galactocentric radius.",
+          "Use v_c(r)^2 = G M(<r)/r to connect the curve to enclosed mass.",
+          "Beyond a finite visible disk, visible matter alone would make the speed decline roughly as r^(-1/2).",
+          "An extended dark-matter halo keeps adding enclosed mass and can therefore maintain a nearly flat outer curve.",
+          "More enclosed dark matter raises the speed all else equal, but halo concentration and radial profile determine the detailed shape."
+        ],
+        "scoring_rubric": [
+          {
+            "criterion": "Connects circular speed to enclosed mass using v_c squared = G M(<r)/r or equivalent reasoning.",
+            "points": 3
+          },
+          {
+            "criterion": "Explains why visible matter alone would lead to a declining outer rotation curve.",
+            "points": 2
+          },
+          {
+            "criterion": "Explains that an extended dark-matter halo keeps enclosed mass increasing and produces flat or slowly varying outer speeds.",
+            "points": 3
+          },
+          {
+            "criterion": "States that more enclosed halo mass raises speed only all else equal and that the halo radial profile also controls curve shape.",
+            "points": 2
+          }
+        ]
+      }
+    },
+    "native-2a220e23116fcc": {
+      "decision": "accept_with_edit",
+      "reason": "The generated Gold overclaimed a universally stabilizing halo; the audit retains the robust gravitational and assembly effects without fixing the sign of every disk instability.",
+      "gold_enrichment": {
+        "gold_answer": {
+          "correct_choice": null,
+          "answer_text": "Dark-matter halos form gravitational potential wells that accrete baryons; gas cooling and angular-momentum evolution within those halos help form rotating stellar disks. Halo mass, concentration, shape, spin, and assembly history affect disk size, rotation curves, merger history, and susceptibility to bars or other instabilities. Extended halo mass explains high outer rotation speeds, while interactions and halo growth influence later morphology and star formation. The halo can modify disk stability and exchange angular momentum with the disk, but it is not correct to claim that dark matter always stabilizes a spiral galaxy."
+        },
+        "standard_solution": [
+          "Dark-matter overdensities grow into halos that provide the potential wells in which baryonic gas accumulates.",
+          "Cooling gas and its angular momentum help determine whether and how a rotating disk forms.",
+          "The halo's extended mass distribution controls much of the outer rotation curve.",
+          "Halo mass, concentration, shape, spin, and assembly history affect disk size, bars, spiral structure, mergers, and star-formation history.",
+          "The halo changes disk stability and exchanges angular momentum with baryons; the direction and strength depend on the halo and disk, so a universal stabilizing claim is unwarranted."
+        ],
+        "scoring_rubric": [
+          {
+            "criterion": "Explains that dark-matter halos provide gravitational potential wells for baryonic accretion and disk formation.",
+            "points": 3
+          },
+          {
+            "criterion": "Connects the extended halo mass profile to flat outer rotation curves or binding of outer disk material.",
+            "points": 2
+          },
+          {
+            "criterion": "Explains that halo mass, concentration, shape, spin, or assembly history affects disk size, morphology, mergers, or star formation.",
+            "points": 3
+          },
+          {
+            "criterion": "Describes halo effects on disk dynamics or angular-momentum exchange without claiming that the halo always stabilizes the disk.",
+            "points": 2
+          }
+        ]
+      }
+    },
+    "native-39446b9ebd9c69": {
+      "decision": "reject",
+      "reason": "The answer is not uniquely reliable: under the ecliptic-north convention both Venus and Uranus are commonly classified as retrograde or clockwise rotators, while a rotation-defined north pole changes the wording again."
+    },
+    "native-3c11a10aea5007": {
+      "decision": "accept_with_edit",
+      "reason": "The central-engine account is usable, but r-process nucleosynthesis and star-formation effects are not generic consequences of GRB radiation and were removed from the required answer.",
+      "gold_enrichment": {
+        "gold_answer": {
+          "correct_choice": null,
+          "answer_text": "Black holes do not radiate gamma-ray bursts directly. Long GRBs can be powered by massive-star collapse and short GRBs by compact-object mergers, with a newly formed black hole or other compact remnant plus a dense accretion flow acting as the central engine. Magnetic fields and rotation launch an ultrarelativistic collimated jet. Dissipation through shocks, magnetic reconnection, or photospheric processes converts jet energy into gamma rays; synchrotron and inverse-Compton emission are important candidate mechanisms. The jet drives a blast wave into surrounding gas, transferring kinetic energy, heating and ionizing the medium, and producing a multiwavelength afterglow."
+        },
+        "standard_solution": [
+          "Clarify that the event and its compact central engine produce the burst; the black hole itself is not a surface emitting gamma rays.",
+          "Identify massive-star collapse and compact-object merger as major progenitor channels.",
+          "Explain that accretion, rotation, and strong magnetic fields launch an ultrarelativistic collimated jet.",
+          "Explain that shocks, reconnection, or photospheric dissipation produce prompt gamma rays, with synchrotron and inverse-Compton processes among the relevant radiation mechanisms.",
+          "Connect jet interaction with the circumburst medium to shocks, heating, ionization, kinetic-energy transfer, and the afterglow."
+        ],
+        "scoring_rubric": [
+          {
+            "criterion": "Clarifies that a catastrophic event and compact central engine, rather than a bare black hole surface, produce the gamma-ray burst.",
+            "points": 2
+          },
+          {
+            "criterion": "Explains that accretion, rotation, and magnetic fields launch an ultrarelativistic collimated jet.",
+            "points": 3
+          },
+          {
+            "criterion": "Describes jet-energy dissipation and a scientifically plausible gamma-ray mechanism such as synchrotron, inverse Compton, reconnection, shocks, or photospheric emission.",
+            "points": 3
+          },
+          {
+            "criterion": "Explains environmental energy transfer through a blast wave, heating or ionization, shocks, or multiwavelength afterglow emission.",
+            "points": 2
+          }
+        ]
+      }
+    },
+    "native-07e0f0ff6bdd77": {
+      "decision": "accept_with_edit",
+      "reason": "No telescope precision or stellar parameters are supplied, so the Gold must give the detection relation and explicitly state that no unique numerical radius follows.",
+      "gold_enrichment": {
+        "gold_answer": {
+          "correct_choice": null,
+          "answer_text": "There is no single numerical minimum radius without the telescope's photometric precision, detection threshold, observing cadence and duration, and the host star's radius and variability. For a small planet the transit depth is approximately delta = (R_p/R_star)^2, so if the minimum detectable combined depth is delta_min then R_p,min is approximately R_star sqrt(delta_min). Repeated transits increase signal-to-noise. Earth-sized habitable-zone planets around Sun-like stars are difficult because their transits are shallow, geometrically unlikely, and roughly annual; smaller cool stars give deeper, more frequent habitable-zone transits but can be more variable."
+        },
+        "standard_solution": [
+          "Use the small-planet transit relation delta approximately equals (R_p/R_star)^2.",
+          "Set the detection threshold delta_min from photometric noise, required signal-to-noise, cadence, and the number of in-transit measurements; then R_p,min approximately equals R_star sqrt(delta_min).",
+          "State that the missing telescope and stellar parameters prevent a unique numerical minimum.",
+          "Explain that Earth-size habitable-zone transits around Sun-like stars are shallow, have low geometric probability, and repeat slowly.",
+          "Explain that smaller stars improve depth and recurrence while stellar variability can worsen the noise."
+        ],
+        "scoring_rubric": [
+          {
+            "criterion": "Uses transit depth delta approximately equal to (R_p/R_star)^2 and relates minimum detectable radius to the photometric detection threshold.",
+            "points": 4
+          },
+          {
+            "criterion": "States that a numerical minimum cannot be determined without telescope noise, signal-to-noise threshold, observing duration or cadence, and stellar properties.",
+            "points": 2
+          },
+          {
+            "criterion": "Explains why Earth-sized habitable-zone planets around Sun-like stars are difficult: shallow depth, low transit probability, and infrequent transits.",
+            "points": 2
+          },
+          {
+            "criterion": "Explains how smaller host stars and repeated transits improve detection while stellar variability can impede it.",
+            "points": 2
+          }
+        ]
+      }
+    },
+    "native-f1e1be79e4d1f0": {
+      "decision": "reject",
+      "reason": "The keyed option conflates accretion-disk energy with Blandford-Znajek extraction of black-hole rotational energy; no option cleanly answers the stem as written."
+    },
+    "native-f8a5a8f8e1cf1b": {
+      "decision": "reject",
+      "reason": "The MCQ is not uniquely keyed: reconnection and ideal-MHD flux-rope instability or loss of equilibrium can each trigger or drive CME initiation."
+    },
+    "native-1b16029be0d1da": {
+      "decision": "accept_with_edit",
+      "reason": "The question contains a false premise that UHECRs avoid energy loss; the Gold now explicitly corrects it and avoids overstating their propagation range.",
+      "gold_enrichment": {
+        "gold_answer": {
+          "correct_choice": null,
+          "answer_text": "The exact sources of ultra-high-energy cosmic rays remain uncertain; candidate accelerators include active galactic nuclei, gamma-ray bursts, and starburst environments, and the particles are mainly protons and heavier nuclei. They do not propagate without losing energy. Protons interact with cosmic-background photons through pair production and, at the highest energies, photopion production associated with the GZK suppression; nuclei can photodisintegrate. Consequently the highest-energy particles must come from a limited cosmological neighborhood rather than arbitrarily far away. Their near-light speed and relatively long interaction lengths below the strongest-loss regime still allow substantial travel, while magnetic deflection obscures their arrival directions."
+        },
+        "standard_solution": [
+          "Identify UHECRs as extremely energetic protons and nuclei whose source classes are not yet uniquely established.",
+          "List plausible high-energy accelerators without presenting any one class as confirmed.",
+          "Correct the premise: propagation causes energy losses through interactions with background radiation.",
+          "For protons, include pair production and high-energy photopion or GZK losses; for nuclei, include photodisintegration as appropriate.",
+          "Conclude that the highest-energy propagation horizon is limited and that magnetic deflection complicates source association."
+        ],
+        "scoring_rubric": [
+          {
+            "criterion": "States that UHECR sources remain uncertain and gives at least one plausible astrophysical accelerator class.",
+            "points": 2
+          },
+          {
+            "criterion": "Identifies UHECRs mainly as protons and heavier nuclei accelerated to extreme energies.",
+            "points": 2
+          },
+          {
+            "criterion": "Explicitly rejects loss-free propagation and explains interactions with cosmic-background photons, including GZK photopion losses or nuclear photodisintegration.",
+            "points": 3
+          },
+          {
+            "criterion": "Explains that the highest-energy propagation distance is limited and that magnetic fields deflect charged particles and hinder source identification.",
+            "points": 3
+          }
+        ]
+      }
+    },
+    "native-6e96b7348166c4": {
+      "decision": "reject",
+      "reason": "The options attribute generic planetary eccentricity and inclination changes to gravitational waves without specifying a compact, rapidly inspiraling binary or a defensible radiation-reaction coupling to the planet."
+    },
+    "native-8c30ee780c173b": {
+      "decision": "reject",
+      "reason": "The keyed answer combines detection of the binary's gravitational waves with unsupported generic detectability of induced planetary-orbit changes; the physical regime and observable are not specified."
+    },
+    "native-c7277fa4845332": {
+      "decision": "accept_with_edit",
+      "reason": "Polarization is central to GR-mode tests and source geometry, but masses and spins are inferred mainly from the full waveform rather than polarization alone.",
+      "gold_enrichment": {
+        "gold_answer": {
+          "correct_choice": null,
+          "answer_text": "General relativity predicts two transverse tensor polarizations, plus and cross. Resolving polarization with a network of differently oriented detectors tests that prediction and can constrain or exclude additional scalar or vector modes from alternative gravity theories. The relative polarization response also helps constrain source orientation, polarization angle, distance-inclination degeneracy, and sky position, improving localization and parameter estimation. Black-hole masses and spins are obtained primarily from the phase evolution, precession, higher modes, merger, and ringdown of the full waveform; polarization information helps break degeneracies but should not be treated as an independent direct measurement of all those properties."
+        },
+        "standard_solution": [
+          "State that general relativity allows two transverse tensor polarization modes.",
+          "Explain that a detector network is needed to separate polarization responses and test for non-GR scalar or vector modes.",
+          "Explain that relative plus/cross response informs orientation, polarization angle, localization, and the distance-inclination degeneracy.",
+          "Distinguish polarization information from the broader waveform features that carry most mass and spin information.",
+          "Conclude that combining polarization and waveform structure improves tests of strong gravity and binary parameter estimation."
+        ],
+        "scoring_rubric": [
+          {
+            "criterion": "States that general relativity predicts two transverse tensor gravitational-wave polarizations and that measuring polarization tests this prediction.",
+            "points": 3
+          },
+          {
+            "criterion": "Explains that additional scalar or vector modes would indicate or constrain alternative theories of gravity.",
+            "points": 2
+          },
+          {
+            "criterion": "Connects polarization-resolved detector responses to source orientation, distance-inclination degeneracy, localization, or other extrinsic parameters.",
+            "points": 3
+          },
+          {
+            "criterion": "Recognizes that masses and spins primarily come from the full waveform while polarization helps break degeneracies and improve joint inference.",
+            "points": 2
+          }
+        ]
+      }
+    },
+    "native-fbe39c3fa210c2": {
+      "decision": "accept_with_edit",
+      "reason": "Distance alone is not evidence for a black-hole identity and absence of electromagnetic emission is supportive but not decisive; the audit emphasizes waveform consistency, inferred masses, and ringdown.",
+      "gold_enrichment": {
+        "gold_answer": {
+          "correct_choice": null,
+          "answer_text": "Binary-black-hole gravitational-wave signals follow the inspiral, merger, and ringdown pattern predicted by general relativity for compact horizons. Their waveform yields component masses that can exceed neutron-star limits, and the remnant ringdown is consistent with a Kerr black hole. The usual absence of an electromagnetic counterpart is consistent with a vacuum black-hole merger but is not by itself proof. These detections test general relativity in the dynamical strong-field regime, reveal populations inaccessible to electromagnetic astronomy, and constrain alternative gravity, propagation, and the properties of compact objects under extreme curvature. These are implications for fundamental and high-energy physics, although gravitational-wave events are not particle-collider measurements."
+        },
+        "standard_solution": [
+          "Identify the observed chirp, merger, and ringdown as the general-relativistic waveform of coalescing compact objects.",
+          "Use inferred component masses above plausible neutron-star masses and Kerr-consistent remnant behavior as the main black-hole evidence.",
+          "Treat a missing electromagnetic counterpart as consistent with, but not decisive proof of, a vacuum black-hole merger.",
+          "Explain that the signals test general relativity and alternative-gravity or propagation effects in a dynamical strong-field regime.",
+          "Explain that gravitational-wave astronomy probes otherwise hidden compact-object populations and extreme spacetime, while distinguishing this from accelerator particle physics."
+        ],
+        "scoring_rubric": [
+          {
+            "criterion": "Connects the observed inspiral-merger-ringdown waveform to general-relativistic binary black-hole predictions.",
+            "points": 3
+          },
+          {
+            "criterion": "Uses inferred masses above neutron-star limits or Kerr-consistent remnant ringdown as evidence for black holes.",
+            "points": 3
+          },
+          {
+            "criterion": "Explains that gravitational-wave detections test gravity and propagation in the dynamical strong-field regime.",
+            "points": 2
+          },
+          {
+            "criterion": "Connects the observations to otherwise inaccessible compact-object populations or extreme spacetime while not misrepresenting them as collider measurements.",
+            "points": 2
+          }
+        ]
+      }
+    }
+  }
+}

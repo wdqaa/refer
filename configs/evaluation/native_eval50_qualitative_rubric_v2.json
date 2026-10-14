@@ -1,0 +1,290 @@
+{
+  "version": "native_eval50_qualitative_rubric_v2.0",
+  "policy": "Three to five question-entailed scientific core points per qualitative item. Study-specific numbers, paper-local observations, and non-unique implementation details are not required unless the visible question explicitly requests them.",
+  "items": [
+    {
+      "item_id": "native-cdd4bfbe57a2b9",
+      "criteria": [
+        {"criterion_id": "C1", "criterion": "Explains that the extreme energies of cosmic rays provide a natural laboratory beyond terrestrial accelerators for testing particle interactions or theories.", "anchor_groups": [["beyond.*(accelerator|terrestrial)", "exceed.*accelerator", "not.*replic.*laborator"], ["test.*(standard model|theor|particle interaction|qcd|electroweak)", "study particle interaction"]]},
+        {"criterion_id": "C2", "criterion": "Explains that cosmic-ray interactions produce detectable secondary particles and have expanded knowledge of the particle spectrum.", "anchor_groups": [["secondary particle", "pions?.*muons?", "muons?.*neutrinos?"], ["discover", "particle spectrum", "produce secondary"]]},
+        {"criterion_id": "C3", "criterion": "Connects cosmic-ray observations to astrophysical acceleration mechanisms or extreme source environments.", "anchor_groups": [["accelerat.*mechan", "source.*(supernova|active galactic|gamma.ray)", "(supernova|active galactic|gamma.ray).*source"]]},
+        {"criterion_id": "C4", "criterion": "Recognizes that composition or spectral signatures can constrain dark matter or other fundamental/exotic particles without claiming a detection.", "anchor_groups": [["dark matter", "exotic particle"], ["constrain", "nature", "clue", "indirect", "explor"]]}
+      ]
+    },
+    {
+      "item_id": "native-f7ea74c01d61ea",
+      "criteria": [
+        {"criterion_id": "C1", "criterion": "Uses a potential scan at a polarographic working electrode, conventionally a dropping-mercury electrode, while measuring current.", "anchor_groups": [["dropping mercury", "mercury drop", "dme"], ["potential.*(appl|scan)", "appl.*potential"], ["measur.*current", "current.*measur"]]},
+        {"criterion_id": "C2", "criterion": "Explains that Pb2+ is reduced and produces a diffusion-limited current proportional to lead concentration.", "anchor_groups": [["reduction of pb", "pb.*2e", "lead ions?.*reduc"], ["diffusion current", "limiting current"], ["proportional.*concentration", "concentration.*linear"]]},
+        {"criterion_id": "C3", "criterion": "Determines the unknown concentration by comparison with standards or a calibration curve.", "anchor_groups": [["calibration curve", "known concentrations?", "standard lead"], ["unknown", "determine.*concentration", "quantitative analysis"]]},
+        {"criterion_id": "C4", "criterion": "Controls the sample matrix, for example with supporting electrolyte, deoxygenation, pretreatment, or interference control.", "anchor_groups": [["supporting electrolyte", "deoxygen", "dissolved oxygen", "interfering ions?", "sample preparation", "pretreat"]]}
+      ]
+    },
+    {
+      "item_id": "native-d5ca54db9abe88",
+      "criteria": [
+        {"criterion_id": "C1", "criterion": "States that cosmic-ray intensity rises with altitude because atmospheric shielding decreases.", "anchor_groups": [["increas.*altitude", "higher altitude.*higher", "altitude.*increas"], ["less.*atmospheric shield", "reduced atmospheric shield", "atmosphere.*thinner"]]},
+        {"criterion_id": "C2", "criterion": "States that intensity is generally higher toward the poles because geomagnetic shielding or cutoff is less effective than near the equator.", "anchor_groups": [["higher latitude", "near.*poles?", "polar route"], ["geomagnetic cutoff", "magnetic shield.*less", "less.*magnetic shield", "deflect.*less"]]},
+        {"criterion_id": "C3", "criterion": "Connects time spent on high-altitude and especially high-latitude routes to higher accumulated dose for crews or frequent flyers.", "anchor_groups": [["crew|frequent flyer", "airline"], ["higher.*dose", "increased exposure", "accumulat"], ["high altitude", "cruising altitude"]]}
+      ]
+    },
+    {
+      "item_id": "native-c3253f873fdeae",
+      "criteria": [
+        {"criterion_id": "C1", "criterion": "Explains that bending stress or moment produces curvature and that the bending modulus quantifies resistance or energetic cost.", "anchor_groups": [["bending modulus", "helfrich"], ["curvature", "curved"], ["resist", "energy required", "energetic cost", "bending energy"]]},
+        {"criterion_id": "C2", "criterion": "Relates in-plane tension or compression to membrane area strain through an area-expansion modulus or equivalent elastic relation.", "anchor_groups": [["tension|tensile|stretch", "compression"], ["area strain", "area change", "expansion modulus"]]},
+        {"criterion_id": "C3", "criterion": "Distinguishes deformation under stress from a change in intrinsic modulus, while allowing large stress or reorganization to change effective properties.", "anchor_groups": [["modulus.*(remain|constant|intrinsic|not.*change)", "intrinsic.*modul", "effective.*propert"], ["large stress|structural reorgan|small stress|linear"]]}
+      ]
+    },
+    {
+      "item_id": "native-9f51e537ef1a94",
+      "criteria": [
+        {"criterion_id": "C1", "criterion": "Correctly identifies DPC and POLDER as passive optical multi-angle polarimetric instruments with broadly similar aerosol-observation bands.", "anchor_groups": [["polar", "multi.angle", "angular coverage"], ["similar.*band", "spectral.*similar", "both.*(aerosol|satellite)"]], "review_patterns": ["passive microwave", "active optical", "dense pixel", "dual polarization cloud"]},
+        {"criterion_id": "C2", "criterion": "States that DPC can provide up to about 12 viewing angles; no claim that this exceeds POLDER is required.", "anchor_groups": [["12.*(angle|view)"]]},
+        {"criterion_id": "C3", "criterion": "States that DPC provides finer or higher spatial resolution than POLDER; the exact 3.3 km value is optional.", "anchor_groups": [["dpc.*(higher|finer).*spatial resolution", "dpc.*high.resolution", "3\\.3.*km"]]}
+      ]
+    },
+    {
+      "item_id": "native-163df300e9e185",
+      "criteria": [
+        {"criterion_id": "C1", "criterion": "Explains that permafrost thaw exposes or mobilizes previously frozen phosphorus through decomposition, dissolution, or mineral weathering.", "anchor_groups": [["permafrost thaw", "thawing.*permafrost", "as permafrost thaws"], ["releas.*phosph", "decompos", "weather", "hydrolysis", "dissolv"]]},
+        {"criterion_id": "C2", "criterion": "Identifies dissolved phosphate as a bioavailable nutrient that increases phosphorus availability in the water body.", "anchor_groups": [["phosphate", "phosphorus"], ["nutrient availability", "bioavailability", "critical nutrient", "essential nutrient"]]},
+        {"criterion_id": "C3", "criterion": "Connects phosphate enrichment to aquatic productivity or eutrophication while recognizing that mobility can depend on environmental chemistry.", "anchor_groups": [["aquatic life", "productiv", "eutroph", "ecosystem"], ["ph|organic matter|other ions|redox|solubility|nutrient cycling", "increase.*nutrient"]], "min_groups": 1}
+      ]
+    },
+    {
+      "item_id": "native-923c415b7ff94a",
+      "criteria": [
+        {"criterion_id": "C1", "criterion": "Gives niobium's critical temperature as approximately 9.2 K.", "anchor_groups": [["9\\.2[0-9]*\\s*k", "9\\.25\\s*k"]]},
+        {"criterion_id": "C2", "criterion": "Explains that below Tc phonon-mediated attraction forms Cooper pairs.", "anchor_groups": [["cooper pair"], ["phonon|lattice vibration"], ["below.*(critical|tc)", "marks.*below"]]},
+        {"criterion_id": "C3", "criterion": "Connects the paired coherent state to zero resistance or transport without scattering.", "anchor_groups": [["zero.*resistance", "without.*resistance", "without scattering", "lossless"]]},
+        {"criterion_id": "C4", "criterion": "Explains that above Tc thermal disruption of pairing restores normal scattering and finite resistance.", "anchor_groups": [["above.*(critical|tc)", "thermal.*break", "normal state"], ["finite resistance", "normal.*conduct", "break.*cooper"]]}
+      ]
+    },
+    {
+      "item_id": "native-d216c9ed276999",
+      "criteria": [
+        {"criterion_id": "C1", "criterion": "Describes the hypothesis that cosmic-ray ionization can promote aerosol nucleation or cloud-condensation nuclei and thereby cloud formation.", "anchor_groups": [["ioniz"], ["cloud condensation nuclei|ccn|aerosol nucleation|charged particles.*nuclei"]]},
+        {"criterion_id": "C2", "criterion": "Connects possible cloud changes to climate through albedo and/or outgoing infrared radiation.", "anchor_groups": [["cloud cover|cloud formation|cloud changes"], ["albedo|radiative balance|reflect.*sun|trap.*(heat|infrared)"]]},
+        {"criterion_id": "C3", "criterion": "States that the causal strength and climatic importance of the correlation are uncertain, weak, or contested.", "anchor_groups": [["debated|not universally accepted|uncertain|weak|active area|under investigation|divided"]]},
+        {"criterion_id": "C4", "criterion": "Recognizes important confounders or competing cloud controls such as humidity, temperature, atmospheric dynamics, solar variability, or anthropogenic aerosols.", "anchor_groups": [["humidity|temperature|atmospheric dynamics|solar|anthropogenic|other climate drivers|confounding"]]}
+      ]
+    },
+    {
+      "item_id": "native-99bb53aab421f9",
+      "criteria": [
+        {"criterion_id": "C1", "criterion": "Gives the cosmic-ray component of annual natural background dose at sea level as about 0.3 mSv, not the roughly 2.4-3 mSv total natural background dose.", "anchor_groups": [["0\\.3\\s*m?s?v", "0\\.3.*millisievert"]], "review_patterns": ["2\\.4.*m?s?v", "3\\s*m?s?v", "3\\.1.*m?s?v"]},
+        {"criterion_id": "C2", "criterion": "Notes that cosmic-ray dose varies with altitude, latitude, and/or solar activity.", "anchor_groups": [["altitude|latitude|solar activity"]]},
+        {"criterion_id": "C3", "criterion": "Identifies a small stochastic long-term cancer risk from ionizing-radiation DNA damage without overstating deterministic effects at background dose.", "anchor_groups": [["cancer"], ["dna damage|ionizing radiation|mutation"], ["small|slight|low risk|risk.*low"]]},
+        {"criterion_id": "C4", "criterion": "Places the health risk in context as very low at ordinary background exposure and mentions repair or comparison with other sources.", "anchor_groups": [["repair mechanism|dna repair|body.*repair|low compared|risk.*low compared|very small"]]}
+      ]
+    },
+    {
+      "item_id": "native-eae9d5bd9ad215",
+      "criteria": [
+        {"criterion_id": "C1", "criterion": "Uses luminescent absorption and re-emission for spectral conversion so photons better match the photovoltaic absorber, including valid up/down-conversion routes.", "anchor_groups": [["absorb", "absorption"], ["re.emit|emission|emit"], ["upconversion|downconversion|spectral conversion|broader spectrum|bandgap"]]},
+        {"criterion_id": "C2", "criterion": "Describes a physically valid light-management route such as luminescent concentration and guiding/reabsorption, without requiring one unique device geometry.", "anchor_groups": [["luminescent solar concentrator|lsc|total internal reflection|guided.*edge|reabsorbed by the solar cell|light concentration|light trapping"]]},
+        {"criterion_id": "C3", "criterion": "Identifies important material constraints such as high quantum yield, spectral matching, low reabsorption/non-radiative loss, or photochemical stability.", "anchor_groups": [["quantum yield|bandgap|spectral.*match|non.radiative|stability|surface passivation"]]},
+        {"criterion_id": "C4", "criterion": "Connects the optical conversion to increased usable absorption or reduced thermal/transmission losses in the solar cell.", "anchor_groups": [["increase.*efficien|broader spectrum|mitigat.*thermal|reduc.*loss|recycl.*energy|usable"]]}
+      ]
+    },
+    {
+      "item_id": "native-8ed749aebde279",
+      "criteria": [
+        {"criterion_id": "C1", "criterion": "Explains that fall winds drive currents, mixing, and horizontal redistribution that alter nutrient and chlorophyll-a patterns.", "anchor_groups": [["wind.driven|wind pattern|strong wind|wind.*circulation"], ["mixing|redistribut|currents?"]]},
+        {"criterion_id": "C2", "criterion": "Connects redistributed nutrients to phytoplankton biomass or chlorophyll-a, rather than treating chlorophyll-a as independent of nutrient supply.", "anchor_groups": [["nutrient"], ["chlorophyll|phytoplankton"], ["stimulat|increase|availability|concentration"]]},
+        {"criterion_id": "C3", "criterion": "Recognizes that direction, intensity, duration, bathymetry, or stratification determines where accumulation or depletion occurs; paper-specific compass directions are not required.", "anchor_groups": [["direction|intensity|duration|stratification|lake.*depth|physical characteristics|leeward"]]}
+      ]
+    },
+    {
+      "item_id": "native-7f1ab338d1df39",
+      "criteria": [
+        {"criterion_id": "C1", "criterion": "Explains salinity adaptation through ion homeostasis/transport and osmotic adjustment or associated stress signaling.", "anchor_groups": [["salinity|sodium"], ["ion transporter|antiporter|sos1|nhx|ion homeostasis|osmoprotect"]]},
+        {"criterion_id": "C2", "criterion": "Explains heat/cold responses through heat-shock or cold-responsive proteins/genes and protective remodeling or chaperone action.", "anchor_groups": [["temperature|heat|cold"], ["heat shock|hsp|cold.responsive|cor|dehydrin|membrane lipid"]]},
+        {"criterion_id": "C3", "criterion": "Explains heavy-metal detoxification through chelation/sequestration, transport, and/or antioxidant defense.", "anchor_groups": [["heavy metal|metal stress"], ["metallothionein|phytochelatin|sequester|detoxif|antioxidant"]]},
+        {"criterion_id": "C4", "criterion": "Recognizes coordinated signaling and gene-expression regulation rather than only macroscopic symptoms.", "anchor_groups": [["gene expression|transcription factor|signaling pathway|stress response pathway|cross.talk"]]}
+      ]
+    },
+    {
+      "item_id": "native-2b667ae5496ac9",
+      "criteria": [
+        {"criterion_id": "C1", "criterion": "Explains that microplastics are persistent, accumulating pollutants with ecosystem or food-web risks.", "anchor_groups": [["microplastic|mps"], ["persist|accumulat|resistan.*degrad"], ["ecosystem|organism|food chain|pollution|toxicity"]]},
+        {"criterion_id": "C2", "criterion": "Explains that filamentous fungi can colonize and enzymatically oxidize or depolymerize plastic surfaces, offering bioremediation.", "anchor_groups": [["filamentous fungi|fungi|fungal"], ["enzyme|enzymatic|metabolic"], ["degrad|break down|bioremediation"]]},
+        {"criterion_id": "C3", "criterion": "Recognizes that evidence should show polymer change or loss and that rates, enzymes, and real-environment performance still need validation; exact study values are not required.", "anchor_groups": [["ftir|molecular structure|mass loss|polymer chain|further.*research|need.*valid|condition|efficacy"]]}
+      ]
+    },
+    {
+      "item_id": "native-00ef4f82bea5fd",
+      "criteria": [
+        {"criterion_id": "C1", "criterion": "Explains that heteroatom doping changes band structure/Fermi level, carrier density or type, and defect or adsorption states.", "anchor_groups": [["band structure|fermi|energy levels?|carrier concentration|charge carrier"], ["dop"]]},
+        {"criterion_id": "C2", "criterion": "Gives the common substitutional trend of nitrogen toward electron-rich/n-type behavior and boron toward hole-rich/p-type behavior.", "anchor_groups": [["nitrogen.*(electron|n.type|donat)", "n doping.*electron"], ["boron.*(p.type|hole|electron.deficient|decreas.*electron)"]]},
+        {"criterion_id": "C3", "criterion": "States that sulfur's effect depends on bonding configuration, concentration, host, or defect structure rather than assigning a universal carrier type.", "anchor_groups": [["sulfur"], ["depend.*(host|concentration|structure|configur)|depending on the host|specific effects depend"]]},
+        {"criterion_id": "C4", "criterion": "Connects tunable carrier/band properties to transistor switching, conductivity control, or junctions.", "anchor_groups": [["transistor|junction"], ["conductivity|carrier|switch|bandgap"]]},
+        {"criterion_id": "C5", "criterion": "Connects dopant-created defects or surface reactivity to improved chemical/gas/biological sensing.", "anchor_groups": [["sensor"], ["sensitivity|adsorption|surface reactivity|defect"]]}
+      ]
+    },
+    {
+      "item_id": "native-e9d9ff5b22f241",
+      "criteria": [
+        {"criterion_id": "C1", "criterion": "Explains that metal identity, ligand set, coordination geometry/number, oxidation state, and local environment tune metal-center behavior.", "anchor_groups": [["coordination environment|ligand.*geometry|ligand type|coordination.*geometry"], ["oxidation state|metal ion|metal identity"]]},
+        {"criterion_id": "C2", "criterion": "Connects coordination to substrate/ligand binding, catalysis, redox/electron transfer, specificity, or structural stability.", "anchor_groups": [["bind.*substrate|catal|redox|electron transfer|reactivity|specificity|stability"]]},
+        {"criterion_id": "C3", "criterion": "Provides a correct oxygen-binding example such as heme iron coordinated by porphyrin and histidine in hemoglobin/myoglobin.", "anchor_groups": [["hemoglobin|myoglobin"], ["heme|porphyrin"], ["histidine|reversible oxygen|oxygen binding"]]},
+        {"criterion_id": "C4", "criterion": "Provides another correct catalytic, electron-transfer, or structural metalloprotein example and explains the metal site's role.", "anchor_groups": [["carbonic anhydrase|cytochrome c oxidase|nitrogenase|zinc finger"], ["electron transfer|catal|oxygen reduction|nitrogen reduction|stabil"]]}
+      ]
+    },
+    {
+      "item_id": "native-6cd13b37a7cb48",
+      "criteria": [
+        {"criterion_id": "C1", "criterion": "Identifies non-thermal plasma or plasma-activated water as sources of reactive oxygen/nitrogen species relevant to agriculture.", "anchor_groups": [["non.thermal plasma|plasma.activated water|ionized gas|plasma"], ["reactive oxygen|reactive nitrogen|rons|ros|nitrogen oxides"]]},
+        {"criterion_id": "C2", "criterion": "Explains plausible seed or plant benefits such as improved wettability/germination, root growth, nutrient uptake, or defense signaling.", "anchor_groups": [["germination|seed|root|nutrient uptake|plant growth|defense"], ["improv|enhanc|stimulat|promot"]]},
+        {"criterion_id": "C3", "criterion": "Explains pathogen or pest inactivation and a possible reduction in chemical pesticide use.", "anchor_groups": [["pathogen|pest|microorganism"], ["inactiv|eliminat|control|reduce"], ["pesticide|disease"]]},
+        {"criterion_id": "C4", "criterion": "Mentions another food-security pathway such as soil remediation, plasma-assisted nitrogen supply, or reduced post-harvest losses.", "anchor_groups": [["soil quality|soil.*remedi|nitrogen fixation|fertilizer|post.harvest|spoilage|food loss"]]},
+        {"criterion_id": "C5", "criterion": "Recognizes that dose, crop, safety, energy use, or scale must be controlled and validated.", "anchor_groups": [["control.*(parameter|application|duration|power|intensity)|tailored|variability|avoid damage|safety|scale"]]}
+      ]
+    },
+    {
+      "item_id": "native-9b93588e2476aa",
+      "criteria": [
+        {"criterion_id": "C1", "criterion": "Explains that activation releases Ca2+ from the sarcoplasmic reticulum and Ca2+ binds troponin.", "anchor_groups": [["sarcoplasmic reticulum"], ["calcium.*bind.*troponin|ca.*bind.*troponin"]]},
+        {"criterion_id": "C2", "criterion": "Explains that troponin moves tropomyosin to expose actin sites and permit actin-myosin cross-bridge cycling.", "anchor_groups": [["tropomyosin"], ["actin.*binding site|binding sites?.*actin"], ["cross.bridge|myosin.*bind"]]},
+        {"criterion_id": "C3", "criterion": "Relates higher Ca2+ to more activated sites/cross-bridges and greater force, with an eventual saturation rather than unlimited proportionality.", "anchor_groups": [["higher.*calcium|higher.*ca|calcium concentration"], ["more cross.bridge|number of cross.bridge|greater force|force.*increase"], ["saturat|maximum|available binding sites|proportional"]], "min_groups": 2},
+        {"criterion_id": "C4", "criterion": "Explains relaxation through Ca2+ removal/reuptake, for example by SERCA, which restores tropomyosin blocking.", "anchor_groups": [["serca|pump.*calcium.*back|calcium.*reuptake|remov.*calcium|relaxation"]]}
+      ]
+    },
+    {
+      "item_id": "native-444ad5e3701625",
+      "criteria": [
+        {"criterion_id": "C1", "criterion": "Defines the quantum Zeno effect as suppression of quantum evolution or transitions by sufficiently frequent measurements.", "anchor_groups": [["frequent measurement|measurement.*high frequenc"], ["prevent.*evol|suppress.*dynamic|freez.*state|remain.*initial"]]},
+        {"criterion_id": "C2", "criterion": "Connects repeated projective measurement/collapse to repeatedly returning the system to the measured initial subspace.", "anchor_groups": [["projecti|collapse"], ["initial state|eigenstate|reset"]]},
+        {"criterion_id": "C3", "criterion": "Provides a mathematically meaningful survival-probability account in which short-time loss is quadratic and survival tends to one as measurement frequency grows.", "anchor_groups": [["quadratic|t\\^?2|delta t.*2|t²|survival probability"], ["n.*infinity|n.*∞|delta t.*0|tends? to 1|remain.*initial"]], "review_patterns": ["p.*e\\^.*gamma.*t"]},
+        {"criterion_id": "C4", "criterion": "Provides a relevant physical example or application such as inhibited decay/transitions, trapped ions/atoms, state protection, or quantum control.", "anchor_groups": [["trapped ion|trapped atom|decay|transition|quantum comput|quantum information|protect quantum state|decoherence"]]}
+      ]
+    },
+    {
+      "item_id": "native-b8459e9358bd70",
+      "criteria": [
+        {"criterion_id": "C1", "criterion": "Explains that phosphorus availability can limit or stimulate cyanobacterial growth, so elevated TP promotes blooms/eutrophication.", "anchor_groups": [["total phosphorus|tp|phosphorus"], ["critical nutrient|limiting nutrient|nutrient.*growth|promot.*cyanobacter|driv.*growth"], ["bloom|eutroph"]]},
+        {"criterion_id": "C2", "criterion": "Connects blooms to water-quality harms such as oxygen depletion, toxins, reduced clarity, or ecosystem disruption.", "anchor_groups": [["water quality|ecosystem"], ["oxygen depletion|toxins?|degrad|harmful"]]},
+        {"criterion_id": "C3", "criterion": "Derives the management implication of reducing and monitoring external/internal phosphorus inputs using source control or treatment.", "anchor_groups": [["reduc.*(tp|phosphorus)|control.*(tp|phosphorus)|nutrient control"], ["wastewater|runoff|monitor|sediment|input"]]}
+      ]
+    },
+    {
+      "item_id": "native-d8c15e8d76238e",
+      "criteria": [
+        {"criterion_id": "C1", "criterion": "States that water's surface tension decreases as temperature increases.", "anchor_groups": [["surface tension.*decreas.*temperature", "temperature.*increas.*surface tension.*decreas", "higher temperature.*lower surface tension"]]},
+        {"criterion_id": "C2", "criterion": "Explains the trend using increased molecular motion and weakened effective hydrogen-bond/cohesive forces at the interface.", "anchor_groups": [["kinetic energy|molecular motion|thermal motion"], ["hydrogen bond|cohesive force|intermolecular force"]]},
+        {"criterion_id": "C3", "criterion": "Describes a valid method, such as capillary rise, drop weight, Wilhelmy plate, or bubble pressure, performed across controlled temperatures.", "anchor_groups": [["capillary rise|drop.weight|wilhelmy|bubble pressure"], ["temperature.*control|controlled temperature|different temperatures"]]},
+        {"criterion_id": "C4", "criterion": "Explains how an observed force, height, drop property, or pressure yields surface tension, preferably with a relevant relation and basic calibration/cleanliness controls.", "anchor_groups": [["h.*2.*cos|force.*perimeter|measur.*height|drop.*weight|pressure.*yield|surface tension.*calculat"], ["clean|calibrat|contact angle|capillary radius|repeat"]], "min_groups": 1}
+      ]
+    },
+    {
+      "item_id": "native-f689a7d440530a",
+      "criteria": [
+        {"criterion_id": "C1", "criterion": "Describes conditioning waste by classification/segregation, volume reduction, and/or immobilization in durable forms such as glass, cement, or ceramic.", "anchor_groups": [["classif|segregat|volume|compaction|incineration|immobil|encapsul|vitrif|glass|cement|ceramic"]]},
+        {"criterion_id": "C2", "criterion": "Uses engineered multi-barrier storage, shielding, containment, cooling, and facility integrity to prevent releases during storage.", "anchor_groups": [["containment|multi.barrier|shielding|engineered storage|facility integrity|robust engineering"]]},
+        {"criterion_id": "C3", "criterion": "Uses deep geological disposal in a stable formation to isolate long-lived high-level waste from the biosphere.", "anchor_groups": [["deep geological repositor|geological disposal"], ["stable.*(rock|geolog)|isolate|long.term containment"]]},
+        {"criterion_id": "C4", "criterion": "Includes long-term monitoring/maintenance and institutional measures such as regulation, transparent governance, research, or international cooperation.", "anchor_groups": [["monitor|maintenance|regulatory|regulation|public|international cooperation|research"]]}
+      ]
+    },
+    {
+      "item_id": "native-69c66cd23304c0",
+      "criteria": [
+        {"criterion_id": "C1", "criterion": "Identifies early innate recruitment: mast-cell mediators and/or neutrophils that rapidly migrate, phagocytose, and kill pathogens.", "anchor_groups": [["mast cell|neutrophil"], ["first responder|histamine|phagocyt|migrat|recruit"]]},
+        {"criterion_id": "C2", "criterion": "Explains macrophage phagocytosis/cytokine signaling and its transition toward resolution, debris clearance, or repair.", "anchor_groups": [["macrophage"], ["phagocyt|debris|cytokine"], ["repair|resolution|homeostasis"]]},
+        {"criterion_id": "C3", "criterion": "Explains that dendritic antigen presentation activates T cells and links innate to adaptive immunity.", "anchor_groups": [["dendritic"], ["present.*antigen|antigen.present"], ["t cells?|adaptive"]]},
+        {"criterion_id": "C4", "criterion": "Describes adaptive effector roles: helper/cytotoxic/regulatory T-cell coordination and/or B-cell antibody production.", "anchor_groups": [["t cells?|helper t|cytotoxic t|regulatory t"], ["b cells?|antibod|kill.*infected|coordinate"]]},
+        {"criterion_id": "C5", "criterion": "Explains coordinated pathogen elimination followed by controlled resolution and tissue repair, not merely a list of cell names.", "anchor_groups": [["work together|coordinate|interplay|cytokines? and chemokines"], ["eliminate|pathogen"], ["repair|resolution|homeostasis"]]}
+      ]
+    },
+    {
+      "item_id": "native-a11709f37bfe8e",
+      "criteria": [
+        {"criterion_id": "C1", "criterion": "Identifies misfolding/conformational conversion and self-association into toxic oligomers and amyloid fibrils.", "anchor_groups": [["misfold|conformational"], ["oligomer|fibril|amyloid"], ["aggregat|self.associat"]]},
+        {"criterion_id": "C2", "criterion": "Describes core kinetic processes such as primary nucleation, elongation/growth, fragmentation, and secondary nucleation.", "anchor_groups": [["nucleation"], ["elongation|growth"], ["fragmentation|secondary nucleation"]]},
+        {"criterion_id": "C3", "criterion": "Uses kinetic/rate or stochastic mathematical models to predict time/concentration dependence and aggregation dynamics.", "anchor_groups": [["kinetic model|rate equation|differential equation|reaction.diffusion|stochastic|monte carlo"], ["predict|simulate|describe"], ["rate|concentration|dynamics"]]},
+        {"criterion_id": "C4", "criterion": "Connects model predictions to testable interventions that target specific aggregation steps or conditions.", "anchor_groups": [["therapeutic|treatment|intervention|drug"], ["target|design|slow|inhibit|redirect"]]}
+      ]
+    },
+    {
+      "item_id": "native-1ee30871e4ed4a",
+      "criteria": [
+        {"criterion_id": "C1", "criterion": "Shows protonation of propene forming the more stable secondary carbocation and hence Markovnikov regiochemistry.", "anchor_groups": [["protonation|protonat"], ["secondary carbocation|more stable carbocation|carbocation stability"], ["markovnikov|2.propanol"]]},
+        {"criterion_id": "C2", "criterion": "Shows water attacking the carbocation to form a protonated alcohol, followed by deprotonation.", "anchor_groups": [["water.*(attack|nucleophile)|nucleophilic attack.*water"], ["protonated alcohol"], ["deprotonat"]]},
+        {"criterion_id": "C3", "criterion": "Identifies 2-propanol as the final product.", "anchor_groups": [["2.propanol|isopropanol"]]},
+        {"criterion_id": "C4", "criterion": "Explains that the planar carbocation is attacked from either face and the mechanism is non-stereospecific, while recognizing that 2-propanol itself is achiral rather than a racemic mixture.", "anchor_groups": [["planar"], ["either (side|face)|non.stereospecific|not stereospecific"], ["achiral|single.*product|not.*racemic"]], "review_patterns": ["racemic mixture", "hydride or alkyl shift"]}
+      ]
+    },
+    {
+      "item_id": "native-2f12806040f38e",
+      "criteria": [
+        {"criterion_id": "C1", "criterion": "Explains that X-ray spectra arise from quantized inner-shell/core-electron energy levels.", "anchor_groups": [["quantized|energy levels"], ["inner shell|core electron|k[- ]?shell|l[- ]?shell"]]},
+        {"criterion_id": "C2", "criterion": "Explains absorption as core-electron excitation or ionization at a threshold/edge.", "anchor_groups": [["absorb|absorption"], ["inner shell|core|lower energy"], ["eject|ioniz|excited.*higher|absorption edge"]]},
+        {"criterion_id": "C3", "criterion": "Explains emission as a higher-level electron filling a core vacancy and emitting the energy difference.", "anchor_groups": [["emission|emit"], ["fill.*vacan|return.*lower|transition.*back"], ["energy difference|energy gap|e.*h|photon"]]},
+        {"criterion_id": "C4", "criterion": "Relates characteristic line/edge energies and patterns to element identity, electron configuration, atomic number, shielding, or effective nuclear charge.", "anchor_groups": [["fingerprint|unique.*element|identify.*element|electron configuration"], ["atomic number|shielding|effective nuclear|energy level spacing"]]},
+        {"criterion_id": "C5", "criterion": "Recognizes that shifts or fine structure can reveal oxidation state/chemical environment and that related configurations show related patterns.", "anchor_groups": [["oxidation state|chemical environment|chemical shift|fine structure|similar.*configuration|related.*pattern"]]}
+      ]
+    },
+    {
+      "item_id": "native-81dab47e6f1d78",
+      "criteria": [
+        {"criterion_id": "C1", "criterion": "Explains that Ohmic heating/current drive is simple but loses effectiveness at high temperature as plasma resistivity falls.", "anchor_groups": [["ohmic"], ["resistiv"], ["high.*temperature|higher temperature|limited|less efficient"]]},
+        {"criterion_id": "C2", "criterion": "Explains that neutral-beam injection provides strong bulk heating and can drive current/momentum, with substantial beam/power engineering demands.", "anchor_groups": [["neutral beam|nbi"], ["heat|energy transfer"], ["current|momentum"], ["engineering|equipment|power|high.voltage|technical"]], "min_groups": 3},
+        {"criterion_id": "C3", "criterion": "Distinguishes RF roles such as lower-hybrid current drive, ion-cyclotron ion heating, and electron-cyclotron localized electron heating/control, with coupling/access constraints.", "anchor_groups": [["lower hybrid|lhcd"], ["ion cyclotron|icrh"], ["electron cyclotron|ecrh"], ["current drive|localized|wave|coupling|antenna"]], "min_groups": 3},
+        {"criterion_id": "C4", "criterion": "Concludes that no method is universally best and practical operation combines methods according to plasma and engineering constraints.", "anchor_groups": [["depend.*(plasma|factor|goal)|combination|combine|no single|specific goals"], ["feasib|constraint|equipment|engineering|plasma parameters"]]}
+      ]
+    },
+    {
+      "item_id": "native-54981140f07ca2",
+      "criteria": [
+        {"criterion_id": "C1", "criterion": "Contrasts PET's sensitive functional/metabolic and potentially quantitative tracer information with mainly structural X-ray/MRI information.", "anchor_groups": [["functional|metabolic"], ["x.ray|mri"], ["structural|anatomical|tracer uptake|quantitative|sensitivity"]]},
+        {"criterion_id": "C2", "criterion": "Notes ionizing-radiation exposure from PET radiotracers, unlike MRI.", "anchor_groups": [["radioactive tracer|radiotracer|ionizing radiation|radiation exposure"], ["mri.*(no|without).*ionizing|pet.*radiation|unlike.*mri"]]},
+        {"criterion_id": "C3", "criterion": "Notes PET's lower spatial resolution and higher cost/limited availability or longer workflow relative to alternatives.", "anchor_groups": [["lower spatial resolution"], ["cost|expensive|availability|accessible|scan time"]]},
+        {"criterion_id": "C4", "criterion": "Recognizes complementary/hybrid PET-CT or PET-MRI use, or that modality choice depends on the clinical question.", "anchor_groups": [["pet.ct|pet/mri|combined|choice.*clinical|clinical context|depends on.*clinical"]]}
+      ]
+    },
+    {
+      "item_id": "native-cf12a26b5a5ecc",
+      "criteria": [
+        {"criterion_id": "C1", "criterion": "Identifies luciferin as the light-emitting substrate whose oxidation creates an electronically excited product that emits on relaxation.", "anchor_groups": [["luciferin"], ["substrate|molecule"], ["oxid|oxyluciferin"], ["excited.*(product|state)|return.*ground|relax.*emit"]]},
+        {"criterion_id": "C2", "criterion": "Identifies luciferase as the enzyme that binds luciferin and catalyzes its oxygen-dependent oxidation, giving speed and specificity.", "anchor_groups": [["luciferase"], ["enzyme|catal"], ["oxygen|oxidation"], ["specific|activation energy|bind"]], "min_groups": 3},
+        {"criterion_id": "C3", "criterion": "Explains that the coupled reaction converts chemical energy efficiently into visible cold light with little heat.", "anchor_groups": [["chemical energy|energy"], ["visible light|emit.*light|biolumines"], ["little heat|cold light|minimal heat|low heat"]]}
+      ]
+    },
+    {
+      "item_id": "native-860b1ff61747b3",
+      "criteria": [
+        {"criterion_id": "C1", "criterion": "Explains that attainable cosmic-ray energy depends on the source's acceleration mechanism, magnetic field, size, or confinement time.", "anchor_groups": [["accelerat"], ["magnetic field|shock front|fermi|reconnection|source environment"], ["energy|power.law"]]},
+        {"criterion_id": "C2", "criterion": "Associates the broad energy regimes with plausible sources: solar at low energy, Galactic/SNR at intermediate energy, and extragalactic AGN/GRB candidates at ultra-high energy.", "anchor_groups": [["solar"], ["supernova|galactic"], ["active galactic|agn|gamma.ray burst|extragalactic"]]},
+        {"criterion_id": "C3", "criterion": "Explains that magnetic deflection and propagation losses make source attribution energy-dependent and generally harder at lower rigidity.", "anchor_groups": [["deflect|propagation|interstellar medium"], ["source identification|arrival direction|anisotropy|energy dependent"]]},
+        {"criterion_id": "C4", "criterion": "Mentions observational constraints such as spectra, anisotropy, composition, gamma rays, or neutrinos that connect energy to candidate sources.", "anchor_groups": [["spectrum|anisotropy|arrival direction|composition|gamma.ray|neutrino|observational"]]}
+      ]
+    },
+    {
+      "item_id": "native-0275f43271d94f",
+      "criteria": [
+        {"criterion_id": "C1", "criterion": "Explains that high-energy cosmic rays penetrate spacecraft/tissue and cause ionization and DNA/cellular damage.", "anchor_groups": [["penetrat"], ["ioniz|radiation damage"], ["dna|cellular|tissue"]]},
+        {"criterion_id": "C2", "criterion": "Identifies important long-term health risks such as cancer, cataracts, or central-nervous-system/cognitive effects.", "anchor_groups": [["cancer|cataract|central nervous|cognitive|neurological"]]},
+        {"criterion_id": "C3", "criterion": "Describes practical shielding/design, especially hydrogen-rich materials such as water or polyethylene, and recognizes mass/secondary-radiation limitations.", "anchor_groups": [["polyethylene|water|hydrogen.rich|shielding"], ["mass|secondary radiation|trade.off|spacecraft design|shielded area"]]},
+        {"criterion_id": "C4", "criterion": "Includes operational exposure reduction such as monitoring/forecasting, activity scheduling, storm shelters, or limiting mission duration.", "anchor_groups": [["monitor|forecast|schedul|mission duration|exposure time|storm shelter|retreat area"]]}
+      ]
+    },
+    {
+      "item_id": "native-385a44a14dee6e",
+      "criteria": [
+        {"criterion_id": "C1", "criterion": "Explains that smog gases and aerosols absorb/scatter sunlight and reduce irradiance reaching photovoltaic cells.", "anchor_groups": [["absorb|scatter"], ["sunlight|solar radiation|irradiance|light"], ["reduc|decreas|attenuat"]]},
+        {"criterion_id": "C2", "criterion": "Explains that particulate deposition/soiling on panel surfaces blocks light and lowers output.", "anchor_groups": [["particulate|soiling|deposit"], ["surface|panel"], ["block|reduc.*light|lower.*efficien|reduce.*quantum"]]},
+        {"criterion_id": "C3", "criterion": "Explains that reactive pollutants such as ozone/NOx can chemically degrade coatings or panel materials over time.", "anchor_groups": [["ozone|o3|nitrogen oxides|nox"], ["degrad|oxid|damage|chemical reaction"]]},
+        {"criterion_id": "C4", "criterion": "Identifies mitigation through cleaning, pollution control, or resistant materials.", "anchor_groups": [["clean|air.pollution control|reduc.*pollution|resistant material|mitigat"]]}
+      ]
+    },
+    {
+      "item_id": "native-99273534388eb3",
+      "criteria": [
+        {"criterion_id": "C1", "criterion": "Explains that geometry, bonding, and electron distribution change excited-state energy levels and potential-energy surfaces.", "anchor_groups": [["geometry|electron distribution|electronic structure|bonding"], ["potential energy surface|energy levels"]]},
+        {"criterion_id": "C2", "criterion": "Connects state coupling/conical intersections to nonadiabatic relaxation, lifetimes, energy transfer, photochemical paths, or products.", "anchor_groups": [["non.adiabatic coupling|electronic.state coupling|conical intersection|surface hopping|intersystem crossing"], ["relax|lifetime|decay pathway|energy transfer|reaction pathway|product"]]},
+        {"criterion_id": "C3", "criterion": "Names appropriate ab initio excited-state methods such as TD-DFT, CI, multiconfigurational SCF, or coupled-cluster methods and what they calculate.", "anchor_groups": [["td.dft|configuration interaction|\\bci\\b|multiconfigurational|mcscf|coupled cluster"], ["excitation energ|electronic state|molecular orbital|transition dipole|potential energy"]]},
+        {"criterion_id": "C4", "criterion": "Explains how calculated surfaces, gradients/couplings, and time-dependent or trajectory methods are used to simulate excited-state dynamics.", "anchor_groups": [["potential energy surface|coupling|gradient"], ["time.dependent|surface hopping|trajectory|simulate.*dynamic"]]}
+      ]
+    }
+  ]
+}

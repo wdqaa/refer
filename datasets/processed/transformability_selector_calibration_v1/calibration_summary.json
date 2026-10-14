@@ -1,0 +1,33 @@
+{
+  "initial_candidate_sources": 150,
+  "selector_requests": 150,
+  "api_errors": 0,
+  "schema_valid": 137,
+  "schema_invalid": 13,
+  "transformability": {
+    "high": 4,
+    "medium": 55,
+    "low": 78
+  },
+  "strict_high_shortlist": 4,
+  "human_reviewed": 4,
+  "human_worth_transform": 1,
+  "clean_medium_human_reviewed": 15,
+  "clean_medium_worth_transform": 3,
+  "combined_human_reviewed": 19,
+  "combined_human_worth_transform": 4,
+  "qa_pipeline_entries": 0,
+  "high_quality_cross_domain_qa": 0,
+  "gate_result": "failed",
+  "gate_reason": "Only four strict-high sources existed and one survived semantic source review. A secondary offline review of all 15 clean-medium records retained three more, leaving four credible sources in total and still insufficient for the required 10-15 source QA calibration.",
+  "recommended_next_strategy": "two_source_grounded_synthesis",
+  "usage": {
+    "prompt_tokens": 194169,
+    "completion_tokens": 20125,
+    "total_tokens": 214294,
+    "prompt_cache_hit_tokens": 128256,
+    "prompt_cache_miss_tokens": 65913,
+    "estimated_cost_usd_off_peak": 0.022347,
+    "estimated_cost_usd_peak": 0.044693
+  }
+}

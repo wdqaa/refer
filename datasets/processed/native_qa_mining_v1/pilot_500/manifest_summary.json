@@ -1,0 +1,54 @@
+{
+  "config_id": "native-qa-mining-v1.3-pilot-500",
+  "seed": 79,
+  "total": 500,
+  "source_files": 19,
+  "directory_domain": {
+    "astronomy": 84,
+    "biology": 84,
+    "chemistry": 83,
+    "geography": 83,
+    "mathematics": 83,
+    "physics": 83
+  },
+  "surface": {
+    "mcq": 252,
+    "open": 248
+  },
+  "stratum": {
+    "astronomy/mcq": 42,
+    "astronomy/open": 42,
+    "biology/mcq": 42,
+    "biology/open": 42,
+    "chemistry/mcq": 42,
+    "chemistry/open": 41,
+    "geography/mcq": 42,
+    "geography/open": 41,
+    "mathematics/mcq": 42,
+    "mathematics/open": 41,
+    "physics/mcq": 42,
+    "physics/open": 41
+  },
+  "excluded_manifest_records": 90,
+  "excluded_unique_identities": 90,
+  "excluded_unique_exact_qa": 90,
+  "excluded_by_identity": 90,
+  "excluded_by_exact_qa": 0,
+  "source_exact_duplicates_skipped": 1215,
+  "overlap_with_prior_by_identity": 0,
+  "overlap_with_prior_by_exact_qa": 0,
+  "eligible_seen_by_stratum": {
+    "astronomy/mcq": 1866,
+    "astronomy/open": 2697,
+    "biology/mcq": 5453,
+    "biology/open": 21866,
+    "chemistry/mcq": 8335,
+    "chemistry/open": 15985,
+    "geography/mcq": 5329,
+    "geography/open": 30691,
+    "mathematics/mcq": 1350,
+    "mathematics/open": 64954,
+    "physics/mcq": 3847,
+    "physics/open": 16351
+  }
+}

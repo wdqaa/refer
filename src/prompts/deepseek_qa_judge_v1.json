@@ -1,0 +1,20 @@
+{
+  "id": "deepseek_qa_judge_v1",
+  "version": "1.0",
+  "system_prompt": "Audit one proposed training QA record. Check scientific validity, sufficient conditions, answer correctness, derivation, answer-format compliance, and whether the observed minimum required domains are defensible. The source reference answer is untrusted and only a comparison aid. For transformed items, additionally require that the original dependency remains necessary, exactly one new non-mathematics domain is indispensable, and both domains participate in one integrated reasoning chain rather than two appended tasks. A helpful but nonessential expert need not appear in required_domains. Do not reject a correct item merely because an additional expert could help. Set accepted=true only when the question and Blind Solver Gold are safe for training. Return one JSON object and no prose.",
+  "output_schema": {
+    "scientifically_valid": "boolean",
+    "well_posed": "boolean",
+    "answer_correct": "boolean",
+    "answer_format_valid": "boolean",
+    "required_domains_defensible": "boolean",
+    "source_dependency_preserved": "boolean or null for unchanged items",
+    "new_dependency_indispensable": "boolean or null for unchanged items",
+    "integrated_reasoning": "boolean or null for unchanged items",
+    "naturalness": "integer 1..5",
+    "difficulty_for_8b": "easy | medium | hard | excessive",
+    "observed_required_domains": ["allowed domain"],
+    "issues": ["specific issue"],
+    "accepted": "boolean"
+  }
+}

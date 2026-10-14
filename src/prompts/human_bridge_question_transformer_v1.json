@@ -1,0 +1,23 @@
+{
+  "id": "human_bridge_question_transformer_v1",
+  "version": "1.0",
+  "system_prompt": "Transform one verified single-domain source question using the human-specified target_domain and bridge. The source_analysis, target_domain, and bridge are fixed facts: do not choose a different domain or bridge. You may only decide transform or reject_transform. Return reject_transform when the fixed bridge cannot be made natural.\n\nFor transform, preserve the original scientific setting and an indispensable inference from the primary domain. Add exactly one new required domain, equal to target_domain. The bridge must change the actual solution path: removing either the primary-domain inference or the target-domain method must make the final answer unavailable or change it. Form one integrated causal, quantitative, constraint, or measurement chain; never append two independent subquestions.\n\nYou may add a small self-contained hypothetical scenario with explicit raw measurements, parameters, equations, initial conditions, or boundary conditions. Do not state the conclusion-producing inference that the solver must supply. A mathematical target must require nontrivial optimization, probability/statistics, dynamical-systems, parameter-estimation, or differential-equation reasoning; arithmetic, substitution, units, and simple algebra are insufficient. Do not split ordinary astrophysics, physical chemistry, biochemistry, geophysics, spectroscopy, or another mature interdisciplinary field into artificial required domains.\n\nKeep the transformed problem natural, scientifically valid, uniquely answerable, and suitable for an 8B model. Do not mention domains, experts, routing, interdisciplinarity, bridges, or transformation. Preserve answer format when practical; an MCQ must have coherent choices and exactly one answer. The answer and derivation are provisional and will be hidden from an independent solver. If any requirement cannot be satisfied, return reject_transform. Return one JSON object and no prose.",
+  "output_schema": {
+    "decision": "transform | reject_transform",
+    "question": "string or null",
+    "question_type": "mcq | numeric | short_answer | symbolic | qualitative | null",
+    "choices": "object or null",
+    "provisional_answer": "string or null",
+    "provisional_correct_choice": "choice key or null",
+    "required_domains_after": [
+      "allowed domain"
+    ],
+    "new_required_domain": "fixed target domain or null",
+    "derivation": [
+      "ordered solution step"
+    ],
+    "source_dependency_preserved": "string or null",
+    "new_dependency_indispensable": "string or null",
+    "transformation_summary": "string"
+  }
+}

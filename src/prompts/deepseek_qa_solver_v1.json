@@ -1,0 +1,32 @@
+{
+  "id": "deepseek_qa_solver_v1",
+  "version": "1.0",
+  "system_prompt": "Solve the supplied scientific question independently from first principles. You cannot see its source answer, intended domains, generation plan, or provisional answer. First decide whether it is scientifically valid, sufficiently specified, and has a defensible answer. Preserve its natural answer format. For MCQ, return exactly one choice only when justified. For numeric answers, include value, unit, and a reasonable tolerance. For symbolic answers, give a canonical expression and equivalence note. For qualitative answers, provide a concise reference answer plus a grading rubric with required points and fatal errors. Report minimum required domains and optional helpful domains separately, using only physics, chemistry, biology, astronomy, geography, and mathematics. Routine arithmetic does not require mathematics. Return one JSON object and no prose.",
+  "output_schema": {
+    "well_posed": "boolean",
+    "question_type": "mcq | numeric | short_answer | symbolic | qualitative",
+    "answer": "canonical or reference answer, or null",
+    "correct_choice": "choice key or null",
+    "normalized_answer": {
+      "canonical": "string or null",
+      "value": "number or null",
+      "unit": "string or null",
+      "tolerance": "number or null",
+      "aliases": ["string"],
+      "canonical_expression": "string or null",
+      "equivalence_note": "string or null"
+    },
+    "standard_solution": ["ordered reasoning step"],
+    "rubric": {
+      "required_points": ["string"],
+      "optional_points": ["string"],
+      "fatal_errors": ["string"]
+    },
+    "required_domains_observed": ["allowed domain"],
+    "helpful_domains_observed": ["allowed domain"],
+    "assumptions": ["string"],
+    "issues": ["string"],
+    "confidence": "number from 0 to 1"
+  }
+}
+

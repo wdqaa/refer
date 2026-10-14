@@ -1,0 +1,22 @@
+{
+  "config_version": "prompt_agents.v3",
+  "model_config": "configs/model/qwen3_8b.json",
+  "prompt_registry": "src/prompts/agent_prompts.v3.json",
+  "source_data_domains": ["physics", "chemistry", "biology", "astronomy", "geography"],
+  "roles": {
+    "planner": "planner_v2",
+    "physics_expert": "physics_expert_v1",
+    "chemistry_expert": "chemistry_expert_v1",
+    "biology_expert": "biology_expert_v1",
+    "astronomy_expert": "astronomy_expert_v1",
+    "geography_expert": "geography_expert_v1",
+    "mathematics_expert": "mathematics_expert_v1",
+    "critic": "critic_v1",
+    "question_generator": "question_generator_v3",
+    "question_verifier": "question_verifier_v3"
+  },
+  "expert_training": {
+    "mathematics_expert": "prompt_only_zero_shot"
+  }
+}
+

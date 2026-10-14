@@ -1,0 +1,15 @@
+{
+  "total": 14,
+  "route": {
+    "keep_control": 8,
+    "keep_cross_domain": 2,
+    "transform_candidate": 4
+  },
+  "preferred_fusion_relation": {
+    "quantitative_modeling": 2,
+    "constraint_coupling": 1,
+    "measurement_observation": 1
+  },
+  "planned_qa_api_calls_max": 36,
+  "calibration_gate": "at_least_2_non_mechanism_transforms_survive_semantic_review"
+}

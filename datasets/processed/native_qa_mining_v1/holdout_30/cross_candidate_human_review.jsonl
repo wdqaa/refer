@@ -1,0 +1,8 @@
+{"native_qa_id":"native-1d7a527ea527d2","machine_priority":"high","human_accept":true,"note":"Dark-matter evidence and its astronomical detection require both physical mechanism and astronomical observations."}
+{"native_qa_id":"native-5c84dfc91437d5","machine_priority":"high","human_accept":true,"note":"PM2.5 prediction explicitly requires spatial/environmental interpretation and a machine-learning method."}
+{"native_qa_id":"native-28a362355cd74e","machine_priority":"high","human_accept":true,"note":"The answer must connect physical dark-matter properties with astronomical abundance and detection evidence."}
+{"native_qa_id":"native-44a78d8b684f73","machine_priority":"high","human_accept":true,"note":"The question asks for an astronomical assessment of two distinct physical dark-matter candidates."}
+{"native_qa_id":"native-e1b990d35a40a7","machine_priority":"high","human_accept":true,"note":"Explaining CFC chemistry and comparing geographically different ozone impacts makes both domains necessary."}
+{"native_qa_id":"native-c68b586cfe62fb","machine_priority":"medium","human_accept":true,"note":"The comparison depends on nuclear-physics energy release and chemical explosive behavior."}
+{"native_qa_id":"native-7ce150469eef75","machine_priority":"high","human_accept":false,"note":"Invalid control: the requested radial-velocity detection limit lacks numerical constraints, so the answer is not grounded."}
+{"native_qa_id":"native-961758b6c3150d","machine_priority":"medium","human_accept":false,"note":"Invalid control: ANOVA cannot be carried out without group observations or sufficient statistics."}

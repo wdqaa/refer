@@ -1,0 +1,31 @@
+{
+  "id": "bridge-guided-calibration-v1",
+  "source_pool": "datasets/processed/transformability_selector_calibration_v1/candidate_sources_150.jsonl",
+  "items": [
+    {"selector_source_id": "selector-v1-chemistry-11516", "primary_domain": "chemistry"},
+    {"selector_source_id": "selector-v1-astronomy-1585", "primary_domain": "astronomy"},
+    {"selector_source_id": "selector-v1-biology-18691", "primary_domain": "physics"},
+    {"selector_source_id": "selector-v1-chemistry-6082", "primary_domain": "chemistry"},
+    {"selector_source_id": "selector-v1-physics-4595", "primary_domain": "physics"},
+    {"selector_source_id": "selector-v1-chemistry-17990", "primary_domain": "chemistry"},
+    {"selector_source_id": "selector-v1-chemistry-18189", "primary_domain": "chemistry"},
+    {"selector_source_id": "selector-v1-biology-7042", "primary_domain": "biology"},
+    {"selector_source_id": "selector-v1-physics-895", "primary_domain": "physics"},
+    {"selector_source_id": "selector-v1-geography-597", "primary_domain": "geography"},
+    {"selector_source_id": "selector-v1-geography-4434", "primary_domain": "geography"},
+    {"selector_source_id": "selector-v1-biology-1183", "primary_domain": "biology"},
+    {"selector_source_id": "selector-v1-chemistry-2043", "primary_domain": "chemistry"},
+    {"selector_source_id": "selector-v1-astronomy-766", "primary_domain": "astronomy"},
+    {"selector_source_id": "selector-v1-biology-11471", "primary_domain": "biology"},
+    {"selector_source_id": "selector-v1-astronomy-1251", "primary_domain": "astronomy"},
+    {"selector_source_id": "selector-v1-astronomy-1589", "primary_domain": "astronomy"},
+    {"selector_source_id": "selector-v1-chemistry-8790", "primary_domain": "chemistry"},
+    {"selector_source_id": "selector-v1-astronomy-85", "primary_domain": "physics"},
+    {"selector_source_id": "selector-v1-astronomy-924", "primary_domain": "biology"},
+    {"selector_source_id": "selector-v1-biology-12629", "primary_domain": "biology"},
+    {"selector_source_id": "selector-v1-biology-19668", "primary_domain": "biology"},
+    {"selector_source_id": "selector-v1-biology-17283", "primary_domain": "biology"},
+    {"selector_source_id": "selector-v1-chemistry-15794", "primary_domain": "chemistry"},
+    {"selector_source_id": "selector-v1-chemistry-19374", "primary_domain": "chemistry"}
+  ]
+}

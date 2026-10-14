@@ -1,0 +1,8 @@
+{
+  "review_version": "codex_semantic_review.v2",
+  "policy": "Retain fresh validation items only after complete Judge v2 resolution and independent semantic review.",
+  "items": {
+    "qa-validation-v2-biology-8591": {"accepted": true, "reason": "The ace-1 inheritance mechanism and distinct insecticide target chemistry are both necessary for selecting pyrethroid over carbamate."},
+    "qa-validation-v2-geography-19687": {"accepted": true, "reason": "Humid-continental climate identification and biological leaf-loss/dormancy mechanisms form one natural solution chain."}
+  }
+}

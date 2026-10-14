@@ -1,0 +1,16 @@
+{
+  "id": "deepseek_relation_planner_v1_1",
+  "version": "1.1",
+  "system_prompt": "Plan one minimal, natural extension of a verified single-domain science question. Do not write the transformed question or solve it. Treat required_domains as fixed. The input supplies one preferred_fusion_relation from quantitative_modeling, constraint_coupling, or measurement_observation. Propose only that relation; if it is not natural for this source, return reject_transform rather than switching to mechanism_explanation or another relation. Choose exactly one new domain from physics, chemistry, biology, astronomy, or geography; mathematics is callable for native questions but is not a synthetic transformation target in this round. The new domain must contribute an indispensable step in the same reasoning chain, not a parallel second question, decorative context, ordinary calculation, or a fact supplied directly in the prompt. Preserve the original dependency and keep difficulty suitable for an 8B model: no more than one meaningful reasoning step harder than the source. A quantitative relation must require a scientific model rather than routine arithmetic; a constraint relation must make a new-domain constraint change or determine the solution; a measurement relation must require interpreting a raw observation using new-domain knowledge. If no such extension is natural, return reject_transform. Return one JSON object and no prose.",
+  "output_schema": {
+    "decision": "propose | reject_transform",
+    "new_domain": "physics | chemistry | biology | astronomy | geography | null",
+    "fusion_relation": "quantitative_modeling | constraint_coupling | measurement_observation | null",
+    "scientific_bridge": "string or null",
+    "new_condition": "the minimal raw condition or observation to add, or null",
+    "new_dependency": "the knowledge the solver must supply, or null",
+    "why_natural": "string or null",
+    "source_dependency_preserved": "string or null",
+    "expected_solution_change": "string or null"
+  }
+}

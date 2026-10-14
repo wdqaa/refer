@@ -1,0 +1,22 @@
+{
+  "seed": 131,
+  "eval_total": 50,
+  "eval_domain_type": {
+    "native_cross_domain": 25,
+    "single": 25
+  },
+  "eval_question_type": {
+    "qualitative": 32,
+    "mcq": 18
+  },
+  "eval_required_domains": {
+    "astronomy": 2,
+    "physics": 17,
+    "biology": 28,
+    "chemistry": 22,
+    "geography": 6,
+    "mathematics": 1
+  },
+  "remaining_total": 164,
+  "overlap": 0
+}

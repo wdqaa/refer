@@ -1,0 +1,83 @@
+{
+  "version": "native_eval48_refinement_adjudications_v1.0",
+  "policy": "Review only ambiguous rubric matches, material scientific errors, and meaningful arm differences. Missing rubric content alone is not a scientific error.",
+  "coverage_overrides": [
+    {"item_id": "native-00ef4f82bea5fd", "arm": "expert_critique", "criterion_id": "C3", "covered": true, "reason": "The answer makes sulfur's effect conditional on dopant concentration, location, defects, and strain rather than assigning a universal carrier type."},
+    {"item_id": "native-00ef4f82bea5fd", "arm": "expert_critique", "criterion_id": "C5", "covered": false, "reason": "It names sensors and defects but never connects dopant-created reactive/adsorption sites to the sensing response."},
+    {"item_id": "native-00ef4f82bea5fd", "arm": "self_refine", "criterion_id": "C5", "covered": false, "reason": "It names sensors without explaining a dopant-created adsorption or surface-reactivity mechanism."},
+
+    {"item_id": "native-1ee30871e4ed4a", "arm": "expert_critique", "criterion_id": "C1", "covered": false, "reason": "It does not identify direct formation of the secondary carbocation or Markovnikov regiochemistry and incorrectly inserts a rearrangement."},
+    {"item_id": "native-1ee30871e4ed4a", "arm": "expert_critique", "criterion_id": "C2", "covered": false, "reason": "It does not give the correct water-attack, protonated-alcohol, then deprotonation sequence."},
+    {"item_id": "native-1ee30871e4ed4a", "arm": "expert_critique", "criterion_id": "C4", "covered": false, "reason": "It incorrectly describes a racemic outcome even though 2-propanol is achiral."},
+    {"item_id": "native-1ee30871e4ed4a", "arm": "self_refine", "criterion_id": "C1", "covered": false, "reason": "Naming 2-propanol does not repair the incorrect hydride/alkyl-shift mechanism or establish the secondary-carbocation route."},
+    {"item_id": "native-1ee30871e4ed4a", "arm": "self_refine", "criterion_id": "C2", "covered": false, "reason": "The protonated-alcohol intermediate and deprotonation step are absent."},
+    {"item_id": "native-1ee30871e4ed4a", "arm": "self_refine", "criterion_id": "C4", "covered": false, "reason": "It incorrectly claims a stereoisomer mixture for achiral 2-propanol."},
+
+    {"item_id": "native-2f12806040f38e", "arm": "expert_critique", "criterion_id": "C1", "covered": true, "reason": "It explicitly attributes characteristic X-rays to K/L inner-shell transitions."},
+    {"item_id": "native-2f12806040f38e", "arm": "self_refine", "criterion_id": "C1", "covered": true, "reason": "It explicitly attributes characteristic X-rays to inner-shell transitions."},
+    {"item_id": "native-2f12806040f38e", "arm": "expert_critique", "criterion_id": "C2", "covered": false, "reason": "Absorption is described as generic excitation without a core threshold, edge, or core ionization."},
+    {"item_id": "native-2f12806040f38e", "arm": "self_refine", "criterion_id": "C2", "covered": false, "reason": "Absorption is described as generic excitation without a core threshold, edge, or core ionization."},
+
+    {"item_id": "native-444ad5e3701625", "arm": "expert_critique", "criterion_id": "C3", "covered": false, "reason": "It supplies no short-time quadratic survival law or repeated-measurement limit despite the request for formulas."},
+    {"item_id": "native-6cd13b37a7cb48", "arm": "expert_critique", "criterion_id": "C1", "covered": false, "reason": "It mentions reactive species only indirectly and does not identify agricultural RONS or plasma-activated water."},
+    {"item_id": "native-6cd13b37a7cb48", "arm": "self_refine", "criterion_id": "C1", "covered": false, "reason": "It does not identify RONS or plasma-activated water as the central treatment chemistry."},
+
+    {"item_id": "native-860b1ff61747b3", "arm": "expert_critique", "criterion_id": "C2", "covered": false, "reason": "It omits the low-energy solar regime and does not map source classes across the requested broad energy regimes."},
+    {"item_id": "native-860b1ff61747b3", "arm": "self_refine", "criterion_id": "C2", "covered": false, "reason": "It omits the low-energy solar regime and does not map source classes across the requested broad energy regimes."},
+    {"item_id": "native-860b1ff61747b3", "arm": "expert_critique", "criterion_id": "C3", "covered": false, "reason": "It mentions deflection and losses without explaining the rigidity/energy dependence of source attribution."},
+    {"item_id": "native-860b1ff61747b3", "arm": "self_refine", "criterion_id": "C3", "covered": false, "reason": "It mentions deflection without explaining why attribution is harder at lower rigidity."},
+    {"item_id": "native-923c415b7ff94a", "arm": "expert_critique", "criterion_id": "C4", "covered": false, "reason": "It does not explain thermal pair breaking and restoration of finite-resistance scattering above Tc."},
+    {"item_id": "native-923c415b7ff94a", "arm": "self_refine", "criterion_id": "C4", "covered": false, "reason": "It does not explain thermal pair breaking and restoration of finite-resistance scattering above Tc."},
+
+    {"item_id": "native-99273534388eb3", "arm": "expert_critique", "criterion_id": "C4", "covered": false, "reason": "It names surfaces and methods but does not explain time propagation/trajectories using gradients or couplings."},
+    {"item_id": "native-99273534388eb3", "arm": "self_refine", "criterion_id": "C2", "covered": true, "reason": "It connects nonadiabatic couplings and conical intersections to transitions between electronic states."},
+    {"item_id": "native-99273534388eb3", "arm": "self_refine", "criterion_id": "C4", "covered": false, "reason": "It does not explain a time-dependent or trajectory procedure for simulating the dynamics."},
+
+    {"item_id": "native-99bb53aab421f9", "arm": "expert_critique", "criterion_id": "C1", "covered": true, "reason": "It clearly distinguishes the approximately 0.3 mSv cosmic component from roughly 2.4 mSv total natural background."},
+    {"item_id": "native-99bb53aab421f9", "arm": "self_refine", "criterion_id": "C1", "covered": true, "reason": "It gives approximately 0.3 mSv for the cosmic component."},
+    {"item_id": "native-99bb53aab421f9", "arm": "expert_critique", "criterion_id": "C3", "covered": true, "reason": "It describes DNA damage and a qualified small cancer-risk increase without deterministic overstatement."},
+    {"item_id": "native-99bb53aab421f9", "arm": "self_refine", "criterion_id": "C3", "covered": false, "reason": "It overstates organ-specific cancer, cardiovascular, and cognitive outcomes for ordinary background exposure."},
+
+    {"item_id": "native-9b93588e2476aa", "arm": "self_refine", "criterion_id": "C4", "covered": false, "reason": "It mentions relaxation rate but not calcium removal/reuptake or restoration of tropomyosin blocking."},
+    {"item_id": "native-9f51e537ef1a94", "arm": "expert_critique", "criterion_id": "C1", "covered": false, "reason": "It misidentifies DPC and fails to establish that both instruments are comparable passive multi-angle optical polarimeters."},
+    {"item_id": "native-9f51e537ef1a94", "arm": "self_refine", "criterion_id": "C1", "covered": false, "reason": "It misidentifies DPC and fails to establish that both instruments are comparable passive multi-angle optical polarimeters."},
+    {"item_id": "native-9f51e537ef1a94", "arm": "expert_critique", "criterion_id": "C3", "covered": false, "reason": "It reverses the spatial-resolution comparison by claiming POLDER is higher resolution."},
+    {"item_id": "native-9f51e537ef1a94", "arm": "self_refine", "criterion_id": "C3", "covered": false, "reason": "It reverses the spatial-resolution comparison by claiming POLDER is higher resolution."},
+
+    {"item_id": "native-c3253f873fdeae", "arm": "expert_critique", "criterion_id": "C1", "covered": true, "reason": "Defining bending modulus as the energy required to bend the bilayer semantically covers resistance to curvature, consistent with the Direct adjudication."},
+    {"item_id": "native-c3253f873fdeae", "arm": "expert_critique", "criterion_id": "C2", "covered": false, "reason": "No membrane area strain or area-expansion relation is given."},
+    {"item_id": "native-c3253f873fdeae", "arm": "self_refine", "criterion_id": "C2", "covered": false, "reason": "No membrane area strain or area-expansion relation is given."},
+    {"item_id": "native-cdd4bfbe57a2b9", "arm": "expert_critique", "criterion_id": "C2", "covered": false, "reason": "It mentions atmospheric secondaries but not particle discovery or expansion of the known particle spectrum."},
+    {"item_id": "native-cf12a26b5a5ecc", "arm": "expert_critique", "criterion_id": "C3", "covered": false, "reason": "It explains visible emission and efficiency but not the defining low-heat/cold-light property."},
+    {"item_id": "native-cf12a26b5a5ecc", "arm": "self_refine", "criterion_id": "C3", "covered": false, "reason": "It explains visible emission and efficiency but not the defining low-heat/cold-light property."},
+
+    {"item_id": "native-d216c9ed276999", "arm": "expert_critique", "criterion_id": "C1", "covered": true, "reason": "It correctly presents ionization as potentially promoting aerosol formation/growth toward CCN and states the uncertainty."},
+    {"item_id": "native-d216c9ed276999", "arm": "self_refine", "criterion_id": "C1", "covered": false, "reason": "Its reasoning again treats freshly charged particles as CCN rather than possible promoters of aerosol nucleation/growth."},
+    {"item_id": "native-d5ca54db9abe88", "arm": "expert_critique", "criterion_id": "C2", "covered": false, "reason": "It attributes the latitude effect to weaker field magnitude rather than lower geomagnetic cutoff/effective shielding."},
+    {"item_id": "native-d5ca54db9abe88", "arm": "self_refine", "criterion_id": "C2", "covered": false, "reason": "It attributes the latitude effect to weaker field magnitude rather than lower geomagnetic cutoff/effective shielding."},
+    {"item_id": "native-d8c15e8d76238e", "arm": "expert_critique", "criterion_id": "C3", "covered": false, "reason": "It lists valid methods but does not state that measurements are repeated at controlled temperatures."},
+    {"item_id": "native-d8c15e8d76238e", "arm": "self_refine", "criterion_id": "C3", "covered": false, "reason": "It lists valid methods but does not state that measurements are repeated at controlled temperatures."},
+    {"item_id": "native-d8c15e8d76238e", "arm": "expert_critique", "criterion_id": "C4", "covered": true, "reason": "It explains that ring/plate detachment force or drop count is the observed quantity used to obtain surface tension."},
+    {"item_id": "native-d8c15e8d76238e", "arm": "self_refine", "criterion_id": "C4", "covered": true, "reason": "It explains that ring/plate detachment force or drop count is the observed quantity used to obtain surface tension."},
+    {"item_id": "native-f7ea74c01d61ea", "arm": "expert_critique", "criterion_id": "C2", "covered": true, "reason": "In context, electrochemical reduction/oxidation at the DME plus diffusion current proportional to lead concentration covers the analytical mechanism, consistent with Direct."},
+    {"item_id": "native-f7ea74c01d61ea", "arm": "self_refine", "criterion_id": "C2", "covered": true, "reason": "In context, electrochemical reduction/oxidation at the DME plus diffusion current proportional to lead concentration covers the analytical mechanism, consistent with Direct."}
+  ],
+  "scientific_errors": [
+    {"item_id": "native-1ee30871e4ed4a", "arm": "expert_critique", "error_id": "E1", "claim": "Propene hydration undergoes a hydride or alkyl shift.", "reason": "Protonation already gives the secondary isopropyl carbocation, so no stabilizing rearrangement occurs."},
+    {"item_id": "native-1ee30871e4ed4a", "arm": "expert_critique", "error_id": "E2", "claim": "Planar attack in propene hydration produces a racemic mixture.", "reason": "The product is achiral 2-propanol, not a racemic pair."},
+    {"item_id": "native-1ee30871e4ed4a", "arm": "self_refine", "error_id": "E1", "claim": "Propene hydration undergoes a hydride or alkyl shift.", "reason": "Protonation already gives the secondary isopropyl carbocation, so no stabilizing rearrangement occurs."},
+    {"item_id": "native-1ee30871e4ed4a", "arm": "self_refine", "error_id": "E2", "claim": "Propene hydration produces a mixture of stereoisomers whose ratio depends on pathway or solvent.", "reason": "The product is achiral 2-propanol, so this stereochemical claim is inapplicable."},
+
+    {"item_id": "native-9f51e537ef1a94", "arm": "expert_critique", "error_id": "E1", "claim": "DPC is a Dual Polarization Cloud instrument focused on cloud/precipitation and POLDER has higher spatial resolution.", "reason": "DPC is the Directional Polarimetric Camera for aerosol/cloud remote sensing, and it has finer spatial resolution than POLDER."},
+    {"item_id": "native-9f51e537ef1a94", "arm": "self_refine", "error_id": "E1", "claim": "DPC is a Dual Polarization Cloud instrument focused on cloud/precipitation and POLDER has higher spatial resolution.", "reason": "DPC is the Directional Polarimetric Camera for aerosol/cloud remote sensing, and it has finer spatial resolution than POLDER."},
+    {"item_id": "native-eae9d5bd9ad215", "arm": "expert_critique", "error_id": "E1", "claim": "Added luminescent material converts a host solar cell's non-radiative recombination losses into radiative emission for reabsorption.", "reason": "Spectral converters redirect incident photons; they do not generally recover the host cell's already dissipated non-radiative recombination loss."},
+    {"item_id": "native-eae9d5bd9ad215", "arm": "self_refine", "error_id": "E1", "claim": "Added luminescent material converts a host solar cell's non-radiative recombination losses into radiative emission for reabsorption.", "reason": "Spectral converters redirect incident photons; they do not generally recover the host cell's already dissipated non-radiative recombination loss."},
+    {"item_id": "native-d5ca54db9abe88", "arm": "expert_critique", "error_id": "E1", "claim": "Earth's magnetic field is stronger near the equator and weaker at high latitude.", "reason": "The radiation trend is governed by geomagnetic cutoff and field geometry; surface field magnitude is not simply weaker at the poles."},
+    {"item_id": "native-d5ca54db9abe88", "arm": "self_refine", "error_id": "E1", "claim": "Earth's magnetic field is stronger near the equator and weaker at the poles.", "reason": "The radiation trend is governed by geomagnetic cutoff and field geometry; surface field magnitude is not simply weaker at the poles."},
+    {"item_id": "native-54981140f07ca2", "arm": "expert_critique", "error_id": "E1", "claim": "Functional information is not available with MRI.", "reason": "MRI has functional and physiological variants; PET is distinguished by tracer-based molecular/metabolic sensitivity."},
+    {"item_id": "native-54981140f07ca2", "arm": "self_refine", "error_id": "E1", "claim": "Functional or metabolic information is not available with MRI.", "reason": "MRI has functional and physiological variants; PET is distinguished by tracer-based molecular/metabolic sensitivity."},
+    {"item_id": "native-f7ea74c01d61ea", "arm": "expert_critique", "error_id": "E1", "claim": "The Ilkovic diffusion-current condition requires a well-stirred solution and the supporting electrolyte ensures stirring.", "reason": "Classical diffusion-controlled polarography uses an unstirred solution; supporting electrolyte suppresses migration rather than providing stirring."},
+    {"item_id": "native-d216c9ed276999", "arm": "self_refine", "error_id": "E1", "claim": "Charged particles freshly created by cosmic-ray ionization may themselves act as cloud-condensation nuclei.", "reason": "Ionization may promote aerosol nucleation and growth toward CCN sizes; molecular ions are not ordinary CCN."},
+    {"item_id": "native-99bb53aab421f9", "arm": "self_refine", "error_id": "E1", "claim": "Ordinary sea-level cosmic-ray background specifically causes lung/breast cancer, cardiovascular disease, and cognitive decline.", "reason": "Those deterministic/specific outcomes are overstated at ordinary background dose; the defensible effect is a very small stochastic cancer risk."}
+  ]
+}

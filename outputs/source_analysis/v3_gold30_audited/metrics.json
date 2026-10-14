@@ -1,0 +1,28 @@
+{
+  "total": 30,
+  "parsed": 30,
+  "parse_success_rate": 1.0,
+  "validity_accuracy": 0.9333,
+  "primary_domain_accuracy": 0.9333,
+  "domain_exact_match_accuracy": 0.9,
+  "decision_accuracy": 0.6667,
+  "cross_domain_precision": 1.0,
+  "cross_domain_recall": 0.8,
+  "math_false_positive_rate": 0.0,
+  "math_false_positive_count": "0/11",
+  "subfield_false_positive_rate": 0.0,
+  "subfield_false_positive_count": "0/5",
+  "invalid_domain_output_rate": 0.0,
+  "per_category_domain_exact_match": {
+    "directory_label_mismatch": 0.8,
+    "natural_cross_domain": 0.8,
+    "ordinary_math_not_domain": 1.0,
+    "single_domain": 1.0,
+    "subfield_not_new_domain": 1.0,
+    "surface_cross_actual_single": 0.8
+  },
+  "prompt_version": "source_analyzer_v3",
+  "model": "Qwen/Qwen3-8B",
+  "seed": 42,
+  "gold_path": "datasets/metadata/source_analysis_gold_v1.jsonl"
+}

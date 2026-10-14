@@ -1,0 +1,53 @@
+{
+  "source_files": 19,
+  "raw_non_mixed_records": 180029,
+  "exact_unique_question_answer_pairs": 178814,
+  "exact_duplicate_records": 1215,
+  "domain": {
+    "astronomy": 4585,
+    "biology": 27540,
+    "chemistry": 24391,
+    "geography": 36426,
+    "mathematics": 66858,
+    "physics": 20229
+  },
+  "surface": {
+    "mcq": 26501,
+    "open": 153528
+  },
+  "file": {
+    "astronomy/astronomy_test500.json": 500,
+    "astronomy/astronomy_train.jsonl": 3680,
+    "astronomy/supergpqa_astro.jsonl": 405,
+    "biology/MMLU-biology.jsonl": 717,
+    "biology/biology_test.jsonl": 3000,
+    "biology/biology_train.jsonl": 23823,
+    "chemistry/MMLU-chemistry.jsonl": 1132,
+    "chemistry/chemistry_test.json": 2496,
+    "chemistry/chemistry_train.jsonl": 20763,
+    "geography/geography.jsonl": 278,
+    "geography/geography_test.json": 4000,
+    "geography/geography_train.jsonl": 31999,
+    "geography/mmlu-geography.jsonl": 149,
+    "math/math_test.jsonl": 3997,
+    "math/math_train.jsonl": 61510,
+    "math/mmlu-math.jsonl": 1351,
+    "physics/mmlu-physics.jsonl": 1299,
+    "physics/physics_test.json": 1720,
+    "physics/physics_train.jsonl": 17210
+  },
+  "mixed_train_excluded_as_known_duplicate": true,
+  "calibration_records": 60,
+  "calibration_group": {
+    "existing_gold": 30,
+    "fresh_stratified": 30
+  },
+  "calibration_directory_domain": {
+    "astronomy": 12,
+    "biology": 8,
+    "chemistry": 9,
+    "physics": 18,
+    "mathematics": 8,
+    "geography": 5
+  }
+}

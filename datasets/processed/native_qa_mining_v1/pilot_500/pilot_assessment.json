@@ -1,0 +1,80 @@
+{
+  "experiment_id": "EXP032",
+  "prompt_version": "native-qa-classifier-v1.3",
+  "total": 500,
+  "schema_valid": 496,
+  "technical_schema_failures": 4,
+  "machine_valid": 452,
+  "machine_high_single": 141,
+  "machine_high_cross": 67,
+  "high_cross_human_review": {
+    "not_cross_domain": 43,
+    "reject_qa": 7,
+    "accept_cross": 17,
+    "acceptance_rate": 0.2537
+  },
+  "medium_cross_human_review": {
+    "reject_qa": 5,
+    "not_cross_domain": 8,
+    "accept_cross": 18,
+    "acceptance_rate": 0.5806
+  },
+  "sampled_audits": {
+    "high_single": {
+      "sampled": 12,
+      "human_agree": 12,
+      "agreement_rate": 1.0
+    },
+    "invalid_low": {
+      "sampled": 12,
+      "human_agree": 9,
+      "agreement_rate": 0.75
+    }
+  },
+  "verified_high_cross": 35,
+  "reviewed_reclassified_single": 51,
+  "high_single_human_review": {
+    "total": 141,
+    "keep_high": 116,
+    "downgrade_medium": 12,
+    "reject": 13
+  },
+  "reviewed_native_single_total": 179,
+  "reviewed_native_qa_total": 214,
+  "reviewed_distribution": {
+    "domain_type": {
+      "single": 179,
+      "native_cross_domain": 35
+    },
+    "keep_priority": {
+      "high": 176,
+      "medium": 38
+    },
+    "question_type": {
+      "mcq": 113,
+      "qualitative": 78,
+      "short_answer": 10,
+      "numeric": 13
+    },
+    "required_domains": {
+      "astronomy": 32,
+      "physics": 57,
+      "biology": 67,
+      "chemistry": 49,
+      "geography": 14,
+      "mathematics": 31
+    }
+  },
+  "api_usage": {
+    "prompt_tokens": 211186,
+    "completion_tokens": 31016,
+    "total_tokens": 242202,
+    "prompt_cache_hit_tokens": 51200,
+    "prompt_cache_miss_tokens": 159986
+  },
+  "actual_cost_usd": {
+    "off_peak": 0.042761,
+    "peak": 0.085522
+  },
+  "decision": "stop_before_full_scan"
+}

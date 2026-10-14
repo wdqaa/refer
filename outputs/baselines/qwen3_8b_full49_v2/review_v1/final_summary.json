@@ -1,0 +1,152 @@
+{
+  "manual_judgments": 116,
+  "arms": {
+    "direct": {
+      "correct": 16,
+      "total": 49,
+      "accuracy": 0.32653061224489793,
+      "by_question_type": {
+        "mcq": {
+          "true": 6,
+          "false": 2
+        },
+        "numeric": {
+          "false": 2,
+          "true": 1
+        },
+        "qualitative": {
+          "false": 24,
+          "true": 1
+        },
+        "short_answer": {
+          "true": 7,
+          "false": 5
+        },
+        "symbolic": {
+          "true": 1
+        }
+      },
+      "by_origin_type": {
+        "native_cross_domain": {
+          "false": 9
+        },
+        "native_single": {
+          "true": 12,
+          "false": 15
+        },
+        "transformed_cross_domain": {
+          "false": 9,
+          "true": 4
+        }
+      }
+    },
+    "routed_multi_agent": {
+      "correct": 20,
+      "total": 49,
+      "accuracy": 0.40816326530612246,
+      "by_question_type": {
+        "mcq": {
+          "true": 6,
+          "false": 2
+        },
+        "numeric": {
+          "true": 2,
+          "false": 1
+        },
+        "qualitative": {
+          "false": 22,
+          "true": 3
+        },
+        "short_answer": {
+          "true": 8,
+          "false": 4
+        },
+        "symbolic": {
+          "true": 1
+        }
+      },
+      "by_origin_type": {
+        "native_cross_domain": {
+          "false": 9
+        },
+        "native_single": {
+          "true": 15,
+          "false": 12
+        },
+        "transformed_cross_domain": {
+          "false": 8,
+          "true": 5
+        }
+      }
+    },
+    "oracle_multi_agent": {
+      "correct": 20,
+      "total": 49,
+      "accuracy": 0.40816326530612246,
+      "by_question_type": {
+        "mcq": {
+          "true": 7,
+          "false": 1
+        },
+        "numeric": {
+          "true": 2,
+          "false": 1
+        },
+        "qualitative": {
+          "false": 23,
+          "true": 2
+        },
+        "short_answer": {
+          "true": 8,
+          "false": 4
+        },
+        "symbolic": {
+          "true": 1
+        }
+      },
+      "by_origin_type": {
+        "native_cross_domain": {
+          "false": 9
+        },
+        "native_single": {
+          "true": 16,
+          "false": 11
+        },
+        "transformed_cross_domain": {
+          "false": 9,
+          "true": 4
+        }
+      }
+    }
+  },
+  "paired_comparisons": {
+    "routed_minus_direct": {
+      "difference": 0.08163265306122452,
+      "bootstrap_95_low": 0.0,
+      "bootstrap_95_high": 0.1836734693877551,
+      "baseline_arm": "direct",
+      "target_arm": "routed_multi_agent",
+      "target_only_correct": 5,
+      "baseline_only_correct": 1
+    },
+    "oracle_minus_direct": {
+      "difference": 0.08163265306122452,
+      "bootstrap_95_low": 0.0,
+      "bootstrap_95_high": 0.18367346938775508,
+      "baseline_arm": "direct",
+      "target_arm": "oracle_multi_agent",
+      "target_only_correct": 5,
+      "baseline_only_correct": 1
+    },
+    "oracle_minus_routed": {
+      "difference": 0.0,
+      "bootstrap_95_low": -0.08163265306122447,
+      "bootstrap_95_high": 0.08163265306122447,
+      "baseline_arm": "routed_multi_agent",
+      "target_arm": "oracle_multi_agent",
+      "target_only_correct": 2,
+      "baseline_only_correct": 2
+    }
+  },
+  "interpretation": "Oracle-domain Multi-Agent is a go only if its paired gain over Direct is positive and practically meaningful; intervals include finite-set uncertainty."
+}

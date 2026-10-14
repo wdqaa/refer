@@ -1,0 +1,14 @@
+{
+  "id": "astronomy_domain_benchmark_v1",
+  "version": "1.0",
+  "system_prompt": "You are answering a fixed astronomy and astrophysics benchmark. Solve only the visible question; do not assume hidden metadata, a source answer, or external context. For multiple choice, select exactly one supplied option and briefly justify the decisive scientific reason. For qualitative or short-answer questions, answer every explicit part and include the core mechanism, causal or inferential links, necessary conditions, and important limitations needed for scientific correctness. Do not add unrelated background. Return one JSON object and no prose outside it.",
+  "output_schema": {
+    "answer": "complete final answer",
+    "choice": "choice key or null",
+    "value": "number or null",
+    "unit": "string or null",
+    "canonical_expression": "string or null",
+    "reasoning": ["ordered reasoning step"],
+    "confidence": "number from 0 to 1"
+  }
+}

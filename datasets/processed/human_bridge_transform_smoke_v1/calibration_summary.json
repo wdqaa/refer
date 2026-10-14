@@ -1,0 +1,47 @@
+{
+  "experiment_id": "EXP-029",
+  "date": "2026-09-28",
+  "scope": "human-specified source-bridge Transformer smoke",
+  "pairs": {
+    "total": 8,
+    "positive": 4,
+    "negative": 4
+  },
+  "initial_thinking_run": {
+    "valid_transformer_outputs": 0,
+    "technical_errors": 8,
+    "interpretation": "The model consumed the 6000-token completion budget in hidden reasoning or returned truncated JSON. This run is retained as a runtime failure and is not used as scientific evidence."
+  },
+  "nonthinking_run": {
+    "positive": {
+      "transform": 4,
+      "reject_transform": 0,
+      "machine_accepted": 0,
+      "human_accepted": 0
+    },
+    "negative": {
+      "correct_reject": 1,
+      "transformed": 2,
+      "pseudo_fusion": 2,
+      "technical_error": 1,
+      "machine_accepted": 0,
+      "human_accepted": 0
+    },
+    "total_machine_accepted": 0,
+    "total_human_accepted": 0,
+    "api_usage": {
+      "successful_calls": 16,
+      "prompt_tokens": 21227,
+      "completion_tokens": 12807,
+      "total_tokens": 34034
+    }
+  },
+  "dominant_failures": [
+    "the source-domain dependency became decorative or was replaced",
+    "the new-domain dependency was supplied directly in the question",
+    "missing quantities were invented in the derivation rather than stated",
+    "mature-field knowledge was split into artificial domains"
+  ],
+  "go_no_go": "no_go",
+  "decision": "Zero of four positive pairs survived semantic review. Stop investing in synthetic single-source cross-domain transformation; do not tune the Transformer, expand the sample, or restart the Bridge Selector."
+}

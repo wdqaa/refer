@@ -1,0 +1,38 @@
+{
+  "schema_version": "astronomy_eval60_expansion_candidates.v1",
+  "config_id": "astronomy_eval60_expansion_v1",
+  "seed": 109,
+  "records": 120,
+  "target_curated_records": 60,
+  "surface": {
+    "mcq": 60,
+    "open": 60
+  },
+  "source_file": {
+    "astronomy/astronomy_test500.json": 20,
+    "astronomy/astronomy_train.jsonl": 80,
+    "astronomy/supergpqa_astro.jsonl": 20
+  },
+  "stratum": {
+    "astronomy/astronomy_test500.json:mcq": 20,
+    "astronomy/astronomy_train.jsonl:mcq": 20,
+    "astronomy/astronomy_train.jsonl:open": 60,
+    "astronomy/supergpqa_astro.jsonl:mcq": 20
+  },
+  "eligible_seen": {
+    "astronomy/astronomy_test500.json:mcq": 483,
+    "astronomy/astronomy_train.jsonl:mcq": 917,
+    "astronomy/astronomy_train.jsonl:open": 2605,
+    "astronomy/supergpqa_astro.jsonl:mcq": 395
+  },
+  "prior_processed_rows_scanned": 4334,
+  "excluded_unique_identities": 909,
+  "excluded_unique_exact_qa": 917,
+  "excluded_by_identity": 180,
+  "excluded_by_exact_qa": 1,
+  "raw_exact_duplicates_skipped": 4,
+  "overlap_with_prior_by_identity": 0,
+  "overlap_with_prior_by_exact_qa": 0,
+  "manifest_sha256": "a77a672e6049155ea9f732e02aad87d4bcb40fa1aa1c21f7afc8435b04e2eb4b",
+  "model_outputs_seen_during_selection": false
+}

@@ -1,0 +1,7 @@
+{
+  "name": "deepseek_source_analyzer_v2_1",
+  "version": "2.1",
+  "base_prompt": "deepseek_source_analyzer_v2.json",
+  "system_prompt_addendum": "Critical validity clarification: allowing an independent mathematics expert does NOT make an underspecified question valid. A question that asks for a statistical conclusion must provide observations, sufficient summary statistics, or a fully specified probabilistic setup. For example, 'determine the fertilizer effect and use ANOVA' with no measurements or summaries must be rejected for missing data, even though a well-posed version would require biology and mathematics. Likewise, a request to optimize reactor size or operating conditions must provide a defined objective plus sufficient kinetics, equilibrium data, constraints, and operating conditions; a generic procedural reference answer does not repair missing inputs. Reject these cases for underspecification, not for involving mathematics. Conversely, when the necessary data and assumptions are present, retain the question and label mathematics as required with mathematics_level=independent."
+}
+

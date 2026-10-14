@@ -1,0 +1,17 @@
+{
+  "config_version": "qwen3_8b_baselines.v1",
+  "dataset": "datasets/processed/deepseek_qa_curated_v2/verified_qa_curated_49.jsonl",
+  "model": "configs/model/qwen3_8b.json",
+  "prompts": "src/prompts/qwen_baselines_v1.json",
+  "arms": ["direct", "routed_multi_agent", "oracle_multi_agent"],
+  "router_max_domains": 3,
+  "generation": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "seed": 42,
+    "role_max_new_tokens": 1024,
+    "final_max_new_tokens": 2048,
+    "final_thinking": false
+  },
+  "training_enabled": false
+}

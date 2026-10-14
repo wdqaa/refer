@@ -1,0 +1,22 @@
+{
+  "prompt_versions": {"transformer": "2.0", "judge": "2.0"},
+  "judge_replay": {
+    "known_semantic_rejects": 8,
+    "known_semantic_rejects_rejected": 8,
+    "previously_retained_boundaries": 4,
+    "previously_retained_boundaries_retained": 3,
+    "newly_identified_false_boundary_split": "qa-pilot-v1-chemistry-15183",
+    "final_errors": 0
+  },
+  "fresh_transform_validation": {
+    "sources": 6,
+    "accepted_after_judge_retry": 2,
+    "rejected": 4,
+    "accepted_ids": [
+      "qa-validation-v2-biology-8591",
+      "qa-validation-v2-geography-19687"
+    ],
+    "final_errors": 0
+  },
+  "conclusion": "The precision-first v2 prompts pass the bounded validation. Transformation yield remains about one third, so production must be staged and semantically reviewed."
+}

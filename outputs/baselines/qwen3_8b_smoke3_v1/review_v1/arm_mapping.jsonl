@@ -1,0 +1,1 @@
+{"item_id": "qa-batch-v2-chemistry-16377", "mapping": [{"candidate_code": "A", "arm": "oracle_multi_agent"}, {"candidate_code": "B", "arm": "direct"}, {"candidate_code": "C", "arm": "routed_multi_agent"}]}

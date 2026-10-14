@@ -1,0 +1,30 @@
+{
+  "schema_version": "astronomy_domain_eval30_summary.v1",
+  "records": 30,
+  "question_types": {
+    "mcq": 16,
+    "qualitative": 12,
+    "short_answer": 2
+  },
+  "domain_types": {
+    "native_cross_domain": 1,
+    "single": 29
+  },
+  "required_domain_sets": {
+    "astronomy": 29,
+    "astronomy+physics": 1
+  },
+  "keep_priority": {
+    "high": 28,
+    "medium": 2
+  },
+  "source_sha256": "7e476410b80d740b9cdd974bbb2d955afb24b680408c8675a9fe88e359f17942",
+  "gold_status": {
+    "mcq": "key available; scientific audit still required before final reporting",
+    "qualitative_and_short_answer": "standard solution and fixed rubric pending"
+  },
+  "training_exclusion": "all 30 records are evaluation-only",
+  "historical_train_candidates": 164,
+  "excluded_from_historical_train_candidates": 30,
+  "remaining_training_eligible": 134
+}

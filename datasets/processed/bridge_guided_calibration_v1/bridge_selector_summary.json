@@ -1,0 +1,18 @@
+{
+  "total": 25,
+  "schema_valid": 24,
+  "failed_or_invalid": 1,
+  "decision": {
+    "none": 24
+  },
+  "selected_target_domain": {},
+  "selected_bridge": {},
+  "risk_flags": {
+    "no_natural_extension": 20,
+    "external_context_required": 3,
+    "too_broad": 7,
+    "source_answer_unreliable": 8,
+    "underspecified_for_transformation": 6,
+    "false_boundary_split": 1
+  }
+}

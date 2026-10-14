@@ -1,0 +1,83 @@
+{
+  "scope": "pilot_500",
+  "total_questions": 500,
+  "schema_valid_labeled": 496,
+  "failed_or_invalid": 4,
+  "valid": 452,
+  "domain_type": {
+    "single": 395,
+    "native_cross_domain": 101
+  },
+  "required_domains": {
+    "astronomy": 74,
+    "physics": 116,
+    "biology": 119,
+    "geography": 56,
+    "chemistry": 108,
+    "mathematics": 85
+  },
+  "question_type": {
+    "mcq": 252,
+    "short_answer": 25,
+    "qualitative": 158,
+    "numeric": 61
+  },
+  "keep_priority": {
+    "high": 208,
+    "medium": 243,
+    "low": 45
+  },
+  "answer_verifiability": {
+    "rule_verifiable": 307,
+    "unreliable": 44,
+    "rubric_verifiable": 145
+  },
+  "high_priority_single": 141,
+  "high_priority_cross_domain": 67,
+  "api_batches": 100,
+  "api_errors": 0,
+  "api_usage": {
+    "prompt_tokens": 211186,
+    "completion_tokens": 31016,
+    "total_tokens": 242202,
+    "prompt_cache_hit_tokens": 51200,
+    "prompt_cache_miss_tokens": 159986
+  },
+  "actual_cost_usd": {
+    "off_peak": 0.042761,
+    "peak": 0.085522
+  },
+  "full_scan_projection": {
+    "raw_non_mixed_records": 180029,
+    "exact_unique_question_answer_pairs": 178814,
+    "method": "linear scaling from this calibration after exact question-answer deduplication",
+    "projected_usage": {
+      "prompt_tokens": 76135108,
+      "completion_tokens": 11181644,
+      "total_tokens": 87316751,
+      "prompt_cache_hit_tokens": 18458220,
+      "prompt_cache_miss_tokens": 57676889
+    },
+    "estimated_cost_usd": {
+      "off_peak": 15.42,
+      "peak": 30.83
+    }
+  },
+  "pricing": {
+    "as_of": "2026-10-08",
+    "model": "DeepSeek-V4.1-Flash via deepseek-flash",
+    "source": "https://api-docs.deepseek.com/quick_start/pricing",
+    "usd_per_million_tokens": {
+      "off_peak": {
+        "input_cache_hit": 0.003,
+        "input_cache_miss": 0.15,
+        "output": 0.6
+      },
+      "peak": {
+        "input_cache_hit": 0.006,
+        "input_cache_miss": 0.3,
+        "output": 1.2
+      }
+    }
+  }
+}

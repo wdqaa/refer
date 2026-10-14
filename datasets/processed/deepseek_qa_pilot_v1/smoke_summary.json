@@ -1,0 +1,30 @@
+{
+  "total": 3,
+  "accepted": 3,
+  "status": {
+    "accepted": 3
+  },
+  "route": {
+    "keep_cross_domain": 1,
+    "keep_control": 1,
+    "transform_candidate": 1
+  },
+  "accepted_origin_type": {
+    "native_cross_domain": 1,
+    "native_single": 1,
+    "transformed_cross_domain": 1
+  },
+  "accepted_question_type": {
+    "qualitative": 1,
+    "mcq": 2
+  },
+  "accepted_difficulty": {
+    "hard": 1,
+    "easy": 1,
+    "medium": 1
+  },
+  "accepted_required_domains": {
+    "astronomy+physics": 2,
+    "astronomy": 1
+  }
+}

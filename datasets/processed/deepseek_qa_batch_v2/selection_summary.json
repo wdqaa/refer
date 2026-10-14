@@ -1,0 +1,27 @@
+{
+  "total": 78,
+  "route": {
+    "keep_control": 47,
+    "keep_cross_domain": 9,
+    "transform_candidate": 22
+  },
+  "question_type": {
+    "mcq": 16,
+    "qualitative": 49,
+    "short_answer": 10,
+    "numeric": 2,
+    "symbolic": 1
+  },
+  "primary_domain": {
+    "astronomy": 14,
+    "physics": 15,
+    "biology": 25,
+    "chemistry": 15,
+    "geography": 8,
+    "mathematics": 1
+  },
+  "planned_first_pass_api_calls": 200,
+  "estimated_retry_allowance": 10,
+  "top_up_candidates_remaining": 8,
+  "estimated_top_up_max_api_calls": 32
+}

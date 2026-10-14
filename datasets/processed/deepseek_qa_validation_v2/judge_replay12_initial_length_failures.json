@@ -1,0 +1,10 @@
+{
+  "note": "Recovered from the first 6000-token replay console output before resumable retry preservation was fixed. No visible Judge JSON was returned for these attempts.",
+  "failures": [
+    {"qa_id": "qa-pilot-v1-astronomy-122", "finish_reason": "length", "prompt_tokens": 2525, "completion_tokens": 6000},
+    {"qa_id": "qa-pilot-v1-biology-11832", "finish_reason": "length", "prompt_tokens": 3894, "completion_tokens": 6000},
+    {"qa_id": "qa-pilot-v1-chemistry-13483", "finish_reason": "length", "prompt_tokens": 4237, "completion_tokens": 6000},
+    {"qa_id": "qa-pilot-v1-chemistry-11280", "finish_reason": "length", "prompt_tokens": 4001, "completion_tokens": 6000},
+    {"qa_id": "qa-pilot-v1-chemistry-15183", "finish_reason": "length", "prompt_tokens": 3330, "completion_tokens": 6000}
+  ]
+}

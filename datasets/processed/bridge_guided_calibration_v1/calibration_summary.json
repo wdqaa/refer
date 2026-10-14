@@ -1,0 +1,26 @@
+{
+  "bridge_library_entries": 49,
+  "calibration_sources": 25,
+  "selector_v1": {
+    "requests": 25,
+    "schema_valid": 24,
+    "schema_invalid": 1,
+    "select": 0,
+    "none": 24
+  },
+  "selector_v1_1_smoke": {
+    "requests": 8,
+    "schema_valid": 7,
+    "schema_invalid": 1,
+    "select": 0,
+    "none": 7,
+    "human_expected_select": 4,
+    "human_expected_none": 4,
+    "reasonable_selected_bridges": 0
+  },
+  "qa_pipeline_entries": 0,
+  "accepted_cross_domain_qa": 0,
+  "gate_result": "failed_at_bridge_selector",
+  "main_failure": "The precision-first Selector collapsed to an all-NONE policy and rejected every human-positive bridge together with the intended negative controls.",
+  "recommendation": "Do not add another prompt revision, run the Transformer, scale API calls, start two-source retrieval, cold-start, or RL. Reassess whether bridge choice should remain model-controlled or be a small human-authored generation prior."
+}

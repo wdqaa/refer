@@ -1,0 +1,42 @@
+{
+  "experiment_id": "EXP-030",
+  "date": "2026-10-08",
+  "classifier_prompt_version": "1.2",
+  "calibration": {
+    "total": 60,
+    "existing_human_gold": 30,
+    "fresh_stratified": 30,
+    "schema_valid": 60
+  },
+  "human_gold_metrics": {
+    "validity_accuracy": 0.9333,
+    "required_domains_exact_match": 0.7667,
+    "domain_type_accuracy": 0.7667,
+    "cross_domain_precision": 0.4,
+    "cross_domain_recall": 0.8
+  },
+  "machine_high_cross_audit": {
+    "candidates": 8,
+    "human_accepted": 4,
+    "false_boundary_splits": 4,
+    "precision": 0.5
+  },
+  "dominant_errors": [
+    "astronomy added to standard astrophysics or particle-physics questions",
+    "chemistry added because a physics problem mentions a molecule or atom",
+    "physics split from mature physical-chemistry or molecular-physics content",
+    "two underdetermined quantitative questions marked valid"
+  ],
+  "cost_usd": {
+    "calibration_off_peak": 0.005006,
+    "calibration_peak": 0.010013,
+    "schema_smoke_off_peak": 0.005268,
+    "schema_smoke_peak": 0.010535,
+    "total_spent_off_peak": 0.010274,
+    "total_spent_peak": 0.020548,
+    "projected_exact_deduplicated_full_scan_off_peak": 14.92,
+    "projected_exact_deduplicated_full_scan_peak": 29.84
+  },
+  "gate": "fail_do_not_scale",
+  "decision": "Do not launch the 178814-item full scan. The classifier is structurally usable and validity is strong, but native-cross-domain precision is too low for high-precision mining."
+}

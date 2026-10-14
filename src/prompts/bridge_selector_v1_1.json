@@ -1,0 +1,6 @@
+{
+  "name": "bridge_selector_v1_1",
+  "version": "1.1",
+  "base_prompt": "bridge_selector_v1.json",
+  "system_prompt_addendum": "Calibration clarification: judge whether one concrete, natural transformed problem CAN be constructed through an allowed bridge; do not require the original source to already contain the target-domain model, numerical observations, or boundary conditions. The Transformer may later add a small self-contained hypothetical scenario with explicit raw values, initial conditions, measurement outputs, or constraints. Such additions are not external_context_required merely because they are absent from the source. Select when the original mechanism remains necessary and a standard target-domain method would also become necessary to determine the same final conclusion. For example, a qualitative biological feedback mechanism may naturally support a nonlinear-dynamics bridge, and a qualitative membrane process may support a membrane-transport bridge, if the transformed question can add minimal parameters while preserving the biological inference. Still return none if most of the scientific mechanism would have to be invented, if a real paper-specific coefficient or dataset is required, if the target method is stated away in the question, or if the bridge is only a mature-field relabeling. Lack of numbers alone is not a reason for none."
+}

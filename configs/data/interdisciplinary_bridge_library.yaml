@@ -1,0 +1,78 @@
+version: 1
+description: Small generation prior for bridge-guided calibration; not a domain ontology.
+
+bridges:
+  biology:
+    chemistry:
+      - molecular_binding
+      - acid_base
+      - reaction_kinetics
+      - concentration_gradient
+    physics:
+      - diffusion
+      - membrane_transport
+      - heat_transfer
+      - fluid_transport
+      - radiation_transport
+    mathematics:
+      - nonlinear_dynamics
+      - probability
+      - statistics
+      - population_modeling
+
+  chemistry:
+    biology:
+      - molecular_binding
+      - enzyme_mechanism
+      - biochemical_constraint
+    physics:
+      - thermodynamics
+      - transport
+      - spectroscopy
+      - material_behavior
+    mathematics:
+      - kinetics_modeling
+      - statistics
+      - optimization
+
+  astronomy:
+    physics:
+      - radiation
+      - gravitation
+      - doppler_effect
+      - orbital_dynamics
+    biology:
+      - radiation_health_effect
+    mathematics:
+      - statistical_inference
+      - dynamical_systems
+      - fitting_estimation
+
+  geography:
+    biology:
+      - exposure_health_effect
+      - ecosystem_response
+    chemistry:
+      - pollutant_transport
+      - environmental_chemistry
+    physics:
+      - heat_transfer
+      - remote_measurement
+    mathematics:
+      - spatial_statistics
+      - time_series
+      - quantitative_modeling
+
+  physics:
+    chemistry:
+      - thermodynamics
+      - material_properties
+      - transport
+    biology:
+      - radiation_health_effect
+      - biophysical_transport
+    mathematics:
+      - differential_equation
+      - optimization
+      - statistical_modeling
+      - dynamical_systems

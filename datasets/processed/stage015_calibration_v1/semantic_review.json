@@ -1,0 +1,26 @@
+{
+  "review_version": "codex_semantic_review.v2",
+  "policy": "Retain only scientifically safe QA with a defensible Gold; reject ambiguity, unsupported claims, source-specific answers without evidence, and false domain necessity.",
+  "items": {
+    "qa-stage015-calibration-v1-astronomy-3610": {
+      "accepted": true,
+      "reason": "The Sun is the unique, stable answer; the standard solution and one-point rubric are accurate."
+    },
+    "qa-stage015-calibration-v1-astronomy-54": {
+      "accepted": true,
+      "reason": "The word 'potentially' and the Gold's unitarity/correlation qualification make B a defensible pedagogical account without claiming the information paradox is experimentally settled."
+    },
+    "qa-stage015-calibration-v1-chemistry-4071": {
+      "accepted": true,
+      "reason": "xenoNER denotes non-extractable residues of xenobiotic origin; D is the only matching option and the Gold does not rely on the distractors."
+    },
+    "qa-stage015-calibration-v1-physics-14976": {
+      "accepted": true,
+      "reason": "The answer correctly treats the requested mass as substance-dependent molar mass rather than a universal numerical value."
+    },
+    "qa-stage015-calibration-v1-astronomy-1435": {
+      "accepted": false,
+      "reason": "The question and Gold are scientifically plausible, but the claimed astronomy-plus-physics requirement is a false boundary split inside one standard astrophysics/cosmic-ray reasoning chain; it does not satisfy the cross-domain dependency criterion."
+    }
+  }
+}

@@ -1,0 +1,52 @@
+version: 1
+
+source_data_domains:
+  - physics
+  - chemistry
+  - biology
+  - astronomy
+  - geography
+
+callable_expert_domains:
+  - physics
+  - chemistry
+  - biology
+  - astronomy
+  - geography
+  - mathematics
+
+expert_training_policy:
+  mathematics:
+    mode: prompt_only_zero_shot
+    source_training_data: excluded
+    reason: >-
+      The current mathematics source data is dominated by elementary arithmetic
+      and simple algebra. The expert remains callable through its role prompt,
+      without domain-specific training in the first round.
+
+relations:
+  physics:
+    chemistry: [mechanism_explanation, constraint_coupling]
+    biology: [mechanism_explanation]
+    geography: [mechanism_explanation, measurement_observation]
+  astronomy:
+    physics: [mechanism_explanation, measurement_observation]
+  chemistry:
+    physics: [mechanism_explanation]
+    biology: [mechanism_explanation, constraint_coupling]
+    geography: [mechanism_explanation, constraint_coupling]
+  biology:
+    chemistry: [mechanism_explanation, constraint_coupling]
+    physics: [mechanism_explanation]
+    geography: [mechanism_explanation, constraint_coupling]
+  geography:
+    physics: [mechanism_explanation, measurement_observation]
+    chemistry: [mechanism_explanation, constraint_coupling]
+    biology: [mechanism_explanation, constraint_coupling]
+
+policy:
+  ordinary_quantitative_work_is_not_a_domain: true
+  native_independent_mathematics_is_allowed: true
+  mathematics_as_new_transformation_domain: false
+  exactly_one_new_domain_per_transformation: true
+  relation_prior_is_not_mandatory: true

@@ -1,0 +1,29 @@
+{
+  "total": 8,
+  "transform_decision": {
+    "transform": 6,
+    "reject_transform": 1,
+    "error": 1
+  },
+  "status": {
+    "rejected_by_judge": 3,
+    "rejected_by_solver_gate": 3,
+    "rejected_by_transformer": 1,
+    "error": 1
+  },
+  "by_expected_case": {
+    "positive": {
+      "total": 4,
+      "transform": 4,
+      "reject_transform": 0,
+      "machine_accepted": 0
+    },
+    "negative": {
+      "total": 4,
+      "transform": 2,
+      "reject_transform": 1,
+      "machine_accepted": 0
+    }
+  },
+  "machine_accepted": 0
+}

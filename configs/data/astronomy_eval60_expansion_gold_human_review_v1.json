@@ -1,0 +1,525 @@
+{
+  "version": "astronomy_eval60_expansion_gold_human_review_v1.0",
+  "expected_input_records": 60,
+  "expected_input_sha256": "12829d3ced745410e2492f6bb0876af77d11eeaa9d391b57144485ce644a939e",
+  "default_decision": "accept",
+  "default_reason": "Question, keyed answer, standard solution, and question-entailed rubric were independently reviewed and found scientifically usable.",
+  "audit_sources": [
+    {
+      "topic": "Neutrino oscillation probabilities",
+      "url": "https://pdg.lbl.gov/2024/reviews/rpp2024-rev-neutrino-mixing.pdf",
+      "finding": "Appearance probabilities require mass splittings, mixing parameters, and potentially matter effects; baseline and energy alone do not determine the answer."
+    },
+    {
+      "topic": "NASA astronaut radiation limit",
+      "url": "https://www.nasa.gov/reference/4-0-human-performance/",
+      "finding": "The current NASA career effective-dose limit is 600 mSv, demonstrating that the source's claimed universal limits are outdated and agency-specific."
+    },
+    {
+      "topic": "Primordial black holes as dark matter",
+      "url": "https://doi.org/10.21468/SciPostPhys.17.2.032",
+      "finding": "An asteroid-mass window remains in which primordial black holes may constitute all dark matter, contrary to the generated Gold's categorical small-fraction claim."
+    },
+    {
+      "topic": "Tidal disruption and Hills mass",
+      "url": "https://academic.oup.com/mnras/article/527/3/6233/7453654",
+      "finding": "There is a maximum black-hole mass above which a star crosses the horizon before being disrupted outside it; disruption likelihood is not monotonic in black-hole mass."
+    }
+  ],
+  "overrides": {
+    "native-83967d4fe8b0d7": {
+      "decision": "accept_with_edit",
+      "reason": "Choice A is the best answer, but the explanation must not present a Kerr horizon as simply a deformed material surface.",
+      "gold_enrichment": {
+        "standard_solution": [
+          "The mass retained after collapse sets the black hole's mass, gravitational field, and characteristic horizon scale.",
+          "Angular momentum inherited from a rotating progenitor produces a Kerr black hole and causes frame dragging.",
+          "Spin changes the horizon radius and geometry and other observable properties; choice A is therefore the only option that correctly connects mass with gravity and progenitor rotation with angular momentum."
+        ],
+        "scoring_rubric": [
+          {
+            "criterion": "Identifies mass as setting the black hole's gravitational strength and characteristic size scale.",
+            "points": 4
+          },
+          {
+            "criterion": "Explains that progenitor rotation contributes angular momentum to a spinning Kerr black hole.",
+            "points": 4
+          },
+          {
+            "criterion": "Recognizes that spin changes horizon geometry or radius and produces effects such as frame dragging.",
+            "points": 2
+          }
+        ]
+      }
+    },
+    "native-0d0d36c3f2613a": {
+      "decision": "reject",
+      "reason": "The claimed 10 percent electron-neutrino appearance probability is not supported by the standard oscillation parameters for the stated L/E, and the problem omits the parameters and matter model needed for a unique calculation."
+    },
+    "native-a5d0bdb4836a04": {
+      "decision": "reject",
+      "reason": "A flat galaxy rotation curve supports unseen gravitating matter but does not specifically support WIMPs over other dark-matter candidates, so none of the options establishes the hypothesis asked about."
+    },
+    "native-8c6f7559fd3b0f": {
+      "decision": "reject",
+      "reason": "The question omits the relevant mass-squared splitting and oscillation model; the generated solution asserts a small phase without calculating it and does not reliably derive the keyed probability."
+    },
+    "native-be65c7f98ddbf7": {
+      "decision": "accept_with_edit",
+      "reason": "The keyed expression is correct, but the original derivation confused cosmological scale factors with the relative Doppler-redshift ratio.",
+      "gold_enrichment": {
+        "standard_solution": [
+          "Factor the observed redshift of the ejecta into the quasar's cosmological redshift and the line-of-sight relativistic Doppler shift relative to the quasar.",
+          "For ejecta moving toward the observer, define R = (1 + z_ej)/(1 + z_Q) = sqrt((1 - beta)/(1 + beta)), where beta = v/c.",
+          "Solving gives beta = (1 - R^2)/(1 + R^2) = [(1 + z_Q)^2 - (1 + z_ej)^2]/[(1 + z_Q)^2 + (1 + z_ej)^2].",
+          "This is choice J."
+        ],
+        "scoring_rubric": [
+          {
+            "criterion": "Uses the ratio (1 + z_ej)/(1 + z_Q) to isolate the relative line-of-sight Doppler shift.",
+            "points": 4
+          },
+          {
+            "criterion": "Applies the relativistic Doppler relation and solves it for beta = v/c.",
+            "points": 3
+          },
+          {
+            "criterion": "Obtains the squared-factor expression in choice J with the correct sign for ejecta directed toward Earth.",
+            "points": 3
+          }
+        ]
+      }
+    },
+    "native-9b0e13925c02b4": {
+      "decision": "accept_with_edit",
+      "reason": "The keyed temperature is correct, but the generated solution wrote an incorrect factor of 16 while numerically using the correct factor of 4.",
+      "gold_enrichment": {
+        "standard_solution": [
+          "Convert the angular diameter to radians: theta = 22 arcmin = 6.40e-3 rad.",
+          "For a uniformly radiating spherical star, the received bolometric flux is s = sigma T^4 (R_star/d)^2.",
+          "For a small angular diameter theta, R_star/d is approximately theta/2, so s = sigma T^4 theta^2/4.",
+          "Thus T = [4s/(sigma theta^2)]^(1/4), which gives approximately 4.69e3 K and choice B."
+        ],
+        "scoring_rubric": [
+          {
+            "criterion": "Converts 22 arcmin to approximately 6.40e-3 radians.",
+            "points": 2
+          },
+          {
+            "criterion": "Uses s = sigma T^4 (R_star/d)^2 and R_star/d approximately theta/2.",
+            "points": 4
+          },
+          {
+            "criterion": "Solves T = [4s/(sigma theta^2)]^(1/4) and obtains about 4.69e3 K.",
+            "points": 4
+          }
+        ]
+      }
+    },
+    "native-f062852d74a01a": {
+      "decision": "reject",
+      "reason": "The stem is badly corrupted and conflates the envelope binding-energy estimate with an unexplained post-bounce shock context, so it is not a high-quality self-contained evaluation item."
+    },
+    "native-8c8c05dd627d0e": {
+      "decision": "reject",
+      "reason": "Virial mass requires a characteristic cluster radius or an equivalent structural assumption, neither of which is supplied in the question; the Gold silently inserts 1.5 Mpc."
+    },
+    "native-ead38e472bccba": {
+      "decision": "reject",
+      "reason": "The opening of the problem is missing, leaving only a fragment that asks to integrate an unspecified expression over wavelength."
+    },
+    "native-7ef51a9f474126": {
+      "decision": "reject",
+      "reason": "The actual present-day Hill radius is about 0.35 AU or roughly 740 Jupiter radii; the keyed 1000 Jupiter radii is only a loose nearest option and the requested AU value is absent from every choice."
+    },
+    "native-8cc5bfb901f51c": {
+      "decision": "accept_with_edit",
+      "reason": "The question asks only for the morphological term, so spiral arms, bulge, gas content, and stellar age must not be mandatory rubric details.",
+      "gold_enrichment": {
+        "standard_solution": [
+          "A galaxy characterized as a rotating disk of stars and dust is called a spiral galaxy."
+        ],
+        "scoring_rubric": [
+          {
+            "criterion": "Answers 'spiral galaxy'.",
+            "points": 10
+          }
+        ]
+      }
+    },
+    "native-4acf94111fadc3": {
+      "decision": "reject",
+      "reason": "There is no universal maximum safe dose, and the source's numerical limits are obsolete: NASA's current career standard is 600 mSv rather than the generated 1 Sv/50 mSv scheme."
+    },
+    "native-32d35ac885532d": {
+      "decision": "accept_with_edit",
+      "reason": "Spatial flatness is related to inflation but is not necessary to answer the question about CMB smoothness and large-scale structure, so it was removed from the required rubric.",
+      "gold_enrichment": {
+        "standard_solution": [
+          "Define inflation as a period of accelerated expansion in the very early universe.",
+          "Explain the horizon problem: distant CMB regions appear too uniform to have equilibrated in a non-inflationary expansion history.",
+          "Inflation stretches a small region that was once causally connected to encompass the observable universe, accounting for the near-uniform CMB temperature.",
+          "Quantum fluctuations stretched to cosmological scales provide initial density perturbations that appear in CMB anisotropies and later grow gravitationally into large-scale structure."
+        ],
+        "scoring_rubric": [
+          {
+            "criterion": "Identifies inflation as accelerated expansion in the very early universe.",
+            "points": 2
+          },
+          {
+            "criterion": "Explains the horizon problem and how inflation makes today's widely separated CMB regions originate from a causally connected patch.",
+            "points": 4
+          },
+          {
+            "criterion": "Connects inflationary fluctuations to CMB anisotropies and the seeds of later large-scale structure.",
+            "points": 4
+          }
+        ]
+      }
+    },
+    "native-fa80319938cc85": {
+      "decision": "accept_with_edit",
+      "reason": "The original Gold treated disk-anchored magnetic fields as the sole jet engine; the audit includes both disk-powered and black-hole-spin extraction mechanisms.",
+      "gold_enrichment": {
+        "gold_answer": {
+          "correct_choice": null,
+          "answer_text": "Gas supplied to a quasar loses energy but retains angular momentum, so it circularizes into a disk around the supermassive black hole. Magnetorotational turbulence and related stresses move angular momentum outward, allowing matter to accrete and heating the disk so that it radiates strongly. Large-scale magnetic fields can launch and collimate a relativistic jet, drawing power from the rotating disk and/or from the black hole's spin through Blandford-Payne- or Blandford-Znajek-type processes. Relativistic electrons in the jet then produce synchrotron radiation and inverse-Compton emission; relativistic beaming can make a jet aimed near our line of sight exceptionally bright."
+        },
+        "standard_solution": [
+          "Explain that inflowing gas with angular momentum circularizes and forms an accretion disk.",
+          "Describe outward angular-momentum transport and dissipation, commonly associated with magnetorotational turbulence, which permit accretion and heat the disk.",
+          "Explain that ordered magnetic fields can launch and collimate a relativistic jet using energy from the disk and/or black-hole spin.",
+          "Identify synchrotron and inverse-Compton radiation from accelerated jet particles, with relativistic beaming affecting observed intensity."
+        ],
+        "scoring_rubric": [
+          {
+            "criterion": "Explains disk formation through inflow plus angular-momentum-supported circularization.",
+            "points": 2
+          },
+          {
+            "criterion": "Describes angular-momentum transport and dissipative heating that allow accretion and disk radiation.",
+            "points": 3
+          },
+          {
+            "criterion": "Explains magnetic launching and collimation of a relativistic jet powered by the disk and/or black-hole spin.",
+            "points": 3
+          },
+          {
+            "criterion": "Identifies synchrotron or inverse-Compton jet emission and, optionally, relativistic beaming.",
+            "points": 2
+          }
+        ]
+      }
+    },
+    "native-ce3756cb1f1193": {
+      "decision": "accept_with_edit",
+      "reason": "The CMB principally constrains initial perturbations and cosmological parameters; dark energy and inflation-specific claims were not made mandatory for this question.",
+      "gold_enrichment": {
+        "gold_answer": {
+          "correct_choice": null,
+          "answer_text": "CMB temperature anisotropies map small density and gravitational-potential perturbations at last scattering. Those perturbations are the initial seeds that later grow under gravity into galaxies, clusters, filaments, and voids. The angular power spectrum measures fluctuation strength by angular scale; its acoustic peak locations and relative heights encode the sound horizon, spatial geometry, and the baryon and dark-matter densities. Fitting the spectrum therefore constrains the initial fluctuation spectrum and the cosmological conditions used to predict the later large-scale matter distribution."
+        },
+        "standard_solution": [
+          "Relate temperature anisotropies at last scattering to primordial density and potential perturbations.",
+          "Explain that these perturbations grow gravitationally into later large-scale structure.",
+          "Describe the angular power spectrum as fluctuation power versus angular scale and connect its peaks to acoustic oscillations in the photon-baryon fluid.",
+          "Use peak positions and heights to constrain geometry, baryon and dark-matter content, and the initial spectrum that determines structure growth."
+        ],
+        "scoring_rubric": [
+          {
+            "criterion": "Connects CMB temperature anisotropies to primordial density or gravitational-potential perturbations at last scattering.",
+            "points": 3
+          },
+          {
+            "criterion": "Explains that these perturbations seed later gravitational growth into large-scale structure.",
+            "points": 3
+          },
+          {
+            "criterion": "Describes the angular power spectrum or acoustic peaks and how they constrain cosmological composition, geometry, or the initial fluctuation spectrum.",
+            "points": 4
+          }
+        ]
+      }
+    },
+    "native-76d54010b61dca": {
+      "decision": "accept_with_edit",
+      "reason": "The original answer overclaimed that a dark-matter halo generically stabilizes a galactic disk; the robust gravitational and assembly roles are retained without fixing the sign of disk-instability effects.",
+      "gold_enrichment": {
+        "gold_answer": {
+          "correct_choice": null,
+          "answer_text": "Dark matter in an extended halo adds enclosed mass well beyond a galaxy's luminous disk. Its gravity keeps outer orbital speeds approximately flat rather than allowing the Keplerian decline predicted from visible matter alone. In cosmological structure formation, dark-matter overdensities collapse into halos and filaments that attract baryonic gas; cooling, star formation, accretion, and mergers within those potentials build galaxies. Halo mass, concentration, shape, spin, and assembly history affect galaxy size, rotation, merger history, and morphology. A halo can alter bars and other disk instabilities and exchange angular momentum with baryons, but it is not universally stabilizing."
+        },
+        "standard_solution": [
+          "Use the mismatch between visible mass and flat outer rotation curves to infer an extended dark-matter halo.",
+          "Explain that early dark-matter overdensities form gravitational scaffolding into which baryonic gas falls and cools.",
+          "Relate halo accretion and mergers to galaxy growth and morphological evolution.",
+          "Describe halo effects on disk dynamics as dependent on halo and disk properties rather than universally stabilizing."
+        ],
+        "scoring_rubric": [
+          {
+            "criterion": "Links extended halo mass to flat outer rotation curves beyond the visible disk.",
+            "points": 3
+          },
+          {
+            "criterion": "Explains that dark-matter halos provide gravitational scaffolding for baryonic collapse and galaxy formation.",
+            "points": 3
+          },
+          {
+            "criterion": "Connects halo mass distribution, accretion, or mergers to galaxy growth, morphology, or dynamics.",
+            "points": 3
+          },
+          {
+            "criterion": "Avoids claiming that a halo always stabilizes a galactic disk.",
+            "points": 1
+          }
+        ]
+      }
+    },
+    "native-b54e37970972d0": {
+      "decision": "accept_with_edit",
+      "reason": "The original Gold presented a quasi-stationary density wave and halo stabilization as universal; modern spiral structure permits multiple mechanisms and halo effects are conditional.",
+      "gold_enrichment": {
+        "gold_answer": {
+          "correct_choice": null,
+          "answer_text": "Spiral galaxies develop when baryonic gas cools and settles, while approximately conserving angular momentum, inside growing dark-matter halos, producing a rotating disk and often a central bulge. Continued gas accretion, star formation, stellar feedback, bars, and interactions then reshape the disk. Spiral patterns can arise through self-gravitating density waves, transient recurrent arms, bar-driven structure, or tidal forcing; in each case compressed gas often forms stars that make arms conspicuous. The halo supplies much of the outer gravitational potential and helps explain flat rotation curves, while its influence on bars and disk stability depends on the halo and baryonic structure."
+        },
+        "standard_solution": [
+          "Explain formation of a rotating disk as gas cools and approximately conserves angular momentum within a dark-matter halo.",
+          "Connect the extended halo mass to the outer gravitational potential and flat rotation curve.",
+          "Describe spiral patterns using at least one viable mechanism, such as density waves, transient self-gravitating arms, a bar, or tidal forcing, and connect gas compression to star formation.",
+          "Explain how accretion, feedback, instabilities, and interactions drive continuing structural and dynamical evolution."
+        ],
+        "scoring_rubric": [
+          {
+            "criterion": "Explains disk formation through gas cooling and angular-momentum-supported rotation within a halo.",
+            "points": 3
+          },
+          {
+            "criterion": "Connects the dark-matter halo to the outer gravitational potential or flat rotation curve without claiming universal disk stabilization.",
+            "points": 2
+          },
+          {
+            "criterion": "Gives a scientifically plausible mechanism for spiral structure and relates arms to gas compression or star formation.",
+            "points": 3
+          },
+          {
+            "criterion": "Discusses continuing evolution through accretion, feedback, bars, mergers, or tidal interactions.",
+            "points": 2
+          }
+        ]
+      }
+    },
+    "native-6f5d089a9278b1": {
+      "decision": "accept_with_edit",
+      "reason": "Axion mass and couplings are model-dependent; the audit distinguishes the QCD axion from broader axion-like particles and avoids requiring a narrow universal mass interval.",
+      "gold_enrichment": {
+        "gold_answer": {
+          "correct_choice": null,
+          "answer_text": "Axions are very weakly coupled, light bosons; the QCD axion was introduced to solve the strong-CP problem, while axion-like particles span a broader parameter space. A dark-matter haloscope searches for resonant conversion of local halo axions into microwave photons in a strong magnetic field. Helioscopes search for X-rays from solar axions converted in a laboratory magnet, and light-shining-through-a-wall experiments test photon-axion-photon conversion. Stellar cooling, cosmology, and structure formation provide complementary constraints. Experiments therefore scan model-dependent combinations of axion mass and couplings to photons, electrons, or nucleons; a viable dark-matter axion must also be sufficiently long-lived, cold, and abundant."
+        },
+        "standard_solution": [
+          "State the QCD-axion motivation and distinguish it from the wider class of axion-like particles.",
+          "Explain haloscope conversion of ambient dark-matter axions to photons in a strong magnetic field, or an equivalent direct search.",
+          "Describe a complementary helioscope, light-shining-through-a-wall, astrophysical, or cosmological probe.",
+          "Identify very weak, model-dependent couplings and mass plus sufficient stability and abundance as the properties experiments constrain."
+        ],
+        "scoring_rubric": [
+          {
+            "criterion": "Identifies axions as light, weakly coupled bosons and relates the QCD axion to the strong-CP problem or dark matter.",
+            "points": 2
+          },
+          {
+            "criterion": "Correctly describes at least one detection method such as a haloscope, helioscope, or light-shining-through-a-wall experiment.",
+            "points": 4
+          },
+          {
+            "criterion": "Mentions astrophysical or cosmological constraints as complementary evidence.",
+            "points": 2
+          },
+          {
+            "criterion": "Treats the mass and couplings as model-dependent and notes the stability or abundance required of dark matter.",
+            "points": 2
+          }
+        ]
+      }
+    },
+    "native-522e9dcfc9c5ff": {
+      "decision": "accept_with_edit",
+      "reason": "The original answer loosely attributed X-rays and new elements to generic cosmic-ray interactions; the audited answer distinguishes atmospheric showers, hadronic gamma rays, electron radiation, and nuclear spallation.",
+      "gold_enrichment": {
+        "gold_answer": {
+          "correct_choice": null,
+          "answer_text": "Cosmic rays are energetic charged particles, mainly protons and atomic nuclei with smaller electron and positron components. When they strike atmospheric nuclei they initiate hadronic and electromagnetic cascades containing pions, muons, electrons, photons, and neutrinos. During propagation in space, nuclei can undergo fragmentation or spallation on interstellar gas, hadronic collisions can produce neutral-pion gamma rays, and cosmic-ray electrons radiate through synchrotron and inverse-Compton processes. Magnetic fields deflect charged cosmic rays and make source reconstruction difficult. Satellites and balloons directly measure lower-energy primary particles, while ground arrays, Cherenkov or fluorescence telescopes, and underground detectors reconstruct higher-energy air showers and secondary particles."
+        },
+        "standard_solution": [
+          "Identify the main cosmic-ray components as protons and nuclei with smaller lepton components.",
+          "Explain atmospheric hadronic and electromagnetic cascades and name representative secondary particles.",
+          "Describe propagation effects such as magnetic deflection, nuclear spallation, pion-decay gamma rays, synchrotron emission, or inverse-Compton emission.",
+          "Contrast direct balloon or satellite measurements with indirect ground-based shower, Cherenkov, fluorescence, or underground detection."
+        ],
+        "scoring_rubric": [
+          {
+            "criterion": "Identifies cosmic rays mainly as high-energy protons and atomic nuclei, with a smaller lepton component.",
+            "points": 2
+          },
+          {
+            "criterion": "Explains atmospheric cascades and representative secondary particles.",
+            "points": 3
+          },
+          {
+            "criterion": "Describes at least one correct interaction or propagation effect in space, such as deflection, spallation, pion production, synchrotron, or inverse Compton emission.",
+            "points": 2
+          },
+          {
+            "criterion": "Describes both direct and indirect cosmic-ray detection approaches.",
+            "points": 3
+          }
+        ]
+      }
+    },
+    "native-c2e623a149b28a": {
+      "decision": "accept_with_edit",
+      "reason": "The Event Horizon Telescope images horizon-scale emission and a black-hole shadow, not the event horizon itself; future-facility names are examples rather than required facts.",
+      "gold_enrichment": {
+        "gold_answer": {
+          "correct_choice": null,
+          "answer_text": "Black holes are inferred from their effects on matter and spacetime: stellar or gas orbits reveal a compact unseen mass, hot accretion flows emit X-rays and radio waves, microlensing can reveal isolated compact objects, and interferometers detect gravitational waves from mergers. Horizon-scale very-long-baseline radio interferometry, as used by the Event Horizon Telescope, images surrounding emission and the black-hole shadow rather than the horizon itself. Each method has selection limits: accretion searches require feeding material, dynamical measurements require suitable tracers and resolution, lensing events are transient, and gravitational-wave instruments cover limited frequency and sensitivity ranges. Larger interferometric arrays, more sensitive X-ray timing and spectroscopy, astrometry, and future space-based gravitational-wave detectors can expand the accessible population."
+        },
+        "standard_solution": [
+          "Describe multiple electromagnetic or dynamical methods, such as stellar orbits and accretion-flow radiation.",
+          "Describe gravitational-wave merger detection and/or microlensing.",
+          "Explain at least one selection effect or limitation for the methods discussed.",
+          "Describe horizon-scale shadow imaging and at least one general route to improved future sensitivity without claiming that the horizon itself is directly photographed."
+        ],
+        "scoring_rubric": [
+          {
+            "criterion": "Describes at least two valid black-hole detection methods based on dynamics, accretion radiation, microlensing, or gravitational waves.",
+            "points": 4
+          },
+          {
+            "criterion": "Explains at least one important limitation or selection effect of those methods.",
+            "points": 2
+          },
+          {
+            "criterion": "Correctly characterizes horizon-scale interferometry as imaging surrounding emission and a black-hole shadow.",
+            "points": 2
+          },
+          {
+            "criterion": "Mentions a plausible improvement such as greater angular resolution, sensitive X-ray observations, astrometry, or space-based gravitational-wave detection.",
+            "points": 2
+          }
+        ]
+      }
+    },
+    "native-7376a68c233287": {
+      "decision": "accept_with_edit",
+      "reason": "The audit replaces the Newtonian escape-velocity phrasing with a causal definition and qualifies tidal disruption, which can occur well inside or outside the horizon depending on mass.",
+      "gold_enrichment": {
+        "gold_answer": {
+          "correct_choice": null,
+          "answer_text": "An event horizon is a one-way causal boundary: no future-directed signal or object that crosses inward can return to the exterior. For a nonrotating, uncharged black hole its areal radius is the Schwarzschild radius r_s = 2GM/c^2, so it scales linearly with mass; spin and charge modify the horizon structure. It is not a material surface, and a freely falling observer crossing a sufficiently large black-hole horizon need not experience a local discontinuity, although a distant observer receives increasingly redshifted and delayed signals. Nearby objects follow strongly curved trajectories. Tidal forces depend on black-hole mass and distance and may disrupt an object before or after horizon crossing; once the horizon is crossed, escape is impossible."
+        },
+        "standard_solution": [
+          "Define the event horizon globally as a one-way causal boundary rather than a material surface.",
+          "For a Schwarzschild black hole, give r_s = 2GM/c^2 and its linear scaling with mass, while noting that spin changes the result.",
+          "Distinguish the distant observer's redshifted, delayed signals from the infalling observer's locally regular crossing for a sufficiently large hole.",
+          "Explain that nearby motion and tidal stress depend on mass and radius; crossing the horizon makes return impossible, but disruption need not occur exactly at the horizon."
+        ],
+        "scoring_rubric": [
+          {
+            "criterion": "Defines the event horizon as a one-way causal boundary from which signals cannot return to the exterior.",
+            "points": 3
+          },
+          {
+            "criterion": "Gives or correctly describes r_s = 2GM/c^2 for a nonrotating black hole and its linear mass scaling.",
+            "points": 3
+          },
+          {
+            "criterion": "Explains that the horizon is not a material surface and distinguishes distant redshift/time delay from local crossing.",
+            "points": 2
+          },
+          {
+            "criterion": "Explains irreversible inward motion after crossing and treats tidal effects as dependent on mass and distance rather than fixed at the horizon.",
+            "points": 2
+          }
+        ]
+      }
+    },
+    "native-a9ad71434404b4": {
+      "decision": "reject",
+      "reason": "The generated Gold is materially overconfident: stellar-origin black holes cannot supply non-baryonic dark matter, but primordial black holes remain allowed to constitute all dark matter in some model-dependent asteroid-mass windows. The question's 'current' answer is also time-sensitive."
+    },
+    "native-34873313d7a989": {
+      "decision": "accept_with_edit",
+      "reason": "The density fraction alone does not support a Big Rip; that outcome requires a phantom equation of state. The audited answer states the standard Lambda-CDM fate and makes alternatives conditional on dark-energy dynamics.",
+      "gold_enrichment": {
+        "gold_answer": {
+          "correct_choice": null,
+          "answer_text": "The dark-energy density parameter is approximately Omega_Lambda = 0.69 in the standard spatially flat Lambda-CDM model, meaning that dark energy supplies about 69 percent of today's critical energy density. Together with an equation of state close to w = -1, it accounts for the present accelerated expansion. If dark energy is a true cosmological constant, expansion continues indefinitely toward an increasingly cold, dilute, asymptotically de Sitter state, with gravitationally unbound regions receding beyond one another's horizons. Other fates are possible only if the dark-energy equation of state evolves; a Big Rip specifically requires sufficiently persistent phantom behavior with w < -1."
+        },
+        "standard_solution": [
+          "Define Omega_Lambda as dark-energy density divided by the critical density and give its approximate present value near 0.69 in flat Lambda-CDM.",
+          "Connect dark energy with the observed accelerated expansion and state the equation-of-state assumption.",
+          "Under a cosmological constant, infer indefinite accelerated expansion and a cold, dilute future.",
+          "Make alternative fates conditional on a different or evolving equation of state; do not infer a Big Rip from Omega_Lambda alone."
+        ],
+        "scoring_rubric": [
+          {
+            "criterion": "Defines the dark-energy density parameter and gives a value around 0.68-0.70.",
+            "points": 3
+          },
+          {
+            "criterion": "Connects dark energy and an equation of state near minus one to accelerated expansion.",
+            "points": 3
+          },
+          {
+            "criterion": "Describes indefinite acceleration and a cold, dilute future under the cosmological-constant assumption.",
+            "points": 2
+          },
+          {
+            "criterion": "Acknowledges equation-of-state uncertainty and does not claim that the measured density parameter alone implies a Big Rip.",
+            "points": 2
+          }
+        ]
+      }
+    },
+    "native-0d85284d599c00": {
+      "decision": "reject",
+      "reason": "The question explicitly requires recent experimental evidence, making a frozen answer time-sensitive, and the generated Gold incorrectly lists primordial black holes as dark-matter particles."
+    },
+    "native-af203276ad3536": {
+      "decision": "accept_with_edit",
+      "reason": "Tidal disruption depends on the star's mean density and on whether the tidal radius lies outside the horizon; it is not monotonically more likely for a larger black-hole mass or a more massive star.",
+      "gold_enrichment": {
+        "gold_answer": {
+          "correct_choice": null,
+          "answer_text": "The outcome is controlled by the black-hole mass M_BH, stellar mass M_star and radius R_star, and closest approach. The characteristic tidal radius is r_t approximately R_star (M_BH/M_star)^(1/3): a star passing well outside it is weakly perturbed, one passing near or within it can be stripped or disrupted and feed a luminous accretion flare, and a bound star may transfer mass if it fills its Roche lobe. A larger stellar radius or lower mean density generally makes disruption easier. Increasing black-hole mass enlarges r_t only as M_BH^(1/3), whereas the horizon scale grows roughly linearly with M_BH; above the Hills mass a Sun-like star can cross the horizon before being disrupted outside it. Thus size, density, distance, orbit, and the relation between tidal and horizon radii all matter."
+        },
+        "standard_solution": [
+          "Identify black-hole mass, stellar mass and radius or density, and closest approach as controlling variables.",
+          "Use r_t approximately R_star (M_BH/M_star)^(1/3) to distinguish weak perturbation, mass stripping, and full tidal disruption.",
+          "Explain that lower-density or larger-radius stars are generally easier to disrupt at fixed mass and orbit.",
+          "Compare the tidal radius with the horizon: because the horizon grows faster with black-hole mass, sufficiently massive holes swallow some stars before an observable external disruption."
+        ],
+        "scoring_rubric": [
+          {
+            "criterion": "Identifies black-hole mass, stellar mass and radius or density, and encounter distance as key variables.",
+            "points": 2
+          },
+          {
+            "criterion": "Correctly describes the tidal-radius scaling or equivalent dependence and the transition from weak perturbation to stripping or disruption.",
+            "points": 3
+          },
+          {
+            "criterion": "Explains how stellar radius or mean density affects susceptibility to disruption.",
+            "points": 2
+          },
+          {
+            "criterion": "Explains that sufficiently massive black holes may swallow a star before disrupting it outside the horizon because the horizon grows faster than the tidal radius.",
+            "points": 3
+          }
+        ]
+      }
+    }
+  }
+}

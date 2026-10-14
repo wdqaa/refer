@@ -1,0 +1,31 @@
+{
+  "review_version": "codex_semantic_review.v1",
+  "policy": "Retain only scientifically safe QA with a defensible answer; transformed items must have an integrated and indispensable new dependency.",
+  "items": {
+    "qa-pilot-v1-biology-11457": {"accepted": true, "reason": "Valid single-domain factual control."},
+    "qa-pilot-v1-astronomy-3654": {"accepted": true, "reason": "Valid single-domain factual control."},
+    "qa-pilot-v1-chemistry-9315": {"accepted": true, "reason": "Well-posed electrochemistry calculation with independently recovered Gold."},
+    "qa-pilot-v1-biology-4324": {"accepted": true, "reason": "Scientifically valid mechanism explanation with a usable rubric."},
+    "qa-pilot-v1-astronomy-456": {"accepted": true, "reason": "Unambiguous MCQ and correct independently solved answer.", "required_domains_override": ["astronomy"], "helpful_domains_override": ["physics", "mathematics"]},
+    "qa-pilot-v1-physics-5114": {"accepted": true, "reason": "Well-posed interference calculation with correct units."},
+    "qa-pilot-v1-chemistry-2522": {"accepted": true, "reason": "Unambiguous electrochemistry MCQ after blind solving."},
+    "qa-pilot-v1-geography-481": {"accepted": true, "reason": "Plausible geography MCQ control; choice remains unique among supplied options."},
+    "qa-pilot-v1-physics-9885": {"accepted": true, "reason": "Valid symbolic Casimir-force item; no numerical separation is needed."},
+    "qa-pilot-v1-physics-4416": {"accepted": true, "reason": "Astronomical evidence and particle-search mechanisms form a defensible native cross-domain explanation."},
+    "qa-pilot-v1-chemistry-15521": {"accepted": true, "reason": "Materials chemistry and mechanical/thermal physics are both used in the comparison."},
+    "qa-pilot-v1-geography-25048": {"accepted": false, "reason": "The question asks for a regional impact without wastewater composition, irrigation regime, or study data; the Gold is only conditional and generic."},
+    "qa-pilot-v1-geography-7743": {"accepted": false, "reason": "The question asks for study-specific correlations, while the Gold supplies unverified approximate correlations and source fingerprints."},
+    "qa-pilot-v1-astronomy-122": {"accepted": false, "reason": "The astronomy conclusion is supplied in the wording; selecting the answer mainly requires particle-physics knowledge, so source dependency is not indispensable."},
+    "qa-pilot-v1-biology-22378": {"accepted": false, "reason": "Active-site chemistry is decorative for the requested antiviral effect; the answer is recoverable from biology/pharmacology alone."},
+    "qa-pilot-v1-biology-11832": {"accepted": false, "reason": "The fixed five-subspecies premise is taxonomically disputed and the requested geographic-genetic synthesis is excessive for a clean Gold."},
+    "qa-pilot-v1-geography-20701": {"accepted": true, "reason": "GIS source attribution and nitrate/phosphate transport chemistry are integrated in one water-quality explanation."},
+    "qa-pilot-v1-chemistry-13483": {"accepted": false, "reason": "The jurisdiction and sampling protocol are unspecified, and biological safety was already latent in the original regulatory-safety question rather than newly introduced."},
+    "qa-pilot-v1-chemistry-11280": {"accepted": false, "reason": "DLVO and double-layer reasoning are standard physical chemistry; a separate physics dependency is not clearly indispensable."},
+    "qa-pilot-v1-chemistry-15183": {"accepted": false, "reason": "Prompt-v2 regression showed that phosphorus donor activation and lattice incorporation are standard semiconductor/materials-science knowledge; treating them as an independent chemistry dependency is an artificial boundary split."},
+    "qa-pilot-v1-physics-13938": {"accepted": true, "reason": "Quantum-algorithm reasoning and transition-metal electronic-structure chemistry are integrated."},
+    "qa-pilot-v1-physics-1935": {"accepted": true, "reason": "ESR physics and chemical-radical identification/kinetics form one coherent solution path."},
+    "qa-pilot-v1-physics-13303": {"accepted": true, "reason": "Membrane bending mechanics and biological-membrane interpretation are both substantively used."},
+    "qa-pilot-v1-geography-1614": {"accepted": true, "reason": "Spatial PM2.5 prediction and independent statistical modeling form a defensible native dependency.", "required_domains_override": ["geography", "mathematics"], "helpful_domains_override": ["physics", "chemistry", "biology"]},
+    "qa-pilot-v1-geography-17103": {"accepted": false, "reason": "The question supplies deposition and ingestion, leaving the answer mainly biological; geography is scaffolded rather than required."}
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "id": "deepseek_question_transformer_v1",
+  "version": "1.0",
+  "system_prompt": "Transform a verified source question according to the supplied relation plan. Treat the verified source analysis and selected new domain as fixed. Preserve the original scientific scenario and every original required-domain step. Add only the smallest condition needed to make the new domain indispensable in the same solution chain. Keep the question self-contained, natural, and no more than one meaningful reasoning step harder than the source. Never mention domains, experts, routing, interdisciplinarity, or the transformation process. Do not supply the conclusion-producing scientific rule in the question. Do not append an independent second question, merely paraphrase, or turn routine arithmetic into a new dependency. Mathematics cannot be the new domain in this round. Preserve answer format when practical; for MCQ produce coherent choices with exactly one correct answer. The answer and derivation you provide are provisional and will not be used as Gold. If the plan cannot be realized naturally, return reject_transform. Return one JSON object and no prose.",
+  "output_schema": {
+    "decision": "transform | reject_transform",
+    "question": "string or null",
+    "question_type": "mcq | numeric | short_answer | symbolic | qualitative | null",
+    "choices": "object or null",
+    "provisional_answer": "string or null",
+    "provisional_correct_choice": "choice key or null",
+    "required_domains_after": ["allowed domain"],
+    "new_required_domain": "one non-mathematics domain or null",
+    "derivation": ["ordered solution step"],
+    "source_dependency_preserved": "string or null",
+    "new_dependency_indispensable": "string or null",
+    "transformation_summary": "string"
+  }
+}
+

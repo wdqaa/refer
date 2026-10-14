@@ -1,0 +1,16 @@
+{
+  "review_pool_definition": "schema-valid medium with self_contained=true, answer_grounded=true, and risk_flags=[]",
+  "reviewed": 15,
+  "worth_transform": 3,
+  "rejected": 12,
+  "retained_source_ids": [
+    "selector-v1-biology-1183",
+    "selector-v1-biology-11471",
+    "selector-v1-astronomy-85"
+  ],
+  "combined_with_strict_high_review": {
+    "reviewed": 19,
+    "worth_transform": 4,
+    "sufficient_for_planned_10_to_15_pipeline": false
+  }
+}

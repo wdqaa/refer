@@ -1,0 +1,16 @@
+{"item_id": "native-163df300e9e185", "arm": "self_refine", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-1ee30871e4ed4a", "arm": "self_refine", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-2f12806040f38e", "arm": "self_refine", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-444ad5e3701625", "arm": "self_refine", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-4a0fb05a96efa5", "arm": "self_refine", "auto_correct": true, "method": "choice_exact", "reason": "expected=B actual=B"}
+{"item_id": "native-54981140f07ca2", "arm": "self_refine", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-823f9ecde2c58e", "arm": "self_refine", "auto_correct": true, "method": "choice_exact", "reason": "expected=C actual=C"}
+{"item_id": "native-860b1ff61747b3", "arm": "self_refine", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-923c415b7ff94a", "arm": "self_refine", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-99273534388eb3", "arm": "self_refine", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-b68c4917e24d31", "arm": "self_refine", "auto_correct": false, "method": "choice_exact", "reason": "expected=G actual=C"}
+{"item_id": "native-c3253f873fdeae", "arm": "self_refine", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-e9d9ff5b22f241", "arm": "self_refine", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-eae9d5bd9ad215", "arm": "self_refine", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-f689a7d440530a", "arm": "self_refine", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-f7ea74c01d61ea", "arm": "self_refine", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}

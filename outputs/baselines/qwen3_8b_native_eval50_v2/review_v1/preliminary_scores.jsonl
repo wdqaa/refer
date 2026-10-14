@@ -1,0 +1,150 @@
+{"item_id": "native-00ef4f82bea5fd", "arm": "direct", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-00ef4f82bea5fd", "arm": "oracle_multi_agent", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-00ef4f82bea5fd", "arm": "routed_multi_agent", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-0275f43271d94f", "arm": "direct", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-0275f43271d94f", "arm": "oracle_multi_agent", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-0275f43271d94f", "arm": "routed_multi_agent", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-1199630e7830c1", "arm": "direct", "auto_correct": true, "method": "choice_exact", "reason": "expected=B actual=B"}
+{"item_id": "native-1199630e7830c1", "arm": "oracle_multi_agent", "auto_correct": true, "method": "choice_exact", "reason": "expected=B actual=B"}
+{"item_id": "native-1199630e7830c1", "arm": "routed_multi_agent", "auto_correct": true, "method": "choice_exact", "reason": "expected=B actual=B"}
+{"item_id": "native-163df300e9e185", "arm": "direct", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-163df300e9e185", "arm": "oracle_multi_agent", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-163df300e9e185", "arm": "routed_multi_agent", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-1ee30871e4ed4a", "arm": "direct", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-1ee30871e4ed4a", "arm": "oracle_multi_agent", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-1ee30871e4ed4a", "arm": "routed_multi_agent", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-2330220e0908a3", "arm": "direct", "auto_correct": true, "method": "choice_exact", "reason": "expected=D actual=D"}
+{"item_id": "native-2330220e0908a3", "arm": "oracle_multi_agent", "auto_correct": true, "method": "choice_exact", "reason": "expected=D actual=D"}
+{"item_id": "native-2330220e0908a3", "arm": "routed_multi_agent", "auto_correct": true, "method": "choice_exact", "reason": "expected=D actual=D"}
+{"item_id": "native-293484733341de", "arm": "direct", "auto_correct": true, "method": "choice_exact", "reason": "expected=C actual=C"}
+{"item_id": "native-293484733341de", "arm": "oracle_multi_agent", "auto_correct": true, "method": "choice_exact", "reason": "expected=C actual=C"}
+{"item_id": "native-293484733341de", "arm": "routed_multi_agent", "auto_correct": true, "method": "choice_exact", "reason": "expected=C actual=C"}
+{"item_id": "native-2b667ae5496ac9", "arm": "direct", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-2b667ae5496ac9", "arm": "oracle_multi_agent", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-2b667ae5496ac9", "arm": "routed_multi_agent", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-2f12806040f38e", "arm": "direct", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-2f12806040f38e", "arm": "oracle_multi_agent", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-2f12806040f38e", "arm": "routed_multi_agent", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-385a44a14dee6e", "arm": "direct", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-385a44a14dee6e", "arm": "oracle_multi_agent", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-385a44a14dee6e", "arm": "routed_multi_agent", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-444ad5e3701625", "arm": "direct", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-444ad5e3701625", "arm": "oracle_multi_agent", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-444ad5e3701625", "arm": "routed_multi_agent", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-44b5dad6a7f791", "arm": "direct", "auto_correct": true, "method": "choice_exact", "reason": "expected=D actual=D"}
+{"item_id": "native-44b5dad6a7f791", "arm": "oracle_multi_agent", "auto_correct": true, "method": "choice_exact", "reason": "expected=D actual=D"}
+{"item_id": "native-44b5dad6a7f791", "arm": "routed_multi_agent", "auto_correct": true, "method": "choice_exact", "reason": "expected=D actual=D"}
+{"item_id": "native-4a0fb05a96efa5", "arm": "direct", "auto_correct": true, "method": "choice_exact", "reason": "expected=B actual=B"}
+{"item_id": "native-4a0fb05a96efa5", "arm": "oracle_multi_agent", "auto_correct": true, "method": "choice_exact", "reason": "expected=B actual=B"}
+{"item_id": "native-4a0fb05a96efa5", "arm": "routed_multi_agent", "auto_correct": true, "method": "choice_exact", "reason": "expected=B actual=B"}
+{"item_id": "native-54981140f07ca2", "arm": "direct", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-54981140f07ca2", "arm": "oracle_multi_agent", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-54981140f07ca2", "arm": "routed_multi_agent", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-5dbd54270e82a4", "arm": "direct", "auto_correct": true, "method": "choice_exact", "reason": "expected=D actual=D"}
+{"item_id": "native-5dbd54270e82a4", "arm": "oracle_multi_agent", "auto_correct": true, "method": "choice_exact", "reason": "expected=D actual=D"}
+{"item_id": "native-5dbd54270e82a4", "arm": "routed_multi_agent", "auto_correct": true, "method": "choice_exact", "reason": "expected=D actual=D"}
+{"item_id": "native-69c66cd23304c0", "arm": "direct", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-69c66cd23304c0", "arm": "oracle_multi_agent", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-69c66cd23304c0", "arm": "routed_multi_agent", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-6cd13b37a7cb48", "arm": "direct", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-6cd13b37a7cb48", "arm": "oracle_multi_agent", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-6cd13b37a7cb48", "arm": "routed_multi_agent", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-6dd60022871403", "arm": "direct", "auto_correct": true, "method": "choice_exact", "reason": "expected=A actual=A"}
+{"item_id": "native-6dd60022871403", "arm": "oracle_multi_agent", "auto_correct": true, "method": "choice_exact", "reason": "expected=A actual=A"}
+{"item_id": "native-6dd60022871403", "arm": "routed_multi_agent", "auto_correct": true, "method": "choice_exact", "reason": "expected=A actual=A"}
+{"item_id": "native-7f1ab338d1df39", "arm": "direct", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-7f1ab338d1df39", "arm": "oracle_multi_agent", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-7f1ab338d1df39", "arm": "routed_multi_agent", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-81dab47e6f1d78", "arm": "direct", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-81dab47e6f1d78", "arm": "oracle_multi_agent", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-81dab47e6f1d78", "arm": "routed_multi_agent", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-823f9ecde2c58e", "arm": "direct", "auto_correct": true, "method": "choice_exact", "reason": "expected=C actual=C"}
+{"item_id": "native-823f9ecde2c58e", "arm": "oracle_multi_agent", "auto_correct": true, "method": "choice_exact", "reason": "expected=C actual=C"}
+{"item_id": "native-823f9ecde2c58e", "arm": "routed_multi_agent", "auto_correct": true, "method": "choice_exact", "reason": "expected=C actual=C"}
+{"item_id": "native-860b1ff61747b3", "arm": "direct", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-860b1ff61747b3", "arm": "oracle_multi_agent", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-860b1ff61747b3", "arm": "routed_multi_agent", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-8cdcc31d9a7923", "arm": "direct", "auto_correct": false, "method": "choice_exact", "reason": "expected=B actual=C"}
+{"item_id": "native-8cdcc31d9a7923", "arm": "oracle_multi_agent", "auto_correct": false, "method": "choice_exact", "reason": "expected=B actual=A"}
+{"item_id": "native-8cdcc31d9a7923", "arm": "routed_multi_agent", "auto_correct": false, "method": "choice_exact", "reason": "expected=B actual=A"}
+{"item_id": "native-8ed749aebde279", "arm": "direct", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-8ed749aebde279", "arm": "oracle_multi_agent", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-8ed749aebde279", "arm": "routed_multi_agent", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-923c415b7ff94a", "arm": "direct", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-923c415b7ff94a", "arm": "oracle_multi_agent", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-923c415b7ff94a", "arm": "routed_multi_agent", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-99273534388eb3", "arm": "direct", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-99273534388eb3", "arm": "oracle_multi_agent", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-99273534388eb3", "arm": "routed_multi_agent", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-99bb53aab421f9", "arm": "direct", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-99bb53aab421f9", "arm": "oracle_multi_agent", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-99bb53aab421f9", "arm": "routed_multi_agent", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-9b93588e2476aa", "arm": "direct", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-9b93588e2476aa", "arm": "oracle_multi_agent", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-9b93588e2476aa", "arm": "routed_multi_agent", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-9c961cea8603b8", "arm": "direct", "auto_correct": true, "method": "choice_exact", "reason": "expected=A actual=A"}
+{"item_id": "native-9c961cea8603b8", "arm": "oracle_multi_agent", "auto_correct": true, "method": "choice_exact", "reason": "expected=A actual=A"}
+{"item_id": "native-9c961cea8603b8", "arm": "routed_multi_agent", "auto_correct": true, "method": "choice_exact", "reason": "expected=A actual=A"}
+{"item_id": "native-9f36fe6f3c746f", "arm": "direct", "auto_correct": true, "method": "choice_exact", "reason": "expected=A actual=A"}
+{"item_id": "native-9f36fe6f3c746f", "arm": "oracle_multi_agent", "auto_correct": true, "method": "choice_exact", "reason": "expected=A actual=A"}
+{"item_id": "native-9f36fe6f3c746f", "arm": "routed_multi_agent", "auto_correct": true, "method": "choice_exact", "reason": "expected=A actual=A"}
+{"item_id": "native-9f51e537ef1a94", "arm": "direct", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-9f51e537ef1a94", "arm": "oracle_multi_agent", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-9f51e537ef1a94", "arm": "routed_multi_agent", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-a11709f37bfe8e", "arm": "direct", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-a11709f37bfe8e", "arm": "oracle_multi_agent", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-a11709f37bfe8e", "arm": "routed_multi_agent", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-a21d5e9bab1fff", "arm": "direct", "auto_correct": false, "method": "choice_exact", "reason": "expected=E actual=C"}
+{"item_id": "native-a21d5e9bab1fff", "arm": "oracle_multi_agent", "auto_correct": true, "method": "choice_exact", "reason": "expected=E actual=E"}
+{"item_id": "native-a21d5e9bab1fff", "arm": "routed_multi_agent", "auto_correct": true, "method": "choice_exact", "reason": "expected=E actual=E"}
+{"item_id": "native-ac759e6bfd9e31", "arm": "direct", "auto_correct": false, "method": "choice_exact", "reason": "expected=A actual=C"}
+{"item_id": "native-ac759e6bfd9e31", "arm": "oracle_multi_agent", "auto_correct": false, "method": "choice_exact", "reason": "expected=A actual=C"}
+{"item_id": "native-ac759e6bfd9e31", "arm": "routed_multi_agent", "auto_correct": false, "method": "choice_exact", "reason": "expected=A actual=C"}
+{"item_id": "native-b68c4917e24d31", "arm": "direct", "auto_correct": false, "method": "choice_exact", "reason": "expected=G actual=C"}
+{"item_id": "native-b68c4917e24d31", "arm": "oracle_multi_agent", "auto_correct": false, "method": "choice_exact", "reason": "expected=G actual=C"}
+{"item_id": "native-b68c4917e24d31", "arm": "routed_multi_agent", "auto_correct": false, "method": "choice_exact", "reason": "expected=G actual=C"}
+{"item_id": "native-b8459e9358bd70", "arm": "direct", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-b8459e9358bd70", "arm": "oracle_multi_agent", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-b8459e9358bd70", "arm": "routed_multi_agent", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-b84b17f7409b61", "arm": "direct", "auto_correct": true, "method": "choice_exact", "reason": "expected=A actual=A"}
+{"item_id": "native-b84b17f7409b61", "arm": "oracle_multi_agent", "auto_correct": true, "method": "choice_exact", "reason": "expected=A actual=A"}
+{"item_id": "native-b84b17f7409b61", "arm": "routed_multi_agent", "auto_correct": true, "method": "choice_exact", "reason": "expected=A actual=A"}
+{"item_id": "native-c3253f873fdeae", "arm": "direct", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-c3253f873fdeae", "arm": "oracle_multi_agent", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-c3253f873fdeae", "arm": "routed_multi_agent", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-cdd4bfbe57a2b9", "arm": "direct", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-cdd4bfbe57a2b9", "arm": "oracle_multi_agent", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-cdd4bfbe57a2b9", "arm": "routed_multi_agent", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-cf12a26b5a5ecc", "arm": "direct", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-cf12a26b5a5ecc", "arm": "oracle_multi_agent", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-cf12a26b5a5ecc", "arm": "routed_multi_agent", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-d216c9ed276999", "arm": "direct", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-d216c9ed276999", "arm": "oracle_multi_agent", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-d216c9ed276999", "arm": "routed_multi_agent", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-d5ca54db9abe88", "arm": "direct", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-d5ca54db9abe88", "arm": "oracle_multi_agent", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-d5ca54db9abe88", "arm": "routed_multi_agent", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-d8c15e8d76238e", "arm": "direct", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-d8c15e8d76238e", "arm": "oracle_multi_agent", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-d8c15e8d76238e", "arm": "routed_multi_agent", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-e8213639caeee3", "arm": "direct", "auto_correct": true, "method": "choice_exact", "reason": "expected=C actual=C"}
+{"item_id": "native-e8213639caeee3", "arm": "oracle_multi_agent", "auto_correct": true, "method": "choice_exact", "reason": "expected=C actual=C"}
+{"item_id": "native-e8213639caeee3", "arm": "routed_multi_agent", "auto_correct": true, "method": "choice_exact", "reason": "expected=C actual=C"}
+{"item_id": "native-e9d9ff5b22f241", "arm": "direct", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-e9d9ff5b22f241", "arm": "oracle_multi_agent", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-e9d9ff5b22f241", "arm": "routed_multi_agent", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-eae9d5bd9ad215", "arm": "direct", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-eae9d5bd9ad215", "arm": "oracle_multi_agent", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-eae9d5bd9ad215", "arm": "routed_multi_agent", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-ebe06f8106a35f", "arm": "direct", "auto_correct": true, "method": "choice_exact", "reason": "expected=D actual=D"}
+{"item_id": "native-ebe06f8106a35f", "arm": "oracle_multi_agent", "auto_correct": true, "method": "choice_exact", "reason": "expected=D actual=D"}
+{"item_id": "native-ebe06f8106a35f", "arm": "routed_multi_agent", "auto_correct": true, "method": "choice_exact", "reason": "expected=D actual=D"}
+{"item_id": "native-f586f51a2498a4", "arm": "direct", "auto_correct": true, "method": "choice_exact", "reason": "expected=B actual=B"}
+{"item_id": "native-f586f51a2498a4", "arm": "oracle_multi_agent", "auto_correct": true, "method": "choice_exact", "reason": "expected=B actual=B"}
+{"item_id": "native-f586f51a2498a4", "arm": "routed_multi_agent", "auto_correct": true, "method": "choice_exact", "reason": "expected=B actual=B"}
+{"item_id": "native-f689a7d440530a", "arm": "direct", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-f689a7d440530a", "arm": "oracle_multi_agent", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-f689a7d440530a", "arm": "routed_multi_agent", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-f7ea74c01d61ea", "arm": "direct", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-f7ea74c01d61ea", "arm": "oracle_multi_agent", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "native-f7ea74c01d61ea", "arm": "routed_multi_agent", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}

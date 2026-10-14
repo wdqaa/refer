@@ -1,0 +1,35 @@
+{
+  "config_version": "astronomy_domain_model_benchmark.v1",
+  "dataset": "datasets/processed/domain_model_benchmark_v1/astronomy_eval30/astronomy_eval30_gold_curated.jsonl",
+  "source_pool_records": 30,
+  "curated_records": 24,
+  "prompt": "src/prompts/astronomy_domain_benchmark_v1.json",
+  "models": {
+    "qwen3_8b": {
+      "model_id": "Qwen/Qwen3-8B",
+      "model_path": "/home/dqwang/Model/Qwen3-8B",
+      "prompt_renderer": "chat_template",
+      "enable_thinking": false
+    },
+    "astrosage_8b": {
+      "model_id": "AstroMLab/AstroSage-8B",
+      "model_path": "/home/dqwang/Model/AstroSage-8B",
+      "prompt_renderer": "plain_completion",
+      "enable_thinking": false
+    }
+  },
+  "generation": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "seed": 42,
+    "max_new_tokens": 1024
+  },
+  "evaluation": {
+    "mcq": "deterministic_exact_choice",
+    "qualitative_and_short_answer": "fixed_gold_rubric_then_blinded_semantic_review",
+    "primary_adjudication": "audited_rubric",
+    "deepseek_role": "blinded_first_pass_only",
+    "codex_role": "gold_audit_and_flagged_dispute_resolution"
+  },
+  "training_enabled": false
+}

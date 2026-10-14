@@ -1,0 +1,9 @@
+{"item_id": "qa-batch-v2-chemistry-16377", "arm": "direct", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "qa-batch-v2-chemistry-16377", "arm": "oracle_multi_agent", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "qa-batch-v2-chemistry-16377", "arm": "routed_multi_agent", "auto_correct": null, "method": "rubric_or_symbolic_review", "reason": "Requires blinded rubric or equivalence review"}
+{"item_id": "qa-batch-v2-chemistry-905", "arm": "direct", "auto_correct": true, "method": "choice_exact", "reason": "expected=B actual=B"}
+{"item_id": "qa-batch-v2-chemistry-905", "arm": "oracle_multi_agent", "auto_correct": true, "method": "choice_exact", "reason": "expected=B actual=B"}
+{"item_id": "qa-batch-v2-chemistry-905", "arm": "routed_multi_agent", "auto_correct": true, "method": "choice_exact", "reason": "expected=B actual=B"}
+{"item_id": "qa-batch-v2-physics-458", "arm": "direct", "auto_correct": false, "method": "choice_exact", "reason": "expected=A actual=B"}
+{"item_id": "qa-batch-v2-physics-458", "arm": "oracle_multi_agent", "auto_correct": false, "method": "choice_exact", "reason": "expected=A actual=B"}
+{"item_id": "qa-batch-v2-physics-458", "arm": "routed_multi_agent", "auto_correct": false, "method": "choice_exact", "reason": "expected=A actual=B"}

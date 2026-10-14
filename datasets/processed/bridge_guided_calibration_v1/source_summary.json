@@ -1,0 +1,11 @@
+{
+  "calibration_id": "bridge-guided-calibration-v1",
+  "total": 25,
+  "primary_domain": {
+    "chemistry": 8,
+    "astronomy": 4,
+    "physics": 4,
+    "biology": 7,
+    "geography": 2
+  }
+}

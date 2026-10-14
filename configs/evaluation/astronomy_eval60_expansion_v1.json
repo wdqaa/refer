@@ -1,0 +1,22 @@
+{
+  "id": "astronomy_eval60_expansion_v1",
+  "seed": 109,
+  "candidate_records": 120,
+  "target_curated_records": 60,
+  "quota_by_source_surface": {
+    "astronomy/astronomy_train.jsonl": {
+      "mcq": 20,
+      "open": 60
+    },
+    "astronomy/astronomy_test500.json": {
+      "mcq": 20,
+      "open": 0
+    },
+    "astronomy/supergpqa_astro.jsonl": {
+      "mcq": 20,
+      "open": 0
+    }
+  },
+  "selection_policy": "Unchanged native astronomy-directory QA; model-blind deterministic reservoir sample after excluding every previously processed source identity or exact QA pair.",
+  "training_enabled": false
+}

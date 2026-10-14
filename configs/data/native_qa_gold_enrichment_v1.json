@@ -1,0 +1,9 @@
+{
+  "id": "native-qa-gold-enrichment-v1",
+  "model": "deepseek-flash",
+  "batch_size": 5,
+  "thinking_enabled": false,
+  "max_tokens": 6000,
+  "retries": 0,
+  "workers": 3
+}

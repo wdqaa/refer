@@ -1,0 +1,26 @@
+{
+  "total": 30,
+  "schema_valid": 30,
+  "validity_accuracy": 0.8667,
+  "required_domains_exact_match": 0.6667,
+  "domain_type_accuracy": 0.8667,
+  "cross_domain_precision": 0.875,
+  "cross_domain_recall": 0.7,
+  "valid_only": {
+    "total": 24,
+    "retention_rate": 0.9167,
+    "required_domains_exact_match": 0.7917,
+    "domain_type_accuracy": 0.875,
+    "cross_domain_precision": 1.0,
+    "cross_domain_recall": 0.6667
+  },
+  "invalid_controls": {
+    "total": 6,
+    "rejection_rate": 0.6667
+  },
+  "per_category_domain_exact_match": {
+    "audited_invalid": 0.1667,
+    "verified_native_cross_domain": 0.6667,
+    "verified_native_single": 0.8667
+  }
+}

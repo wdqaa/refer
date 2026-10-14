@@ -1,0 +1,39 @@
+{"item_id": "qa-batch-v2-astronomy-3016", "mapping": [{"candidate_code": "A", "arm": "oracle_multi_agent"}, {"candidate_code": "B", "arm": "direct"}, {"candidate_code": "C", "arm": "routed_multi_agent"}]}
+{"item_id": "qa-batch-v2-astronomy-3033", "mapping": [{"candidate_code": "A", "arm": "routed_multi_agent"}, {"candidate_code": "B", "arm": "oracle_multi_agent"}, {"candidate_code": "C", "arm": "direct"}]}
+{"item_id": "qa-batch-v2-biology-12675", "mapping": [{"candidate_code": "A", "arm": "oracle_multi_agent"}, {"candidate_code": "B", "arm": "routed_multi_agent"}, {"candidate_code": "C", "arm": "direct"}]}
+{"item_id": "qa-batch-v2-biology-12824", "mapping": [{"candidate_code": "A", "arm": "oracle_multi_agent"}, {"candidate_code": "B", "arm": "routed_multi_agent"}, {"candidate_code": "C", "arm": "direct"}]}
+{"item_id": "qa-batch-v2-biology-13790", "mapping": [{"candidate_code": "A", "arm": "oracle_multi_agent"}, {"candidate_code": "B", "arm": "direct"}, {"candidate_code": "C", "arm": "routed_multi_agent"}]}
+{"item_id": "qa-batch-v2-biology-16775", "mapping": [{"candidate_code": "A", "arm": "direct"}, {"candidate_code": "B", "arm": "oracle_multi_agent"}, {"candidate_code": "C", "arm": "routed_multi_agent"}]}
+{"item_id": "qa-batch-v2-biology-17903", "mapping": [{"candidate_code": "A", "arm": "oracle_multi_agent"}, {"candidate_code": "B", "arm": "routed_multi_agent"}, {"candidate_code": "C", "arm": "direct"}]}
+{"item_id": "qa-batch-v2-biology-19246", "mapping": [{"candidate_code": "A", "arm": "oracle_multi_agent"}, {"candidate_code": "B", "arm": "routed_multi_agent"}, {"candidate_code": "C", "arm": "direct"}]}
+{"item_id": "qa-batch-v2-biology-22035", "mapping": [{"candidate_code": "A", "arm": "oracle_multi_agent"}, {"candidate_code": "B", "arm": "routed_multi_agent"}, {"candidate_code": "C", "arm": "direct"}]}
+{"item_id": "qa-batch-v2-biology-5661", "mapping": [{"candidate_code": "A", "arm": "oracle_multi_agent"}, {"candidate_code": "B", "arm": "direct"}, {"candidate_code": "C", "arm": "routed_multi_agent"}]}
+{"item_id": "qa-batch-v2-chemistry-10656", "mapping": [{"candidate_code": "A", "arm": "direct"}, {"candidate_code": "B", "arm": "oracle_multi_agent"}, {"candidate_code": "C", "arm": "routed_multi_agent"}]}
+{"item_id": "qa-batch-v2-chemistry-16377", "mapping": [{"candidate_code": "A", "arm": "routed_multi_agent"}, {"candidate_code": "B", "arm": "oracle_multi_agent"}, {"candidate_code": "C", "arm": "direct"}]}
+{"item_id": "qa-batch-v2-chemistry-19509", "mapping": [{"candidate_code": "A", "arm": "direct"}, {"candidate_code": "B", "arm": "oracle_multi_agent"}, {"candidate_code": "C", "arm": "routed_multi_agent"}]}
+{"item_id": "qa-batch-v2-chemistry-7904", "mapping": [{"candidate_code": "A", "arm": "direct"}]}
+{"item_id": "qa-batch-v2-geography-15776", "mapping": [{"candidate_code": "A", "arm": "oracle_multi_agent"}, {"candidate_code": "B", "arm": "routed_multi_agent"}, {"candidate_code": "C", "arm": "direct"}]}
+{"item_id": "qa-batch-v2-geography-19886", "mapping": [{"candidate_code": "A", "arm": "direct"}, {"candidate_code": "B", "arm": "oracle_multi_agent"}, {"candidate_code": "C", "arm": "routed_multi_agent"}]}
+{"item_id": "qa-batch-v2-geography-28410", "mapping": [{"candidate_code": "A", "arm": "direct"}, {"candidate_code": "B", "arm": "routed_multi_agent"}, {"candidate_code": "C", "arm": "oracle_multi_agent"}]}
+{"item_id": "qa-batch-v2-geography-29227", "mapping": [{"candidate_code": "A", "arm": "oracle_multi_agent"}, {"candidate_code": "B", "arm": "routed_multi_agent"}, {"candidate_code": "C", "arm": "direct"}]}
+{"item_id": "qa-batch-v2-geography-5235", "mapping": [{"candidate_code": "A", "arm": "routed_multi_agent"}, {"candidate_code": "B", "arm": "direct"}, {"candidate_code": "C", "arm": "oracle_multi_agent"}]}
+{"item_id": "qa-batch-v2-physics-13597", "mapping": [{"candidate_code": "A", "arm": "routed_multi_agent"}, {"candidate_code": "B", "arm": "oracle_multi_agent"}, {"candidate_code": "C", "arm": "direct"}]}
+{"item_id": "qa-batch-v2-physics-14546", "mapping": [{"candidate_code": "A", "arm": "routed_multi_agent"}, {"candidate_code": "B", "arm": "oracle_multi_agent"}, {"candidate_code": "C", "arm": "direct"}]}
+{"item_id": "qa-batch-v2-physics-14715", "mapping": [{"candidate_code": "A", "arm": "direct"}, {"candidate_code": "B", "arm": "routed_multi_agent"}, {"candidate_code": "C", "arm": "oracle_multi_agent"}]}
+{"item_id": "qa-batch-v2-physics-14821", "mapping": [{"candidate_code": "A", "arm": "routed_multi_agent"}, {"candidate_code": "B", "arm": "oracle_multi_agent"}]}
+{"item_id": "qa-batch-v2-physics-5711", "mapping": [{"candidate_code": "A", "arm": "direct"}, {"candidate_code": "B", "arm": "oracle_multi_agent"}, {"candidate_code": "C", "arm": "routed_multi_agent"}]}
+{"item_id": "qa-batch-v2-physics-7460", "mapping": [{"candidate_code": "A", "arm": "oracle_multi_agent"}, {"candidate_code": "B", "arm": "direct"}, {"candidate_code": "C", "arm": "routed_multi_agent"}]}
+{"item_id": "qa-pilot-v1-astronomy-3654", "mapping": [{"candidate_code": "A", "arm": "routed_multi_agent"}, {"candidate_code": "B", "arm": "direct"}, {"candidate_code": "C", "arm": "oracle_multi_agent"}]}
+{"item_id": "qa-pilot-v1-biology-11457", "mapping": [{"candidate_code": "A", "arm": "oracle_multi_agent"}, {"candidate_code": "B", "arm": "routed_multi_agent"}]}
+{"item_id": "qa-pilot-v1-biology-4324", "mapping": [{"candidate_code": "A", "arm": "direct"}, {"candidate_code": "B", "arm": "oracle_multi_agent"}, {"candidate_code": "C", "arm": "routed_multi_agent"}]}
+{"item_id": "qa-pilot-v1-chemistry-15521", "mapping": [{"candidate_code": "A", "arm": "oracle_multi_agent"}, {"candidate_code": "B", "arm": "direct"}, {"candidate_code": "C", "arm": "routed_multi_agent"}]}
+{"item_id": "qa-pilot-v1-geography-1614", "mapping": [{"candidate_code": "A", "arm": "oracle_multi_agent"}, {"candidate_code": "B", "arm": "direct"}, {"candidate_code": "C", "arm": "routed_multi_agent"}]}
+{"item_id": "qa-pilot-v1-geography-20701", "mapping": [{"candidate_code": "A", "arm": "oracle_multi_agent"}, {"candidate_code": "B", "arm": "routed_multi_agent"}, {"candidate_code": "C", "arm": "direct"}]}
+{"item_id": "qa-pilot-v1-physics-13303", "mapping": [{"candidate_code": "A", "arm": "routed_multi_agent"}, {"candidate_code": "B", "arm": "direct"}, {"candidate_code": "C", "arm": "oracle_multi_agent"}]}
+{"item_id": "qa-pilot-v1-physics-13938", "mapping": [{"candidate_code": "A", "arm": "oracle_multi_agent"}, {"candidate_code": "B", "arm": "routed_multi_agent"}, {"candidate_code": "C", "arm": "direct"}]}
+{"item_id": "qa-pilot-v1-physics-1935", "mapping": [{"candidate_code": "A", "arm": "direct"}, {"candidate_code": "B", "arm": "routed_multi_agent"}, {"candidate_code": "C", "arm": "oracle_multi_agent"}]}
+{"item_id": "qa-pilot-v1-physics-4416", "mapping": [{"candidate_code": "A", "arm": "direct"}, {"candidate_code": "B", "arm": "routed_multi_agent"}, {"candidate_code": "C", "arm": "oracle_multi_agent"}]}
+{"item_id": "qa-pilot-v1-physics-5114", "mapping": [{"candidate_code": "A", "arm": "direct"}]}
+{"item_id": "qa-pilot-v1-physics-9885", "mapping": [{"candidate_code": "A", "arm": "routed_multi_agent"}, {"candidate_code": "B", "arm": "oracle_multi_agent"}, {"candidate_code": "C", "arm": "direct"}]}
+{"item_id": "qa-validation-v2-biology-8591", "mapping": [{"candidate_code": "A", "arm": "routed_multi_agent"}, {"candidate_code": "B", "arm": "direct"}, {"candidate_code": "C", "arm": "oracle_multi_agent"}]}
+{"item_id": "qa-validation-v2-geography-19687", "mapping": [{"candidate_code": "A", "arm": "direct"}, {"candidate_code": "B", "arm": "oracle_multi_agent"}, {"candidate_code": "C", "arm": "routed_multi_agent"}]}

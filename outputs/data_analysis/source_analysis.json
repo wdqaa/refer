@@ -1,0 +1,994 @@
+{
+  "analysis_version": "source_analysis.v1",
+  "generated_at": "2026-09-27T15:56:04+08:00",
+  "input_root": "/home/dqwang/Projects/multi_agent_opd_single_student/datasets/science_dataset/mixed_dataset",
+  "notes": [
+    "Counts are raw records; cross-file deduplication has not been applied.",
+    "The mixed domain is reported separately and excluded from non_mixed_total.",
+    "Lengths are approximate word/CJK-character counts of normalized stems.",
+    "Difficulty and reasoning labels are rule-based proxies, not gold labels."
+  ],
+  "totals": {
+    "all_records_including_mixed": 339014,
+    "non_mixed_total": 180029,
+    "mixed_total": 158985,
+    "files": 20
+  },
+  "domain_counts": {
+    "astronomy": 4585,
+    "biology": 27540,
+    "chemistry": 24391,
+    "geography": 36426,
+    "math": 66858,
+    "mixed": 158985,
+    "physics": 20229
+  },
+  "domain_lengths": {
+    "astronomy": {
+      "question_words": {
+        "count": 4585,
+        "mean": 26.8,
+        "median": 23.0,
+        "p25": 15.0,
+        "p75": 33.0,
+        "p90": 46.0
+      },
+      "answer_words": {
+        "count": 4585,
+        "mean": 227.01,
+        "median": 282.0,
+        "p25": 1.0,
+        "p75": 420.0,
+        "p90": 484.0
+      }
+    },
+    "biology": {
+      "question_words": {
+        "count": 27540,
+        "mean": 24.15,
+        "median": 21.0,
+        "p25": 16.0,
+        "p75": 27.0,
+        "p90": 33.0
+      },
+      "answer_words": {
+        "count": 27540,
+        "mean": 290.07,
+        "median": 378.0,
+        "p25": 39.0,
+        "p75": 436.0,
+        "p90": 480.0
+      }
+    },
+    "chemistry": {
+      "question_words": {
+        "count": 24391,
+        "mean": 35.41,
+        "median": 27.0,
+        "p25": 20.0,
+        "p75": 40.0,
+        "p90": 62.0
+      },
+      "answer_words": {
+        "count": 24391,
+        "mean": 218.65,
+        "median": 228.0,
+        "p25": 1.0,
+        "p75": 393.0,
+        "p90": 446.0
+      }
+    },
+    "geography": {
+      "question_words": {
+        "count": 36426,
+        "mean": 20.1,
+        "median": 19.0,
+        "p25": 15.0,
+        "p75": 24.0,
+        "p90": 30.0
+      },
+      "answer_words": {
+        "count": 36426,
+        "mean": 79.73,
+        "median": 78.0,
+        "p25": 43.0,
+        "p75": 113.0,
+        "p90": 149.0
+      }
+    },
+    "math": {
+      "question_words": {
+        "count": 66858,
+        "mean": 47.37,
+        "median": 44.0,
+        "p25": 34.0,
+        "p75": 57.0,
+        "p90": 72.0
+      },
+      "answer_words": {
+        "count": 66858,
+        "mean": 90.86,
+        "median": 81.0,
+        "p25": 56.0,
+        "p75": 119.0,
+        "p90": 157.0
+      }
+    },
+    "mixed": {
+      "question_words": {
+        "count": 158985,
+        "mean": 35.5,
+        "median": 30.0,
+        "p25": 21.0,
+        "p75": 45.0,
+        "p90": 62.0
+      },
+      "answer_words": {
+        "count": 158985,
+        "mean": 175.68,
+        "median": 110.0,
+        "p25": 62.0,
+        "p75": 308.0,
+        "p90": 430.0
+      }
+    },
+    "physics": {
+      "question_words": {
+        "count": 20229,
+        "mean": 34.59,
+        "median": 32.0,
+        "p25": 22.0,
+        "p75": 44.0,
+        "p90": 58.0
+      },
+      "answer_words": {
+        "count": 20229,
+        "mean": 246.13,
+        "median": 262.0,
+        "p25": 54.0,
+        "p75": 404.0,
+        "p90": 473.0
+      }
+    }
+  },
+  "answer_format": {
+    "multiple_choice": 35954,
+    "open_ended": 303060
+  },
+  "reasoning_proxy": {
+    "conceptual": 160359,
+    "quantitative": 178655
+  },
+  "difficulty_proxy": {
+    "easy": 144979,
+    "hard": 23411,
+    "medium": 170624
+  },
+  "files": {
+    "astronomy/astronomy_test500.json": {
+      "records": 500,
+      "schemas": {
+        "answer|choices|id|stem": 500
+      },
+      "question_words": {
+        "count": 500,
+        "mean": 15.21,
+        "median": 15.0,
+        "p25": 12.0,
+        "p75": 18.0,
+        "p90": 20.0
+      },
+      "answer_words": {
+        "count": 500,
+        "mean": 1.0,
+        "median": 1.0,
+        "p25": 1.0,
+        "p75": 1.0,
+        "p90": 1.0
+      },
+      "answer_format": {
+        "multiple_choice": 500
+      },
+      "reasoning_proxy": {
+        "conceptual": 465,
+        "quantitative": 35
+      },
+      "difficulty_proxy": {
+        "easy": 464,
+        "medium": 36
+      }
+    },
+    "astronomy/astronomy_train.jsonl": {
+      "records": 3680,
+      "schemas": {
+        "prompt|response": 3680
+      },
+      "question_words": {
+        "count": 3680,
+        "mean": 26.99,
+        "median": 24.0,
+        "p25": 16.0,
+        "p75": 34.0,
+        "p90": 44.0
+      },
+      "answer_words": {
+        "count": 3680,
+        "mean": 282.59,
+        "median": 356.0,
+        "p25": 1.0,
+        "p75": 436.0,
+        "p90": 494.0
+      },
+      "answer_format": {
+        "multiple_choice": 976,
+        "open_ended": 2704
+      },
+      "reasoning_proxy": {
+        "conceptual": 3279,
+        "quantitative": 401
+      },
+      "difficulty_proxy": {
+        "easy": 2688,
+        "hard": 34,
+        "medium": 958
+      }
+    },
+    "astronomy/supergpqa_astro.jsonl": {
+      "records": 405,
+      "schemas": {
+        "choices|difficulty|discipline|field|id|is_calculation|mcq_answer|question|subfield": 405
+      },
+      "question_words": {
+        "count": 405,
+        "mean": 39.45,
+        "median": 34.0,
+        "p25": 15.0,
+        "p75": 52.0,
+        "p90": 76.0
+      },
+      "answer_words": {
+        "count": 405,
+        "mean": 1.0,
+        "median": 1.0,
+        "p25": 1.0,
+        "p75": 1.0,
+        "p90": 1.0
+      },
+      "answer_format": {
+        "multiple_choice": 405
+      },
+      "reasoning_proxy": {
+        "conceptual": 88,
+        "quantitative": 317
+      },
+      "difficulty_proxy": {
+        "easy": 77,
+        "hard": 41,
+        "medium": 287
+      }
+    },
+    "biology/MMLU-biology.jsonl": {
+      "records": 717,
+      "schemas": {
+        "choices|id|mcq_answer|question": 717
+      },
+      "question_words": {
+        "count": 717,
+        "mean": 24.96,
+        "median": 19.0,
+        "p25": 11.0,
+        "p75": 33.0,
+        "p90": 49.4
+      },
+      "answer_words": {
+        "count": 717,
+        "mean": 1.0,
+        "median": 1.0,
+        "p25": 1.0,
+        "p75": 1.0,
+        "p90": 1.0
+      },
+      "answer_format": {
+        "multiple_choice": 717
+      },
+      "reasoning_proxy": {
+        "conceptual": 589,
+        "quantitative": 128
+      },
+      "difficulty_proxy": {
+        "easy": 501,
+        "hard": 22,
+        "medium": 194
+      }
+    },
+    "biology/biology_test.jsonl": {
+      "records": 3000,
+      "schemas": {
+        "answer|choices|id|stem|topic": 3000
+      },
+      "question_words": {
+        "count": 3000,
+        "mean": 17.82,
+        "median": 17.0,
+        "p25": 13.0,
+        "p75": 22.0,
+        "p90": 27.0
+      },
+      "answer_words": {
+        "count": 3000,
+        "mean": 1.0,
+        "median": 1.0,
+        "p25": 1.0,
+        "p75": 1.0,
+        "p90": 1.0
+      },
+      "answer_format": {
+        "multiple_choice": 3000
+      },
+      "reasoning_proxy": {
+        "conceptual": 2701,
+        "quantitative": 299
+      },
+      "difficulty_proxy": {
+        "easy": 2659,
+        "hard": 1,
+        "medium": 340
+      }
+    },
+    "biology/biology_train.jsonl": {
+      "records": 23823,
+      "schemas": {
+        "prompt|response": 23823
+      },
+      "question_words": {
+        "count": 23823,
+        "mean": 24.92,
+        "median": 21.0,
+        "p25": 16.0,
+        "p75": 27.0,
+        "p90": 33.0
+      },
+      "answer_words": {
+        "count": 23823,
+        "mean": 335.18,
+        "median": 395.0,
+        "p25": 300.0,
+        "p75": 445.0,
+        "p90": 486.0
+      },
+      "answer_format": {
+        "multiple_choice": 1940,
+        "open_ended": 21883
+      },
+      "reasoning_proxy": {
+        "conceptual": 22562,
+        "quantitative": 1261
+      },
+      "difficulty_proxy": {
+        "easy": 21155,
+        "hard": 485,
+        "medium": 2183
+      }
+    },
+    "chemistry/MMLU-chemistry.jsonl": {
+      "records": 1132,
+      "schemas": {
+        "choices|id|mcq_answer|question": 1132
+      },
+      "question_words": {
+        "count": 1132,
+        "mean": 42.59,
+        "median": 38.0,
+        "p25": 24.0,
+        "p75": 55.0,
+        "p90": 76.0
+      },
+      "answer_words": {
+        "count": 1132,
+        "mean": 1.0,
+        "median": 1.0,
+        "p25": 1.0,
+        "p75": 1.0,
+        "p90": 1.0
+      },
+      "answer_format": {
+        "multiple_choice": 1132
+      },
+      "reasoning_proxy": {
+        "conceptual": 91,
+        "quantitative": 1041
+      },
+      "difficulty_proxy": {
+        "easy": 83,
+        "hard": 124,
+        "medium": 925
+      }
+    },
+    "chemistry/chemistry_test.json": {
+      "records": 2496,
+      "schemas": {
+        "answer|choices|id|stem": 2496
+      },
+      "question_words": {
+        "count": 2496,
+        "mean": 28.26,
+        "median": 18.0,
+        "p25": 14.0,
+        "p75": 25.0,
+        "p90": 43.0
+      },
+      "answer_words": {
+        "count": 2496,
+        "mean": 1.0,
+        "median": 1.0,
+        "p25": 1.0,
+        "p75": 1.0,
+        "p90": 1.0
+      },
+      "answer_format": {
+        "multiple_choice": 2496
+      },
+      "reasoning_proxy": {
+        "conceptual": 1320,
+        "quantitative": 1176
+      },
+      "difficulty_proxy": {
+        "easy": 1253,
+        "hard": 172,
+        "medium": 1071
+      }
+    },
+    "chemistry/chemistry_train.jsonl": {
+      "records": 20763,
+      "schemas": {
+        "prompt|response": 20763
+      },
+      "question_words": {
+        "count": 20763,
+        "mean": 35.87,
+        "median": 28.0,
+        "p25": 21.0,
+        "p75": 40.0,
+        "p90": 62.0
+      },
+      "answer_words": {
+        "count": 20763,
+        "mean": 256.68,
+        "median": 327.0,
+        "p25": 73.0,
+        "p75": 404.0,
+        "p90": 454.0
+      },
+      "answer_format": {
+        "multiple_choice": 4766,
+        "open_ended": 15997
+      },
+      "reasoning_proxy": {
+        "conceptual": 12112,
+        "quantitative": 8651
+      },
+      "difficulty_proxy": {
+        "easy": 10360,
+        "hard": 1435,
+        "medium": 8968
+      }
+    },
+    "geography/geography.jsonl": {
+      "records": 278,
+      "schemas": {
+        "choices|id|mcq_answer|question": 278
+      },
+      "question_words": {
+        "count": 278,
+        "mean": 38.49,
+        "median": 22.5,
+        "p25": 17.0,
+        "p75": 46.5,
+        "p90": 80.3
+      },
+      "answer_words": {
+        "count": 278,
+        "mean": 1.0,
+        "median": 1.0,
+        "p25": 1.0,
+        "p75": 1.0,
+        "p90": 1.0
+      },
+      "answer_format": {
+        "multiple_choice": 278
+      },
+      "reasoning_proxy": {
+        "conceptual": 252,
+        "quantitative": 26
+      },
+      "difficulty_proxy": {
+        "easy": 189,
+        "hard": 28,
+        "medium": 61
+      }
+    },
+    "geography/geography_test.json": {
+      "records": 4000,
+      "schemas": {
+        "answer|choices|evidence_keywords|id|stem|topic": 4000
+      },
+      "question_words": {
+        "count": 4000,
+        "mean": 14.64,
+        "median": 14.0,
+        "p25": 12.0,
+        "p75": 16.0,
+        "p90": 19.0
+      },
+      "answer_words": {
+        "count": 4000,
+        "mean": 1.0,
+        "median": 1.0,
+        "p25": 1.0,
+        "p75": 1.0,
+        "p90": 1.0
+      },
+      "answer_format": {
+        "multiple_choice": 4000
+      },
+      "reasoning_proxy": {
+        "conceptual": 3117,
+        "quantitative": 883
+      },
+      "difficulty_proxy": {
+        "easy": 3102,
+        "medium": 898
+      }
+    },
+    "geography/geography_train.jsonl": {
+      "records": 31999,
+      "schemas": {
+        "prompt|response": 31999
+      },
+      "question_words": {
+        "count": 31999,
+        "mean": 20.63,
+        "median": 20.0,
+        "p25": 15.0,
+        "p75": 25.0,
+        "p90": 30.0
+      },
+      "answer_words": {
+        "count": 31999,
+        "mean": 90.63,
+        "median": 86.0,
+        "p25": 56.0,
+        "p75": 119.0,
+        "p90": 153.0
+      },
+      "answer_format": {
+        "multiple_choice": 922,
+        "open_ended": 31077
+      },
+      "reasoning_proxy": {
+        "conceptual": 25880,
+        "quantitative": 6119
+      },
+      "difficulty_proxy": {
+        "easy": 25181,
+        "medium": 6818
+      }
+    },
+    "geography/mmlu-geography.jsonl": {
+      "records": 149,
+      "schemas": {
+        "category|choices|id|mcq_answer|question|src": 149
+      },
+      "question_words": {
+        "count": 149,
+        "mean": 17.54,
+        "median": 15.0,
+        "p25": 12.0,
+        "p75": 19.0,
+        "p90": 27.0
+      },
+      "answer_words": {
+        "count": 149,
+        "mean": 1.0,
+        "median": 1.0,
+        "p25": 1.0,
+        "p75": 1.0,
+        "p90": 1.0
+      },
+      "answer_format": {
+        "multiple_choice": 149
+      },
+      "reasoning_proxy": {
+        "conceptual": 67,
+        "quantitative": 82
+      },
+      "difficulty_proxy": {
+        "easy": 65,
+        "medium": 84
+      }
+    },
+    "math/math_test.jsonl": {
+      "records": 3997,
+      "schemas": {
+        "prompt|response": 3997
+      },
+      "question_words": {
+        "count": 3997,
+        "mean": 42.05,
+        "median": 39.0,
+        "p25": 27.0,
+        "p75": 53.0,
+        "p90": 68.0
+      },
+      "answer_words": {
+        "count": 3997,
+        "mean": 93.29,
+        "median": 81.0,
+        "p25": 56.0,
+        "p75": 118.0,
+        "p90": 159.0
+      },
+      "answer_format": {
+        "multiple_choice": 1,
+        "open_ended": 3996
+      },
+      "reasoning_proxy": {
+        "conceptual": 40,
+        "quantitative": 3957
+      },
+      "difficulty_proxy": {
+        "easy": 29,
+        "hard": 473,
+        "medium": 3495
+      }
+    },
+    "math/math_train.jsonl": {
+      "records": 61510,
+      "schemas": {
+        "prompt|response": 61510
+      },
+      "question_words": {
+        "count": 61510,
+        "mean": 48.03,
+        "median": 45.0,
+        "p25": 35.0,
+        "p75": 58.0,
+        "p90": 72.0
+      },
+      "answer_words": {
+        "count": 61510,
+        "mean": 92.68,
+        "median": 82.0,
+        "p25": 58.0,
+        "p75": 121.0,
+        "p90": 157.0
+      },
+      "answer_format": {
+        "open_ended": 61510
+      },
+      "reasoning_proxy": {
+        "conceptual": 183,
+        "quantitative": 61327
+      },
+      "difficulty_proxy": {
+        "easy": 62,
+        "hard": 8721,
+        "medium": 52727
+      }
+    },
+    "math/mmlu-math.jsonl": {
+      "records": 1351,
+      "schemas": {
+        "choices|id|mcq_answer|question": 1351
+      },
+      "question_words": {
+        "count": 1351,
+        "mean": 33.35,
+        "median": 29.0,
+        "p25": 17.0,
+        "p75": 43.0,
+        "p90": 63.0
+      },
+      "answer_words": {
+        "count": 1351,
+        "mean": 1.0,
+        "median": 1.0,
+        "p25": 1.0,
+        "p75": 1.0,
+        "p90": 1.0
+      },
+      "answer_format": {
+        "multiple_choice": 1351
+      },
+      "reasoning_proxy": {
+        "conceptual": 79,
+        "quantitative": 1272
+      },
+      "difficulty_proxy": {
+        "easy": 60,
+        "hard": 89,
+        "medium": 1202
+      }
+    },
+    "mixed/mixed_train.jsonl": {
+      "records": 158985,
+      "schemas": {
+        "prompt|response": 158985
+      },
+      "question_words": {
+        "count": 158985,
+        "mean": 35.5,
+        "median": 30.0,
+        "p25": 21.0,
+        "p75": 45.0,
+        "p90": 62.0
+      },
+      "answer_words": {
+        "count": 158985,
+        "mean": 175.68,
+        "median": 110.0,
+        "p25": 62.0,
+        "p75": 308.0,
+        "p90": 430.0
+      },
+      "answer_format": {
+        "multiple_choice": 9453,
+        "open_ended": 149532
+      },
+      "reasoning_proxy": {
+        "conceptual": 75069,
+        "quantitative": 83916
+      },
+      "difficulty_proxy": {
+        "easy": 67684,
+        "hard": 11153,
+        "medium": 80148
+      }
+    },
+    "physics/mmlu-physics.jsonl": {
+      "records": 1299,
+      "schemas": {
+        "choices|id|mcq_answer|question": 1299
+      },
+      "question_words": {
+        "count": 1299,
+        "mean": 39.29,
+        "median": 36.0,
+        "p25": 23.0,
+        "p75": 52.0,
+        "p90": 68.0
+      },
+      "answer_words": {
+        "count": 1299,
+        "mean": 1.0,
+        "median": 1.0,
+        "p25": 1.0,
+        "p75": 1.0,
+        "p90": 1.0
+      },
+      "answer_format": {
+        "multiple_choice": 1299
+      },
+      "reasoning_proxy": {
+        "conceptual": 277,
+        "quantitative": 1022
+      },
+      "difficulty_proxy": {
+        "easy": 233,
+        "hard": 117,
+        "medium": 949
+      }
+    },
+    "physics/physics_test.json": {
+      "records": 1720,
+      "schemas": {
+        "choices|id|mcq_answer|qtype|question": 1720
+      },
+      "question_words": {
+        "count": 1720,
+        "mean": 32.7,
+        "median": 29.0,
+        "p25": 20.0,
+        "p75": 42.0,
+        "p90": 55.0
+      },
+      "answer_words": {
+        "count": 1720,
+        "mean": 1.0,
+        "median": 1.0,
+        "p25": 1.0,
+        "p75": 1.0,
+        "p90": 1.0
+      },
+      "answer_format": {
+        "multiple_choice": 1720
+      },
+      "reasoning_proxy": {
+        "conceptual": 1135,
+        "quantitative": 585
+      },
+      "difficulty_proxy": {
+        "easy": 896,
+        "hard": 38,
+        "medium": 786
+      }
+    },
+    "physics/physics_train.jsonl": {
+      "records": 17210,
+      "schemas": {
+        "prompt|response": 17210
+      },
+      "question_words": {
+        "count": 17210,
+        "mean": 34.42,
+        "median": 32.0,
+        "p25": 22.0,
+        "p75": 44.0,
+        "p90": 57.0
+      },
+      "answer_words": {
+        "count": 17210,
+        "mean": 289.13,
+        "median": 317.0,
+        "p25": 155.0,
+        "p75": 420.0,
+        "p90": 482.0
+      },
+      "answer_format": {
+        "multiple_choice": 849,
+        "open_ended": 16361
+      },
+      "reasoning_proxy": {
+        "conceptual": 11053,
+        "quantitative": 6157
+      },
+      "difficulty_proxy": {
+        "easy": 8238,
+        "hard": 478,
+        "medium": 8494
+      }
+    }
+  },
+  "examples": [
+    {
+      "source_file": "astronomy/astronomy_test500.json",
+      "source_id": "1",
+      "question": "Which effect is most realistically expected for neutrinos propagating near a massive black hole?",
+      "answer": "B",
+      "choice_count": 4
+    },
+    {
+      "source_file": "astronomy/astronomy_train.jsonl",
+      "source_id": "index:0",
+      "question": "What key differences help distinguish stellar black holes from primordial black holes?",
+      "answer": "D",
+      "choice_count": 4
+    },
+    {
+      "source_file": "astronomy/supergpqa_astro.jsonl",
+      "source_id": "873484527",
+      "question": "The statement that would best describe a \"comet tail\" would be considered which of the following?",
+      "answer": "J",
+      "choice_count": 10
+    },
+    {
+      "source_file": "biology/MMLU-biology.jsonl",
+      "source_id": "2804",
+      "question": "Which of the following would most likely provide examples of mitotic cell divisions?",
+      "answer": "B",
+      "choice_count": 8
+    },
+    {
+      "source_file": "biology/biology_test.jsonl",
+      "source_id": "1",
+      "question": "Which strategy is specifically mentioned to improve next-generation sequencing accuracy by focusing on specific genomic regions?",
+      "answer": "C",
+      "choice_count": 4
+    },
+    {
+      "source_file": "biology/biology_train.jsonl",
+      "source_id": "index:0",
+      "question": "What factors determine the ability of Bouligand structures with small pitch angles to dissipate energy through the growth of sub-critical damage?",
+      "answer": "C",
+      "choice_count": 4
+    },
+    {
+      "source_file": "chemistry/MMLU-chemistry.jsonl",
+      "source_id": "3526",
+      "question": "An unknown substance is found to have a high melting point. In addition, it is a poor conductor of electricity and does not dissolve in water. The substance most likely contains",
+      "answer": "C",
+      "choice_count": 10
+    },
+    {
+      "source_file": "chemistry/chemistry_test.json",
+      "source_id": "1",
+      "question": "What is the enthalpy of combustion of propane (C3H8) in kJ/mol, based on the given calorimetry data?",
+      "answer": "C",
+      "choice_count": 4
+    },
+    {
+      "source_file": "chemistry/chemistry_train.jsonl",
+      "source_id": "index:0",
+      "question": "What are the methods for transforming the morphology of porous organic frameworks (POFs)?",
+      "answer": "A",
+      "choice_count": 4
+    },
+    {
+      "source_file": "geography/geography.jsonl",
+      "source_id": "1",
+      "question": "冰川服务可分为供给服务、调节服务和文化服务。其中供给服务包括淡水资源、水力发电;调节服务包括气候调节、径流调节;文化服务包括美学欣赏、科学研究等。三江源冰川服务总价值为421.51亿元，直接经济价值的供给服务价值占总价值的20.64%。下列冰川的功能中能够直接体现经济价值的是()",
+      "answer": "C",
+      "choice_count": 4
+    },
+    {
+      "source_file": "geography/geography_test.json",
+      "source_id": "1",
+      "question": "How does highway network resilience affect industrial co-agglomeration in the Guanzhong Plain?",
+      "answer": "B",
+      "choice_count": 4
+    },
+    {
+      "source_file": "geography/geography_train.jsonl",
+      "source_id": "index:0",
+      "question": "What effect does long-term biogas slurry application have on Chloroflexi in paddy field soil?",
+      "answer": "B",
+      "choice_count": 4
+    },
+    {
+      "source_file": "geography/mmlu-geography.jsonl",
+      "source_id": "5128",
+      "question": "Which zone contains low-income slums, ethnic ghettos, and general deterioration in Burgess's concentric zone model of urban form?",
+      "answer": "C",
+      "choice_count": 9
+    },
+    {
+      "source_file": "math/math_test.jsonl",
+      "source_id": "index:0",
+      "question": "For what positive value of $n$ does $|3+ni|=3\\sqrt{10}$?",
+      "answer": "We have $|3+ni|=\\sqrt{3^2+n^2}=3\\sqrt{10}$.\nSquaring both sides, we get $9+n^2=90$.\nSolving for $n^2$, we have $n^2=81$.\nTaking the positive square root, we find $n=$.\n\nFinal Answer: 9",
+      "choice_count": 0
+    },
+    {
+      "source_file": "math/math_train.jsonl",
+      "source_id": "index:0",
+      "question": "Silvia’s bakery is offering 10% on advanced orders over $50.00.  She orders 2 quiches for $15.00 each, 6 croissants at $3.00 each and 6 buttermilk biscuits for $2.00 each.  How much will her order be with the discount?",
+      "answer": "Silvia orders 2 quiches at $15.00 each, so she spends 2 * $15.00 = $30.00 on quiches.\nShe also orders 6 croissants at $3.00 each, so she spends 6 * $3.00 = $18.00 on croissants.\nShe also orders 6 buttermilk biscuits at $2.00 each, so she spends 6 * $2.00 = $12.00 on biscuits.\nHer total order before ",
+      "choice_count": 0
+    },
+    {
+      "source_file": "math/mmlu-math.jsonl",
+      "source_id": "7687",
+      "question": "Statement 1 | A ring homomorphism is one to one if and only if the kernel is {0}. Statement 2 | Q is an ideal in R.",
+      "answer": "H",
+      "choice_count": 9
+    },
+    {
+      "source_file": "mixed/mixed_train.jsonl",
+      "source_id": "index:0",
+      "question": "Silvia’s bakery is offering 10% on advanced orders over $50.00.  She orders 2 quiches for $15.00 each, 6 croissants at $3.00 each and 6 buttermilk biscuits for $2.00 each.  How much will her order be with the discount?",
+      "answer": "Silvia orders 2 quiches at $15.00 each, so she spends 2 * $15.00 = $30.00 on quiches.\nShe also orders 6 croissants at $3.00 each, so she spends 6 * $3.00 = $18.00 on croissants.\nShe also orders 6 buttermilk biscuits at $2.00 each, so she spends 6 * $2.00 = $12.00 on biscuits.\nHer total order before ",
+      "choice_count": 0
+    },
+    {
+      "source_file": "physics/mmlu-physics.jsonl",
+      "source_id": "9044",
+      "question": "What is the significance of the 1:2:4 resonance in the Jupiter's moons system?",
+      "answer": "I",
+      "choice_count": 9
+    },
+    {
+      "source_file": "physics/physics_test.json",
+      "source_id": "0",
+      "question": "What is the force generated by a single muscle fiber during contraction? Calculate the force generated by a single muscle fiber given its cross-sectional area, contractile force per unit area, and the physiological range of lengths at which it can generate force.",
+      "answer": "D",
+      "choice_count": 4
+    },
+    {
+      "source_file": "physics/physics_train.jsonl",
+      "source_id": "index:0",
+      "question": "A heat engine operates between a hot temperature source of 400 K and a cold temperature source of 300 K. Calculate the Carnot efficiency of the heat engine.",
+      "answer": "The Carnot efficiency is the maximum possible efficiency for a heat engine operating between two temperature reservoirs. It is given by the formula:\n\nCarnot efficiency = 1 - (T_cold / T_hot)\n\nwhere T_cold is the temperature of the cold reservoir and T_hot is the temperature of the hot reservoir. Bot",
+      "choice_count": 0
+    }
+  ]
+}

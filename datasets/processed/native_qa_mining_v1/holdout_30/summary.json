@@ -1,0 +1,83 @@
+{
+  "scope": "holdout_30",
+  "total_questions": 30,
+  "schema_valid_labeled": 30,
+  "failed_or_invalid": 0,
+  "valid": 24,
+  "domain_type": {
+    "single": 22,
+    "native_cross_domain": 8
+  },
+  "required_domains": {
+    "biology": 4,
+    "astronomy": 6,
+    "chemistry": 8,
+    "physics": 9,
+    "geography": 3,
+    "mathematics": 2
+  },
+  "question_type": {
+    "short_answer": 7,
+    "numeric": 5,
+    "qualitative": 14,
+    "mcq": 4
+  },
+  "keep_priority": {
+    "medium": 9,
+    "high": 15,
+    "low": 6
+  },
+  "answer_verifiability": {
+    "rule_verifiable": 9,
+    "rubric_verifiable": 15,
+    "unreliable": 6
+  },
+  "high_priority_single": 9,
+  "high_priority_cross_domain": 6,
+  "api_batches": 6,
+  "api_errors": 0,
+  "api_usage": {
+    "prompt_tokens": 14844,
+    "completion_tokens": 1951,
+    "total_tokens": 16795,
+    "prompt_cache_hit_tokens": 1536,
+    "prompt_cache_miss_tokens": 13308
+  },
+  "actual_cost_usd": {
+    "off_peak": 0.003171,
+    "peak": 0.006343
+  },
+  "full_scan_projection": {
+    "raw_non_mixed_records": 180029,
+    "exact_unique_question_answer_pairs": 178814,
+    "method": "linear scaling from this calibration after exact question-answer deduplication",
+    "projected_usage": {
+      "prompt_tokens": 88477168,
+      "completion_tokens": 11628871,
+      "total_tokens": 100106038,
+      "prompt_cache_hit_tokens": 9155277,
+      "prompt_cache_miss_tokens": 79321891
+    },
+    "estimated_cost_usd": {
+      "off_peak": 18.9,
+      "peak": 37.81
+    }
+  },
+  "pricing": {
+    "as_of": "2026-10-08",
+    "model": "DeepSeek-V4.1-Flash via deepseek-flash",
+    "source": "https://api-docs.deepseek.com/quick_start/pricing",
+    "usd_per_million_tokens": {
+      "off_peak": {
+        "input_cache_hit": 0.003,
+        "input_cache_miss": 0.15,
+        "output": 0.6
+      },
+      "peak": {
+        "input_cache_hit": 0.006,
+        "input_cache_miss": 0.3,
+        "output": 1.2
+      }
+    }
+  }
+}

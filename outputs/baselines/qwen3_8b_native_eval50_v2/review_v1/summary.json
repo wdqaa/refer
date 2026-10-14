@@ -1,0 +1,53 @@
+{
+  "trace_items": 150,
+  "preliminary_score_counts": {
+    "direct": {
+      "manual": 32,
+      "true": 14,
+      "false": 4
+    },
+    "oracle_multi_agent": {
+      "manual": 32,
+      "true": 15,
+      "false": 3
+    },
+    "routed_multi_agent": {
+      "manual": 32,
+      "true": 15,
+      "false": 3
+    }
+  },
+  "routing": {
+    "items": 50,
+    "exact_set_match": 0.5,
+    "micro_precision": 0.7441860465116279,
+    "micro_recall": 0.8421052631578947,
+    "over_routed_items": 21,
+    "under_routed_items": 11
+  },
+  "efficiency": {
+    "direct": {
+      "items": 50,
+      "mean_calls": 1,
+      "mean_input_tokens": 312.82,
+      "mean_output_tokens": 251.42,
+      "mean_latency_seconds": 14.54196902
+    },
+    "oracle_multi_agent": {
+      "items": 50,
+      "mean_calls": 2.52,
+      "mean_input_tokens": 1322.42,
+      "mean_output_tokens": 759.68,
+      "mean_latency_seconds": 45.573183119999996
+    },
+    "routed_multi_agent": {
+      "items": 50,
+      "mean_calls": 3.72,
+      "mean_input_tokens": 1712.58,
+      "mean_output_tokens": 917.34,
+      "mean_latency_seconds": 54.45794172
+    }
+  },
+  "manual_review_items": 32,
+  "warning": "Do not report overall arm accuracy until blinded manual reviews are merged."
+}

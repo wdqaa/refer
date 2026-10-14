@@ -1,0 +1,24 @@
+{"native_qa_id":"native-a10abcb5095b17","audit_group":"high_single","human_agree":true,"reason":"Well-posed astronomy MCQ; one astronomy dependency is sufficient."}
+{"native_qa_id":"native-6c633768a83947","audit_group":"high_single","human_agree":true,"reason":"Well-posed particle-physics estimate correctly assigned to physics despite its source directory."}
+{"native_qa_id":"native-211bcde2c4e7ac","audit_group":"high_single","human_agree":true,"reason":"Clear biology question with a usable qualitative reference answer."}
+{"native_qa_id":"native-10207571495b7b","audit_group":"high_single","human_agree":true,"reason":"Objective biochemistry MCQ that is answerable within biology."}
+{"native_qa_id":"native-b68c4917e24d31","audit_group":"high_single","human_agree":true,"reason":"Self-contained diffusion/permeability calculation within chemistry."}
+{"native_qa_id":"native-ae8b929d33b3af","audit_group":"high_single","human_agree":true,"reason":"Broad but answerable materials-chemistry question with rubric-verifiable guidance."}
+{"native_qa_id":"native-bca05fd0523251","audit_group":"high_single","human_agree":true,"reason":"Self-contained objective topographic-map question."}
+{"native_qa_id":"native-8ed34fe7c9388b","audit_group":"high_single","human_agree":true,"reason":"Clear single-domain Earth-science fact question."}
+{"native_qa_id":"native-86ce31f1dd4379","audit_group":"high_single","human_agree":true,"reason":"Self-contained arithmetic word problem with a correct worked reference."}
+{"native_qa_id":"native-f9bcdf28b40280","audit_group":"high_single","human_agree":true,"reason":"Well-posed probability MCQ requiring one mathematical dependency."}
+{"native_qa_id":"native-78f8c47966f53e","audit_group":"high_single","human_agree":true,"reason":"Objective interferometry calculation within physics."}
+{"native_qa_id":"native-58dab5160732a3","audit_group":"high_single","human_agree":true,"reason":"Self-contained magnetic-field calculation with a grounded reference."}
+{"native_qa_id":"native-5cf465532a449a","audit_group":"invalid_low","human_agree":true,"reason":"The requested cosmic-string likelihood is not defined by the black-hole parameters."}
+{"native_qa_id":"native-7e798dee691717","audit_group":"invalid_low","human_agree":true,"reason":"The numerical quantities needed for an energy answer are absent."}
+{"native_qa_id":"native-b29001ddfdb056","audit_group":"invalid_low","human_agree":true,"reason":"The specialized term depends on unstated study context and is not self-contained."}
+{"native_qa_id":"native-616868a9acd628","audit_group":"invalid_low","human_agree":true,"reason":"Opaque protein identifiers require an external interaction database."}
+{"native_qa_id":"native-5c877ab7474e08","audit_group":"invalid_low","human_agree":true,"reason":"The equilibrium calculation lacks necessary constants and the reference reasoning is unreliable."}
+{"native_qa_id":"native-a974014c43fefc","audit_group":"invalid_low","human_agree":false,"reason":"This is broad but still a coherent rubric-verifiable chemistry-education question."}
+{"native_qa_id":"native-cfe92d6e12872b","audit_group":"invalid_low","human_agree":false,"reason":"The options make the nowcasting relationship objectively answerable."}
+{"native_qa_id":"native-3c8a229bc3289f","audit_group":"invalid_low","human_agree":true,"reason":"The reference depends on an unstated case study and specific household findings."}
+{"native_qa_id":"native-a7f9b00f02407b","audit_group":"invalid_low","human_agree":false,"reason":"The probability MCQ is self-contained and option E is correct."}
+{"native_qa_id":"native-ed28f49be16b14","audit_group":"invalid_low","human_agree":true,"reason":"The duplicated stem gives no rule for weight change after month two, so x is underdetermined."}
+{"native_qa_id":"native-d7ae1b7ef8e4cc","audit_group":"invalid_low","human_agree":true,"reason":"The keyed free-energy sign is wrong and the rate constant is irrelevant to the stated calculation."}
+{"native_qa_id":"native-9c2fa9598398d1","audit_group":"invalid_low","human_agree":true,"reason":"The options make unsupported or incorrect claims about mass, frequency, and accretion-rate effects."}

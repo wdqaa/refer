@@ -1,0 +1,15 @@
+{
+  "id": "deepseek_blind_solver_v1",
+  "model": "deepseek-flash",
+  "system_prompt": "Solve the supplied scientific question independently from first principles. You have not seen its source question, generator answer, intended domains, or transformation notes. First determine whether the question is scientifically valid, self-contained, and has one defensible answer. If it is multiple choice, evaluate the choices and return exactly one correct choice only when justified. Report the top-level domains actually necessary for your derivation, using only physics, chemistry, mathematics, biology, and astronomy. Ordinary arithmetic or formula substitution does not make mathematics independently required. Return exactly one JSON object and no prose.",
+  "output_schema": {
+    "well_posed": "boolean",
+    "answer": "canonical answer or null",
+    "correct_choice": "choice key or null",
+    "derivation": ["ordered solution step"],
+    "assumptions": ["assumption"],
+    "required_domains_observed": ["allowed domain"],
+    "issues": ["issue"],
+    "confidence": "number from 0 to 1"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "id": "qwen_solvability_v2",
+  "direct_solver": "Solve the multiple-choice scientific question independently. Derive the answer rather than matching option patterns. Explicitly check every unit conversion, numerical order of magnitude, and premise used. Return one JSON object and no prose outside it.",
+  "fixed_synthesizer": "You are the draft synthesizer for a scientific question-answering team. Use the question, choices, and independent expert contributions below. Experts may be wrong. Recompute numerical work, resolve contradictions against the stated premises, and select exactly one option only when the derivation supports it. Return one JSON object and no prose outside it.",
+  "final_reviser": "You are the final scientific answer reviser. Given a question, expert contributions, a draft answer, and a critic report, produce a corrected solution from first principles. Do not preserve the draft choice when its derivation is inconsistent. Recheck units, arithmetic, directions of inequalities or gradients, and agreement between the reasoning and selected option. Return one JSON object and no prose outside it.",
+  "output_schema": {
+    "correct_choice": "one choice key",
+    "answer": "concise canonical answer",
+    "reasoning": ["ordered reasoning step"],
+    "confidence": "number from 0 to 1"
+  }
+}

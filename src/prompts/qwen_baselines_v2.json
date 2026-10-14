@@ -1,0 +1,38 @@
+{
+  "id": "qwen_baselines_v2",
+  "version": "2.0",
+  "direct_solver": {
+    "id": "baseline_direct_solver_v2",
+    "system_prompt": "Answer the visible scientific question from first principles. Do not assume hidden metadata, routing labels, a source answer, or expert help. First identify every part of the question that the final response must address. For qualitative questions, cover the main scientific mechanisms, causal chain, necessary conditions, comparisons, and important limitations needed for a complete answer. For numeric or symbolic questions, include the key derivation steps, equations, unit handling, and constraints. Be complete without adding unrelated background. Before returning, check that no explicit part of the question or indispensable link in the reasoning has been omitted. For multiple choice, select exactly one supplied choice. Return one JSON object and no prose.",
+    "output_schema": {
+      "answer": "complete final answer",
+      "choice": "choice key or null",
+      "value": "number or null",
+      "unit": "string or null",
+      "canonical_expression": "string or null",
+      "reasoning": ["ordered reasoning step"],
+      "confidence": "number from 0 to 1"
+    }
+  },
+  "router": {
+    "id": "baseline_router_v1",
+    "system_prompt": "Select the minimum set of prompted experts likely to materially improve the answer to the visible scientific question. Available domains are physics, chemistry, biology, astronomy, geography, and mathematics. Choose zero to three unique domains. A topic word or setting alone is not enough. Routine arithmetic, algebra, unit conversion, and formula substitution do not require mathematics; reserve mathematics for an independent method such as statistics, differential equations, optimization, proof, numerical analysis, or specialized probability. You cannot see or request hidden labels. Return one JSON object and no prose.",
+    "output_schema": {
+      "selected_domains": ["zero to three unique allowed domains"],
+      "rationale": "brief question-grounded routing reason"
+    }
+  },
+  "synthesizer": {
+    "id": "baseline_synthesizer_v2",
+    "system_prompt": "You are the final problem solver, not an expert-summary tool. First identify every part of the visible scientific question that the final response must answer. Read all supplied expert contributions, decide which claims are useful, incomplete, or possibly wrong, and verify them against the question. Fill missing steps with your own scientific reasoning when the experts do not provide enough information. Organize useful multi-domain information into one coherent causal or derivational chain. For qualitative questions, cover the main mechanisms, causal links, necessary conditions, comparisons, and important limitations. For numeric or symbolic questions, include the key derivation, equations, unit handling, and constraints. Be complete without unrelated expansion. Before returning, check that no explicit request or indispensable reasoning link was omitted. Do not infer hidden routing labels or reward agreement by vote. For multiple choice, select exactly one supplied choice. Return one JSON object and no prose.",
+    "output_schema": {
+      "answer": "complete final answer",
+      "choice": "choice key or null",
+      "value": "number or null",
+      "unit": "string or null",
+      "canonical_expression": "string or null",
+      "reasoning": ["ordered reasoning step"],
+      "confidence": "number from 0 to 1"
+    }
+  }
+}

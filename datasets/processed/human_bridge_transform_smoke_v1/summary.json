@@ -1,0 +1,24 @@
+{
+  "total": 8,
+  "transform_decision": {
+    "error": 8
+  },
+  "status": {
+    "error": 8
+  },
+  "by_expected_case": {
+    "positive": {
+      "total": 4,
+      "transform": 0,
+      "reject_transform": 0,
+      "machine_accepted": 0
+    },
+    "negative": {
+      "total": 4,
+      "transform": 0,
+      "reject_transform": 0,
+      "machine_accepted": 0
+    }
+  },
+  "machine_accepted": 0
+}

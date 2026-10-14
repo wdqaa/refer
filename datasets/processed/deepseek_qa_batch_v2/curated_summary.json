@@ -1,0 +1,42 @@
+{
+  "machine_accepted": 37,
+  "semantic_review_accepted": 31,
+  "semantic_review_rejected": 6,
+  "rejected_ids": [
+    "qa-batch-v2-astronomy-1424",
+    "qa-batch-v2-biology-13631",
+    "qa-batch-v2-biology-451",
+    "qa-batch-v2-geography-1396",
+    "qa-batch-v2-geography-5144",
+    "qa-batch-v2-physics-1093"
+  ],
+  "origin_type": {
+    "native_cross_domain": 5,
+    "native_single": 18,
+    "transformed_cross_domain": 8
+  },
+  "question_type": {
+    "qualitative": 17,
+    "mcq": 5,
+    "short_answer": 8,
+    "numeric": 1
+  },
+  "difficulty": {
+    "medium": 14,
+    "easy": 9,
+    "hard": 8
+  },
+  "required_domains": {
+    "astronomy+physics": 2,
+    "physics": 6,
+    "biology": 5,
+    "biology+chemistry": 1,
+    "biology+geography": 3,
+    "chemistry": 6,
+    "chemistry+geography": 2,
+    "chemistry+physics": 3,
+    "geography": 1,
+    "geography+physics": 1,
+    "mathematics+physics": 1
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "total": 8,
+  "schema_valid": 7,
+  "failed_or_invalid": 1,
+  "decision": {
+    "none": 7
+  },
+  "selected_target_domain": {},
+  "selected_bridge": {},
+  "risk_flags": {
+    "source_answer_unreliable": 1,
+    "no_natural_extension": 7,
+    "too_broad": 2,
+    "external_context_required": 1
+  }
+}
